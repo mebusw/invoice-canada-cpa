@@ -1,0 +1,47 @@
+{
+  "skill_name": "invoice-canada-cpa",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "客户 ABC Inc. 要做 2026 年度的 T2 报税, 发票都在 references/invoices/ 里。帮我做一整套 workpaper: 抽取发票金额、分类、GIFI 映射、试算平衡、税务复核报告、催收邮件, 其他数据你编。输出放到 outputs/ 文件夹。",
+      "expected_output": "完整 Working Paper Package: 5 个标准目录、发票数字抽取正确(合计 4,303.05)且勾稽通过、试算平衡表借贷平衡、GIFI 映射含置信度、税务复核报告含风险与缺失资料、催收邮件草稿",
+      "files": ["references/invoices/发票_3fc8c0e4a4f04ca8a4444064e1e3e24a.pdf", "references/invoices/KPLS202605070014942_108563371_1.pdf", "references/invoices/发票_c2c5c2ec27494fdcb792e1125acfa244.pdf", "references/invoices/电子发票.pdf", "references/invoices/dzfp_26502000001342486246_上海扣启企业管理咨询有限公司_20260705083700.pdf", "references/invoices/微信图片_20260608194649_1014_210.jpg"],
+      "expectations": [
+        "抽取全部 6 张发票且价税合计 = 4,303.05",
+        "每张发票通过勾稽校验 (金额+税额=价税合计)",
+        "输出包含 5 个标准目录 (01_Source_Documents ~ 05_Client_Questions)",
+        "extracted_transactions.xlsx 存在且含发票数据",
+        "trial_balance.xlsx 存在且借贷平衡",
+        "gifi_mapping.xlsx 存在且含 GIFI 码与置信度",
+        "financial_statement_draft.xlsx 存在且资产=负债+权益",
+        "tax_review_report.md 存在且含风险项与缺失资料",
+        "followup_email_draft.md 存在且含缺失项催收",
+        "分类正确: 餐费→8521 / 差旅→8523 / 通行费→8520"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "客户发来一堆票据(在 references/invoices/ 文件夹), 帮我抽一下金额数字、按加拿大会计科目分下类, 再看看有没有要提醒客户的风险点, 写一份总结就行。",
+      "expected_output": "抽取汇总(6 张发票, 合计 4,303.05 或分类金额)+ 加拿大科目分类 + 至少一个风险提醒(如餐费 50% 限制、发票抬头不一致、缺失资料)",
+      "files": ["references/invoices/发票_3fc8c0e4a4f04ca8a4444064e1e3e24a.pdf", "references/invoices/KPLS202605070014942_108563371_1.pdf", "references/invoices/发票_c2c5c2ec27494fdcb792e1125acfa244.pdf", "references/invoices/电子发票.pdf", "references/invoices/dzfp_26502000001342486246_上海扣启企业管理咨询有限公司_20260705083700.pdf", "references/invoices/微信图片_20260608194649_1014_210.jpg"],
+      "expectations": [
+        "抽取 6 张发票 (或合计金额 4,303.05)",
+        "按加拿大科目分类 (餐费/差旅/汽车 或 GIFI 码)",
+        "至少识别 1 个风险点 (餐费 50% / 抬头不一致 / 缺资料等)",
+        "提到勾稽校验或数字验证"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "帮客户做 T2 workpaper: 发票在 references/invoices/, 银行流水之类的其他数据你编。我要 trial_balance.xlsx、gifi_mapping.xlsx 和 tax_review_report.md 三个文件, 放 outputs 里。",
+      "expected_output": "三个指定文件: trial_balance.xlsx(借贷平衡)、gifi_mapping.xlsx(含 GIFI 建议)、tax_review_report.md(含风险与复核内容), 数据包含发票抽取金额",
+      "files": ["references/invoices/发票_3fc8c0e4a4f04ca8a4444064e1e3e24a.pdf", "references/invoices/KPLS202605070014942_108563371_1.pdf", "references/invoices/发票_c2c5c2ec27494fdcb792e1125acfa244.pdf", "references/invoices/电子发票.pdf", "references/invoices/dzfp_26502000001342486246_上海扣启企业管理咨询有限公司_20260705083700.pdf", "references/invoices/微信图片_20260608194649_1014_210.jpg"],
+      "expectations": [
+        "trial_balance.xlsx 存在且借贷平衡",
+        "gifi_mapping.xlsx 存在且含 GIFI 建议",
+        "tax_review_report.md 存在且含风险内容",
+        "数据包含发票金额 (合计 4,303.05 或分类金额)"
+      ]
+    }
+  ]
+}
