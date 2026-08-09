@@ -1,2 +1,6 @@
 .DS_Store
 .env
+.pyc
+node_module/
+venv/
+output/
