@@ -1,0 +1,164 @@
+{
+  "skill_name": "invoice-canada-cpa",
+  "_note": "GIFI codes in this file were corrected against CRA RC4088 Appendix A (Complete listing of the GIFI). Prior versions asserted 8521 for meals and 8520 for vehicle expenses; both were wrong (8521 = Advertising, 8520 = Advertising and promotion generic). Correct: meals = 8523, vehicle = 9281, travel = 9200, office = 8810, catch-all = 9270.",
+  "evals": [
+    {
+      "id": 1,
+      "name": "standard-canadian-receipt-batch",
+      "prompt": "I have 12 Canadian receipt images in /Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/. Process them with multi-modal extraction (MiniMax JSON + MinerU markdown), cross-validate using LLM (vendor/date from MiniMax, amounts from MinerU with tie-out check), assign GIFI codes, and write a 3-sheet Excel to round2_cross_validated.xlsx. Validate all 8 quality gates.",
+      "expected_output": "Excel file with Decisions / Raw_Outputs / Validation_Report sheets. 12 rows. All 8 quality gates pass. Source attribution tagged for every field. Tie-out verified (sub+tax=total) for every row. Every GIFI code exists in the CRA list and is neither a generic block header nor a total item.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/*.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "restaurant-discount-receipt",
+      "prompt": "Process this BBQ restaurant receipt: bbq_95.68_11.02.jpg. The receipt has SubTotal $94.07, 10% DISCOUNT -$9.41, H.S.T. $11.02, TOTAL $95.68. Use the printed SubTotal (not the calculated tax base $84.66). Apply the discounted tie-out formula.",
+      "expected_output": "subtotal=94.07, discount=9.41, tax=11.02, total=95.68. Tie-out: (94.07 - 9.41) + 11.02 = 95.68 ✓. GIFI code 8523 Meals and entertainment (NOT 8521, which is Advertising; NOT 8520, which is the generic block header). tax_treatment notes the 50% ITA 67.1 limit as a separate axis. Source attribution for each field.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/bbq_95.68_11.02.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "zero-tax-grocery-receipt",
+      "prompt": "Process this T&T Supermarket basic-grocery receipt: tnt_64.78_0.jpg. The receipt has SubTotal $64.78, HST $0.00 (zero-rated basic groceries), TOTAL $64.78. Use is None checks (not 'or -1') to avoid false tie-out failures on zero-tax receipts.",
+      "expected_output": "subtotal=64.78, tax=0.0, total=64.78. Tie-out passes (64.78 + 0.0 = 64.78). GIFI code 8523 Meals and entertainment if staff food, or 9130 Supplies if operational — either is acceptable when justified by stated use. Must NOT be 8521. Note: tax=0.0 is valid, not missing.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/tnt_64.78_0.jpg"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "sideways-rotated-receipt",
+      "prompt": "Process this sideways-photographed Costco tire receipt: costco_971.75_111.79.jpg. Don't rotate the image. MinerU may partially extract the values. If vendor/date fail in both MiniMax and MinerU, mark them as VISUAL. The receipt has 4 tires at $209.99, $20 levy, HST $111.79, total $971.75.",
+      "expected_output": "subtotal=859.96, tax=111.79, total=971.75. Vendor may be marked VISUAL. GIFI code 9281 Vehicle expenses (CRA lists tires explicitly under 9281). NOT 8520. Treated as current expense; review_required=true flagged due to amount.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/costco_971.75_111.79.jpg"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "chinese-english-mixed-receipt",
+      "prompt": "Process this Chinese-English mixed BBQ receipt: bbq_95.68_11.02.jpg. Vendor is '有局儿烧烤' in Chinese. Use MiniMax to extract the English transliteration. Preserve the Chinese in a vendor_cn field. Skip Tesseract (it will garble Chinese).",
+      "expected_output": "vendor='Haven Party BBQ', vendor_cn='有局儿烧烤', vendor_source='MiniMax'. All amounts correctly extracted. Chinese characters preserved.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/bbq_95.68_11.02.jpg"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "filename-mismatch-detection",
+      "prompt": "There's a file costco_1315.46_144.62.jpg (the filename was renamed from costco_315.46_144.62.jpg because it was missing the leading '1'). Verify the rename happened, check that the filename numbers now match the receipt contents, and confirm all 8 quality gates pass.",
+      "expected_output": "Filename check: 1315.46 matches receipt total, 144.62 matches receipt tax. Mismatch resolved. All gates pass.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/costco_1315.46_144.62.jpg"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "tire-purchase-expense-vs-capital",
+      "prompt": "Process the Costco tire receipt costco_971.75_111.79.jpg. The 4 tires at $209.99 + $20 levy + $111.79 HST = $971.75. The single transaction exceeds $500. Should this be a current expense or capitalized under CCA Class 10?",
+      "expected_output": "GIFI code 9281 Vehicle expenses. Treated as a CURRENT EXPENSE, not capital — CRA explicitly lists 'tires' among the contents of 9281. Capitalization under CCA Class 10 applies to acquiring the vehicle itself, not to replacement tires. Amount is large, so review_required=true and the note should say 'Large vehicle-expense amount; CPA to confirm expense vs capital treatment.' deductible_pct='100%'. The skill must NOT assert a hard '>$500 = capital' rule.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/costco_971.75_111.79.jpg"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "50-percent-meals-deduction-rule",
+      "prompt": "Process the BBQ restaurant receipt bbq_95.68_11.02.jpg. Per ITA 67.1, only 50% of meal expenses are deductible. Apply the rule at classification time — do not halve the recorded expense (the 50% is applied at filing time by the CPA). Set the deductible_pct to '50%' in the workpaper.",
+      "expected_output": "GIFI 8523 Meals and entertainment, deductible_pct='50% (ITA 67.1)', schedule_1_flag=true. The recorded expense in the workpaper stays at $95.68 (full amount). GIFI mapping and tax treatment are recorded in separate columns — the 50% limit must not alter the GIFI code or the recorded amount.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/bbq_95.68_11.02.jpg"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "generic-parent-trap",
+      "prompt": "For the 12-receipt batch, produce the GIFI summary. For each code assigned, state its parent code and whether it is a generic block header. Then confirm: is 8520 equal to the sum of 8521 + 8522 + 8523 + 8524?",
+      "expected_output": "No row uses a generic block header (8520, 8620, 8710, 8760, 8860, 8910, 8960, 9060, 9130, 9150, 9220) when a specific child code applies. gifi_parent and is_generic are populated for every row. The answer to the summing question is NO — CRA states a generic item does not represent the total of the items in its block, so 8520 must never be computed as the sum of 8521-8524.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/*.jpg"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "gifi-code-validity-gate",
+      "prompt": "Run quality gate 5 (GIFI validity) over the workpaper. For each assigned GIFI code, verify it exists in the CRA GIFI list, is not a generic block header, and is not a total item.",
+      "expected_output": "Gate reports pass/fail per row. Codes that do not exist in CRA Appendix A (e.g. 8575, 8530, 8540, 8545, 8550, 8560, 8565, 8605) are rejected. Total items (8299, 9367, 9368, 9369) are rejected as classification targets. Any rejected row is listed in Validation_Report with review_required=true.",
+      "files": [
+        "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/*.jpg"
+      ]
+    }
+  ],
+  "assertions": {
+    "1": [
+      "Excel file round2_cross_validated.xlsx is created",
+      "Excel has exactly 3 sheets: Decisions, Raw_Outputs, Validation_Report",
+      "Decisions sheet has 12 rows (one per receipt)",
+      "All 8 quality gates pass in Validation_Report sheet",
+      "Source attribution present for every field",
+      "gifi_parent and is_generic columns present and populated"
+    ],
+    "2": [
+      "Subtotal extracted as 94.07 (printed value, not 84.66 calculated)",
+      "Discount field present with value 9.41",
+      "Tie-out formula (sub - discount + tax = total) satisfied",
+      "GIFI code 8523 assigned (NOT 8521, NOT 8520)",
+      "50% ITA 67.1 limit recorded in tax_treatment, not in the GIFI column"
+    ],
+    "3": [
+      "Tax extracted as 0.0 (not None, not -1)",
+      "Tie-out formula 64.78 + 0 = 64.78 satisfied",
+      "GIFI code 8523 or 9130 assigned with stated justification (NOT 8521)",
+      "No false 'missing tax' warning generated"
+    ],
+    "4": [
+      "Image not programmatically rotated",
+      "Subtotal, tax, total extracted from MinerU markdown",
+      "Vendor may be marked VISUAL (acceptable)",
+      "Tie-out 859.96 + 111.79 = 971.75 satisfied",
+      "GIFI code 9281 assigned (NOT 8520)"
+    ],
+    "5": [
+      "vendor contains 'Haven Party BBQ' (English transliteration)",
+      "vendor_cn contains '有局儿烧烤' (Chinese preserved)",
+      "vendor_source is 'MiniMax'",
+      "Tesseract NOT used in pipeline"
+    ],
+    "6": [
+      "Filename is costco_1315.46_144.62.jpg (not 315.46)",
+      "Filename numbers 1315.46 and 144.62 match extracted values",
+      "Filename check passes in validation report",
+      "No mismatch warning"
+    ],
+    "7": [
+      "GIFI code 9281 assigned (NOT 8520)",
+      "Classified as current expense, NOT capitalized by default",
+      "No assertion of a hard '>$500 = capital' rule",
+      "review_required=true with a note deferring expense-vs-capital to CPA",
+      "Recorded expense stays at $971.75 (not halved)"
+    ],
+    "8": [
+      "GIFI code 8523 Meals and entertainment (NOT 8521)",
+      "deductible_pct='50% (ITA 67.1)' recorded in a separate column from gifi_code",
+      "Recorded expense in workpaper is $95.68 (full amount, not $47.84)",
+      "schedule_1_flag set, with note that the cap is applied at filing time by CPA"
+    ],
+    "9": [
+      "No generic block header used where a specific child code applies",
+      "gifi_parent populated for every row",
+      "is_generic populated for every row",
+      "Explicitly answers NO to 8520 = 8521+8522+8523+8524",
+      "Cites the CRA rule that a generic item is not the block total"
+    ],
+    "10": [
+      "Every assigned code is verified against the CRA GIFI list",
+      "Non-existent codes (8575, 8530, 8540, 8560, 8565, 8605) are rejected",
+      "Total items (8299, 9367, 9368, 9369) are rejected as classification targets",
+      "Rejected rows appear in Validation_Report with review_required=true"
+    ]
+  }
+}
