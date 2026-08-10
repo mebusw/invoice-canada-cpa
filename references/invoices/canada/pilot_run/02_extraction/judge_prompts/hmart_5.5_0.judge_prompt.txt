@@ -1,0 +1,139 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "H MART",
+  "vendor_cn": null,
+  "address": "5323 Yonge St. North York, ON, M2N5R4",
+  "date": "2026-02-26",
+  "time": "16:13",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "TRADITIONAL KOREAN RICE",
+      "price": 5.5
+    }
+  ],
+  "subtotal": 5.5,
+  "discount": 0.0,
+  "tax": 0.0,
+  "tax_label": "N/A",
+  "total": 5.5,
+  "tip": 0.0,
+  "confidence": 0.98,
+  "notes": "The receipt date is printed as Feb 26, 2026."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+# CIMART
+
+5323YongeSNortYokONM2N5R4 416-792-1131
+
+Yur(03
+
+Feb262026 1613.40
+
+Qty Description TRADITIONAL_KOREANRICE@550550
+
+<table><tr><td>Total1lems Sub Total</td><td>5.50</td></tr><tr><td>Total Due</td><td>5.50</td></tr><tr><td>Master</td><td>5.50 000</td></tr></table>
+
+Tran#23364   
+Tace235283   
+Purchase   
+MasterCard   
+00000000x4739   
+AIDA0000000041010   
+App Name MASTERCARD   
+APPROVED Amount CAD\$5.50   
+No signature requred   
+RRN:000000761555P   
+Auth00173Z   
+TVR00000D8001   
+HMART55CS03/HMART55CC03 TSI AB00   
+00（001）   
+02/26/2026 413.38PM
+
+Don'tforgetyourpv!
+
+yutg e etecg
+
+TAX Heg# 850075788
+
+440320005024
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

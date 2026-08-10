@@ -1,0 +1,188 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "Walmart",
+  "vendor_cn": null,
+  "address": "5000 HWY 7, MARKHAM, ON L3R 4M9",
+  "date": "2026-02-19",
+  "time": "20:58",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "YFM CROISSAN 62*735274270",
+      "price": 5.94
+    },
+    {
+      "name": "CH STRIPS VF 62*735019090",
+      "price": 10.98
+    },
+    {
+      "name": "FUJI 3.410 kg @ $4.34/kg",
+      "price": 14.8
+    },
+    {
+      "name": "ORANGE 68G201111240",
+      "price": 11.88
+    },
+    {
+      "name": "ORANGE 68G201111240",
+      "price": 11.88
+    }
+  ],
+  "subtotal": 55.48,
+  "discount": null,
+  "tax": null,
+  "tax_label": "mixed",
+  "total": 55.48,
+  "tip": 0.0,
+  "confidence": 0.92,
+  "notes": "Taxes not itemized separately on receipt; GST/HST and QST registration numbers printed (137466199 RT 0001 and 1016561356 TQ 0001). Store 3053, Terminal LMTUP01896B, MCARD TEND exact. Last 4 of card 4739. No signature required."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+lete
+
+10f3\$1000
+
+gift cards
+
+Rulesandregulationsapply.   
+See contest rules for details.
+
+STORE 3053
+
+5000 HWY7
+
+MARKHAM,ON
+
+L3R4M9
+
+905-477-6060
+
+ST# 030530P牛009080 TE# 80 TR# 01433
+
+YFM CROISSAN 62735274270\$5.94D
+
+CH STRIPS VF 627735019090\$10.98D
+
+3.410k9 @ \$4.34/kg\$14.80D
+
+ORANGE686201111240\$11.88D
+
+ORANGE686201111240\$11.88D
+
+SUBTOTAL\$55.48
+
+TOTAL\$55.48
+
+MCARD TEND\$55.48
+
+CHANGE DUE\$0.00
+
+MASTERCAR\*\*\*\*\*\*\*\*\*4739RF
+
+\$55.48 TOTAL PURCHASE
+
+APPROVAL #042392
+
+RN # 605100731786
+
+AID A0000004100
+
+TC BE2EB3389E460EE8
+
+TERMINAL ID LMTUPO18955
+
+\*No Signature Required
+
+02/19/2620:58:06
+
+GST/HST 137466199 RT0001
+
+QST 1016551356 TQ0001
+
+# ITEMS SOLD5
+
+TC# 2810420 8692 3910 8218
+
+02/19/26
+
+20:58:11
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

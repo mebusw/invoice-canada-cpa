@@ -1,0 +1,29 @@
+## COSTCO OLESALE
+
+Markham#151 khnONL66 YorktechDr 156
+
+<table><tr><td rowspan=1 colspan=4>206422CRCAREPLUS2664922CLRCAREPLUS2664922CLRCAREPLUS</td><td></td><td></td></tr><tr><td rowspan=1 colspan=5>1188137CRAISINS1.8 1.91188137CRAISINS1.8 14.49H</td><td></td></tr><tr><td rowspan=1 colspan=5>1188137CRAISINS1.8 16.99</td><td></td></tr><tr><td rowspan=1 colspan=5>1270656BR0OKSIOEVP 3.50H2054213TPD/1270656 16.991270656R0SIDEVP 3.50-H2054213TPD/1270656 16.99H2706SIDEVP2054213/10556 13.99332383LABELS  21.997012740KSMENSULT 21.99H</td><td></td></tr><tr><td rowspan=1 colspan=4>7013050KS OMEN507012750KSVIT OMEN5212651NBEEPROPO</td><td rowspan=1 colspan=1>21.9915.99H</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=4>5212651N BEEPROPO5212651BEEPRPO</td><td></td><td></td></tr><tr><td rowspan=1 colspan=4>5212651WNBEEPRPO5212651NBEEPROPO</td><td rowspan=1 colspan=1>15.99H15.99H</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=6>7013070KSENS50 17.99H435710NB HAIR SKIN 17.99H</td></tr><tr><td rowspan=1 colspan=6>435710NBHAIR SKIN 17.99H35710NBHAIRSKIN 17.99435710NBHAIRSKIN 17.99H435710NBHAIRSKIN 17.99H</td></tr><tr><td rowspan=1 colspan=4>1971606GODIVA DC2031206 TPD/1971606</td><td rowspan=1 colspan=1>6.00-H18.99H</td><td></td></tr><tr><td rowspan=1 colspan=4>1971606GODIVA DC2031206TPD/19716061971606GODIVADC2031206TPD/1971606197160660D1VA</td><td rowspan=1 colspan=1>6.00-H18.99H6.00-H18.99H</td><td></td></tr><tr><td rowspan=1 colspan=4>197160660D1VA2031206JPD/19716062941400 JMIE5ON VI2030464 TPD/2941400</td><td rowspan=1 colspan=2>6.00-H14.99H3.00-H</td></tr><tr><td rowspan=1 colspan=4>3941402JRMVITD25001761155KSCOQ10200</td><td></td><td></td></tr><tr><td></td><td></td><td></td><td></td><td rowspan=1 colspan=2>34.99H34.99H</td></tr><tr><td rowspan=2 colspan=4>1761155KSCOQ102001761155KS CO102001761155KSCDQ102001761155KSCOQ102001761155KSCOQ10200</td><td></td><td></td></tr><tr><td rowspan=2 colspan=3>1761155KSCOQ10200655360JOINT EASE2051386 TPD/655360</td><td rowspan=2 colspan=2>34.9934,99H29.99H6.00-H29.99H</td></tr><tr><td rowspan=1 colspan=2>2051386 TPD/655360655360JOINTESE</td></tr><tr><td rowspan=2 colspan=6>2051386 TPD/6558603941402JAM VIT02500 13.99H1795041 SWISS ARK  34.99H5961920NE6A3  33.99H5961920N OEA3  33.99H5961920NOMGA3  33.99H5961920NOMEGA3  33.99H5961920WN OMEGA3  33.99HSUBTOTAL     1,170.84TAX       144.62MMTOTAL    扑</td></tr><tr><td rowspan=1 colspan=2>34.99H</td><td rowspan=1 colspan=1></td></tr></table>
+
+ACCT:MASTERCARD   
+EFERENCE:0010013710C   
+UH539222026/03/2419:45:12   
+Invoice Nunber:009371   
+Purhase-Mestercard   
+A000000041010   
+000000800 E800
+
+1APPROVETHN YOU027   
+AMOUNT:51.315.46
+
+IHPORTNT-retanthsCoPy foryourrecords CHANGE 0.00
+
+P（H）HST13x TOIAL DISCOUNT(S) TOLUBERFITEMSSOLD 144.62 56 19:513151 \$49.50
+
+OP102 NaeSedech）
+
+Thank You! Please Come Again
+
+H-HST G-GST HST/GST 121476325RT e:151Tr9Trn:5040P:102
+
+Items Sold: 56   
+D9 2026/03/24 19:45

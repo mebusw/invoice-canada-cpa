@@ -1,0 +1,86 @@
+[
+  {
+    "doc_id": "2026-0001",
+    "source_file": "bbq_95.68_11.02.jpg",
+    "file_hash": "5bc4e0f240af05a2970f8322462bf0b04ae5557a963a8aa9a175e9c2c988f46e",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0002",
+    "source_file": "canadiantire_11.29_1.30.jpg",
+    "file_hash": "e45ebc015e667ebbe02cbf51321c6c731e4167188863eec070496a04181b44ca",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0003",
+    "source_file": "costco_1315.46_144.62.jpg",
+    "file_hash": "65bc433f12a05c60de90ad24aa55915ee3e7bf34ee7a9ee880adf471cec2d48c",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0004",
+    "source_file": "costco_971.75_111.79.jpg",
+    "file_hash": "e0db787b34b9b41e3d41acbdd3e23eed1477973eec5155ab6b93c33e71e067a4",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0005",
+    "source_file": "hmart_5.5_0.jpg",
+    "file_hash": "51e55b2d8e76f91aa357f0e550b2824ad32e1b355b8e782800b22c3c74b7151d",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0006",
+    "source_file": "shoppers_84.69_9.75.jpg",
+    "file_hash": "21c004a7af61e356a9d32dd9b4532509bbe9e89490027496ce0f4d1660695cb3",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0007",
+    "source_file": "tnt_173.73_7.92.jpg",
+    "file_hash": "b11c3a807d35ce1388036c8d13e4407c1f53ab8054c1551e8f0134f09b41326e",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0008",
+    "source_file": "tnt_36.17_3.59.jpg",
+    "file_hash": "62886fff441644f8abcde43aabab689584240f4c3b0b61697e4361ddf0dfe60d",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0009",
+    "source_file": "tnt_64.78_0.jpg",
+    "file_hash": "0a2463fffbfaa167f37ed9699748f979d4dfe9c54d502efca6edd82cba5b6ca9",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0010",
+    "source_file": "walmart_101.98_1.75.jpg",
+    "file_hash": "0c97ca937808a70829acf12b16d746c33a721cc3d7eb10f1b77563864a01c7d2",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0011",
+    "source_file": "walmart_55.48_0.jpg",
+    "file_hash": "526f64f5c7269682cb4d47d9f256fa41bbf558155ca7d09c3deac15764b9682a",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  },
+  {
+    "doc_id": "2026-0012",
+    "source_file": "walmart_60.16_1.19.jpg",
+    "file_hash": "8565e4be408fd5ab5c7df310afaa35e01ad45d42400a8680aada44f6232f09a8",
+    "page_no": 1,
+    "doc_type_hint": "unknown"
+  }
+]

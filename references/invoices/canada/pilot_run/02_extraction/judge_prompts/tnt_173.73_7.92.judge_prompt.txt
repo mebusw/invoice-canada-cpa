@@ -1,0 +1,155 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "",
+  "address": "7070 Warden Ave., Markham, ON L3R 5Y2",
+  "date": "2026-03-26",
+  "time": "18:14",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "ROYAL FAMILY ROYAL PINE CAKE (MEMBERS)",
+      "price": 14.97
+    },
+    {
+      "name": "CAJUN STYLE CHICKEN WINGS",
+      "price": 8.68
+    },
+    {
+      "name": "LAMB SHOULDER BONELESS - ROLL 0.50 Kg @ $20.64/kg",
+      "price": 15.47
+    },
+    {
+      "name": "LAMB SHOULDER BONELESS - ROLL 0.50 Kg @ $20.64/kg",
+      "price": 15.75
+    },
+    {
+      "name": "WHITE RADISH 2.405 Kg @ $2.18/kg",
+      "price": 5.24
+    },
+    {
+      "name": "GREEN ONION 2.0 @ $0.98ea",
+      "price": 1.96
+    },
+    {
+      "name": "MANGO ORANGE 1.0 @ $19.99ea",
+      "price": 19.99
+    },
+    {
+      "name": "ORGANIC ENOKI MUSHROOM 2.0 @ $5.50",
+      "price": 5.5
+    },
+    {
+      "name": "STRAWBERRY 4.0 @ $3.00",
+      "price": 6.0
+    },
+    {
+      "name": "FRESH COLD NOODLE 6.0 @ $5.99ea",
+      "price": 35.94
+    }
+  ],
+  "subtotal": 165.81,
+  "discount": 0.0,
+  "tax": 7.92,
+  "tax_label": "HST",
+  "total": 173.73,
+  "tip": 0.0,
+  "confidence": 0.88,
+  "notes": "HST listed as HST (TOTAL GST+PST). Date printed 03/26/26 (interpreting as 2026 per receipt). Time printed 6:14:01 PM. Transaction trans#:145710. Earned 150 master points; new points balance 5280. Auth# 082612, MID 4293843, TID 54238843, Batch# 113, Ref# 324. Loyalty member program noted (NOT A MEMBER YET?). Quantity disc on Royal Pine Cake was $80.00 (regular vs member price $14.97) but not reflected in subtotal — appears as savings on member pricing."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+NOTAMEMBERYET?DOWNLOAD&JOINNOWI立即下载APP加入大单模分计！ GEX mEN/XGET EXCLUSIVEOFHLAS
+
+ANARNBEUUA DRZEARNREWARDS
+
+ENOY ONINEGRULERY DELIVERY
+
+<!-- image-->
+
+楼和分
+
+生新尚品配送
+
+<table><tr><td>040889288</td></tr><tr><td>特金</td></tr><tr><td>US14.97 F00</td></tr><tr><td>Us16.320 U$8.68</td></tr><tr><td>V$15.47 LE）LABSHOULDERBONELESSROLL 550g8s28.64/kg 價嫩羊肉卷 w$15.75</td></tr><tr><td>DUCE TERADISH 405k90$2.18/kg v$5,24 在萄 SALE)GREEN ONION 20$0.98e8. V$1.96 特價青 BAGGEDORANGE</td></tr><tr><td>2819.99e8 Vs39.98 袋装甜 EOGAIEO V$5.50 特價有機金姑</td></tr><tr><td>(SALE)STRAUBERRY 592493402/$3.00 VS6.00 （特價）早</td></tr><tr><td>6$5.99e8 V$35.948P 特小安新羊凉皮</td></tr><tr><td>Points 160 $0.00 SUBTOTAL $198 HST (TOTAL GST.PST)</td></tr><tr><td>TOTAL 817-.73 t</td></tr><tr><td>03/26/266:14:01PH en50068 Trans:145710 T&amp;TSUPERHARKET11 7070UARDENAUE HARKHAN.ON L3R5Y2</td></tr><tr><td>（905）470-8113 PURCHASE NID:4298843 TID:S4298843 Ref324 HasterCard 4739P **/** Total $173.73</td></tr><tr><td>00 RPPROVED 082612.001 HASTERCARD AI:：0000100 TUR:0000008001 HOUHEUE Thank You/Hercit Plese Cone n! CUSTONER COPY Trans:145710</td></tr><tr><td>en：00015068-01010 28 AUILABLE AT IN-STOE</td></tr><tr><td>ELL USHOU UEDID TODAY PC Oti oints! full contest rules.</td></tr></table>
+
+<!-- image-->
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

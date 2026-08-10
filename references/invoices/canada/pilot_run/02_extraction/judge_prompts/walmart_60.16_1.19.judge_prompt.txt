@@ -1,0 +1,206 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "Walmart",
+  "vendor_cn": null,
+  "address": "5000 HWY 7, MARKHAM, ON L3R 4M9",
+  "date": "2026-02-23",
+  "time": "21:05",
+  "currency": "CAD",
+  "payment_method": "Visa",
+  "line_items": [
+    {
+      "name": "CASA HAWAIIA 058336173040",
+      "price": 3.47
+    },
+    {
+      "name": "POT WHT/ RST 033383454850",
+      "price": 3.94
+    },
+    {
+      "name": "POT WHT/ RST 033383454850",
+      "price": 3.94
+    },
+    {
+      "name": "CDM CDN CLAS 058336745700",
+      "price": 3.47
+    },
+    {
+      "name": "CASA ULTIMAT 058336173060",
+      "price": 3.47
+    },
+    {
+      "name": "YFM CROISSAN 627735274270",
+      "price": 5.94
+    },
+    {
+      "name": "YFM CROISSAN 627735274270",
+      "price": 5.94
+    },
+    {
+      "name": "NAT FLTR 2 064420010140",
+      "price": 7.18
+    },
+    {
+      "name": "EGGS 30 627735279720",
+      "price": 9.18
+    },
+    {
+      "name": "INC 40W 4PK 046677569890",
+      "price": 8.98
+    },
+    {
+      "name": "PHL ECOFEE 400505872130",
+      "price": 0.2
+    },
+    {
+      "name": "TABLE SALT 066010001050",
+      "price": 1.63
+    },
+    {
+      "name": "TABLE SALT 066010001050",
+      "price": 1.63
+    }
+  ],
+  "subtotal": 58.97,
+  "discount": 0.0,
+  "tax": 1.19,
+  "tax_label": "HST",
+  "total": 60.16,
+  "tip": 0.0,
+  "confidence": 0.98,
+  "notes": "The date on the receipt is 02/23/26. The receipt lists '# ITEMS SOLD 12' while there are 13 line items, likely because PHL ECOFEE is a fee and not a physical item sold."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+<!-- image-->
+
+WIN! 1of3 \$1000 gift cards
+
+Rules and regulations apply.   
+See contest rules for details.
+
+STORE 3053
+
+5000HWY7
+
+MARKHAM,ON
+
+L3R4M9
+
+905-477-600
+
+<table><tr><td rowspan=1 colspan=2>ST#03053 0P# 009034 TE# 34 TR# 00559CASA HAWAIIA 058336173040     $3.47D</td></tr><tr><td rowspan=1 colspan=2>POT WHT/RST 033383454850     $3.94DPOT WHT/RST 033383454850     $3.94D</td></tr><tr><td rowspan=1 colspan=2>CDM CDN CLAS 058336745700     $3.47DCASA ULTIMAT 058336173060     $3.47DYFM CROISSAN 627274270     $5.94D</td></tr><tr><td rowspan=1 colspan=2>YFM CR0ISSAN 627735274270     $5.94D</td></tr><tr><td rowspan=1 colspan=1>NAT FLTR2</td><td rowspan=1 colspan=1>064420010140     $7.18D</td></tr><tr><td rowspan=1 colspan=1>EGGS 30</td><td rowspan=1 colspan=1>627735279720     $9.18D</td></tr><tr><td rowspan=1 colspan=1>INC40W4PK</td><td rowspan=1 colspan=1>046677569890     $8.98J</td></tr><tr><td rowspan=1 colspan=2>PHL ECOFEE  400505872130     $0.20A</td></tr><tr><td rowspan=2 colspan=1>TABLE SALTTABLE SALT</td><td rowspan=1 colspan=1>066010001050     $1.63D</td></tr><tr><td rowspan=1 colspan=1>066010001050     $1.63D</td></tr></table>
+
+SUBTOTAL\$58.97
+
+HST 13.0000%\$1.19
+
+VISA TEND\$60.16
+
+TOTAL\$60.16
+
+VISP CR\*\*\*\*\*\*\*\*\*\*\*\*\*4562 RF
+
+\$60.16 TOTAL PURCHASE
+
+AFOVAL #202993
+
+RRN #001001840
+
+TRANS ID-306055075326778
+
+AID A0000000031010
+
+TC C6482E59D1795D29
+
+TERMINAL ID WMTUP001443
+
+02/23/2621:05:31
+
+GST/HST 137466199 RT0001
+
+QST 1016551356 TQ 0001
+
+# ITEMS SOLD 12
+
+TC# 7030 4111 8822 3316 0288
+
+02/23/2621:05:36
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

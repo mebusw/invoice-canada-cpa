@@ -1,0 +1,92 @@
+{
+  "doc_type": "receipt",
+  "vendor": "Walmart",
+  "vendor_cn": null,
+  "address": "5000 HWY 7, MARKHAM, ON L3R 4M9",
+  "date": "2026-03-13",
+  "time": "12:07",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "KETCHUP 1.5L",
+      "price": 6.97
+    },
+    {
+      "name": "SEAL 2 MILK",
+      "price": 6.44
+    },
+    {
+      "name": "RICE",
+      "price": 12.98
+    },
+    {
+      "name": "EGGS 30",
+      "price": 9.18
+    },
+    {
+      "name": "POT WHT/ RST",
+      "price": 3.94
+    },
+    {
+      "name": "BANANAS",
+      "price": 1.88
+    },
+    {
+      "name": "DENT PEPPMNT",
+      "price": 4.48
+    },
+    {
+      "name": "DENT WHITE",
+      "price": 4.48
+    },
+    {
+      "name": "DENT PEPPMNT",
+      "price": 4.48
+    },
+    {
+      "name": "DNR ROLLS",
+      "price": 2.48
+    },
+    {
+      "name": "CROISSANT",
+      "price": 5.94
+    },
+    {
+      "name": "CC MUFFIN",
+      "price": 3.22
+    },
+    {
+      "name": "FUJI",
+      "price": 5.53
+    },
+    {
+      "name": "NAPPA",
+      "price": 4.02
+    },
+    {
+      "name": "GINGER",
+      "price": 0.95
+    },
+    {
+      "name": "NAPPA",
+      "price": 3.14
+    },
+    {
+      "name": "PKLOINHALF",
+      "price": 8.32
+    },
+    {
+      "name": "ML CHKN DRUM",
+      "price": 11.80
+    }
+  ],
+  "subtotal": 100.23,
+  "discount": 0.00,
+  "tax": 1.75,
+  "tax_label": "HST",
+  "total": 101.98,
+  "tip": 0.00,
+  "confidence": 0.95,
+  "notes": "Date printed as 03/13/26, interpreted as 2026-03-13. Subtotal reflects prices after listed savings."
+}

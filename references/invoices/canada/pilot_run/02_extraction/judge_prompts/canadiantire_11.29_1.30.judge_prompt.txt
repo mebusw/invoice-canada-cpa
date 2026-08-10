@@ -1,0 +1,134 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "CANADIAN TIRE #126",
+  "vendor_cn": null,
+  "address": "6310 Yonge St. @ Steeles Ave. Willowdale, Ontario",
+  "date": "2026-03-26",
+  "time": "19:40",
+  "currency": "CAD",
+  "payment_method": "Visa",
+  "line_items": [
+    {
+      "name": "PH4967 OIL FILT",
+      "price": 9.99
+    }
+  ],
+  "subtotal": 9.99,
+  "discount": null,
+  "tax": 1.3,
+  "tax_label": "HST",
+  "total": 11.29,
+  "tip": null,
+  "confidence": 0.98,
+  "notes": "HST # 86621 8696 RT0001"
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+416-222-2511
+
+Thank You For Shopping DECEIPTOPERATOR#：823F1oat:001
+
+017-5509-4PH49670ILFILT\$9.99
+
+<table><tr><td>SUBTOTAL</td><td>5555</td><td>9.99</td></tr><tr><td>13HST</td><td></td><td>1.30</td></tr><tr><td>TOTAL</td><td></td><td>11.29</td></tr><tr><td>VISA TEND</td><td></td><td>11.29</td></tr></table>
+
+01APPROVED-THANK YOU 027 Retain this copy for yourrecords
+
+Collect 4in CT Money at Canadian Tire and get back 5t per litre in CT Money on regular gas at participating Gas+ locations with a Triangle Mastercard. Calculated pre-tax.Terns & conditions apply.Visit Triangle.cun for details.
+
+## CUSTOMER COPY
+
+Visit canadiantire.ca or dounload the Canadian Tire MobiTe App today！
+
+Take our survey each mionth fora chance Visittelldtreondnterode
+
+8326-6010-52600-1239
+
+<!-- image-->
+
+EXCHNGEONLYONOPENEDUSEPRODUCTS ANGE ON B /AUTOELECTRICAL/GENERATC   
+EXCHANGE ONLY ON ALL CAMPI   
+NORETUREXCHASTES   
+CARBATTERIES/CHARGERSNONREFUNDABLE   
+ALL CLE NCE/LIVE GOO0 NSHAVE7DAYS/SPECIALPOLICY   
+HST#866218696R0001
+
+<!-- image-->
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

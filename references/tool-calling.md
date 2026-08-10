@@ -2,12 +2,12 @@
 
 Exact commands, parameters, and authentication for each tool in the pipeline.
 
-## MiniMax (mmx vision)
+## MiniMax vision CLI
 
 ### Authentication
-The `mmx` CLI is already configured on the user's system with their API key. No setup needed.
+`mmx` CLI is already configured on the user's system with API key. No setup needed.
 
-### Command
+###### Command
 
 ```bash
 mmx vision describe \
@@ -19,27 +19,14 @@ mmx vision describe \
 
 ### Recommended prompt for receipts
 
-```
-Extract from this Canadian receipt. Return ONLY valid JSON (no markdown fences, no commentary).
-Use this exact schema:
-{
-  "vendor": "store or restaurant name",
-  "vendor_cn": "Chinese name if present, else empty string",
-  "address": "full street address with city and province",
-  "date": "YYYY-MM-DD format",
-  "time": "HH:MM or HH:MM:SS",
-  "subtotal": float (pre-tax amount, or null if not shown),
-  "discount": float (converted from percentage),
-  "tax": float (HST/GST/PST amount, or 0 if zero-rated basic groceries),
-  "tax_label": "HST" or "GST" or "PST" or "QST" or "N/A",
-  "total": float (grand total amount paid),
-  "currency": "CAD" or "USD",
-  "payment_method": "Visa" or "MasterCard" or "Debit" or "Cash" or "Unknown",
-  "payment_account": "card number or account number",
-  "line_items": [{"name": "...", "price": float}, ...]
-}
-If any field cannot be determined, use null. Output ONLY the JSON object.
-```
+The prompt should request a single JSON object with **all** the fields the pipeline needs (vendor, line_items, amounts, etc.). See `SKILL.md` §1.1 for the schema. **Do not use multiple short prompts** — the model performs better with one comprehensive schema prompt than several split prompts.
+
+Key prompt design rules:
+- Provide the JSON schema as the prompt itself, not as prose
+- Include `line_items` explicitly — models omit it unless asked
+- Include `discount` and `tip` separately — they often pollute subtotal otherwise
+- Include `confidence` so the model self-reports reliability
+- Ask for the `notes` field for any reconciliation anomalies
 
 ### Extracting JSON from output
 
@@ -54,11 +41,14 @@ m = re.search(r"\{[\s\S]*\}", result.stdout)
 data = json.loads(m.group(0)) if m else {}
 ```
 
+Do **not** write field-level regex extraction beyond this. Trust the JSON.
+
 ### Failure modes
 
 - Empty stdout: API key issue or rate limit. Wait 5s and retry.
-- JSON with `null` for all fields: model couldn't parse the image. Try with `--prompt "Look at this image carefully and extract..."` to force attention.
-- No JSON block: the model output prose instead. Tighten the prompt or use `--output json` instead of `text` if available.
+- JSON with `null` for all fields: model couldn't parse the image. Re-prompt with `"Look at this image carefully and extract..."`.
+- No JSON block: model output prose. Tighten the prompt or use `--output json` if available.
+- Output truncated at token limit on long receipts (50+ line items): rely on MinerU markdown to fill gaps.
 
 ## MinerU Precision Parse
 
@@ -73,45 +63,22 @@ python3 /Users/jacky/.agents/skills/mineru/run_mineru.py <image_path> --timeout 
 
 ### Output structure
 
-For an image `bbq_95.68_11.02.jpg`, output is:
-
 ```
-output_bbq_95.68_11.02/
+output_<image>/
 ├── full.md                    ← main output (use this)
 ├── layout.json                ← block-level layout (debugging)
 ├── *.content_list.json        ← structured content
 ├── *.content_list_v2.json     ← v2 content
-├── *.model.json               ← model metadata
+├── *.model.json                ← model metadata
 ├── *.origin.pdf               ← original as PDF
 └── images/                    ← extracted image fragments
 ```
 
-The `full.md` file is what you use for amount extraction.
+The `full.md` is given to the LLM-judge for cross-validation, **not** parsed by regex.
 
-### Searching for known values in full.md
+### Agent lightweight mode caveat
 
-```python
-def value_in_mineru_text(value, text, tol=0.01):
-    """Check if `value` appears anywhere as a money amount in `text`."""
-    if value is None or not text:
-        return False
-    for m in re.finditer(r"\$?\s*(\d{1,3}(?:,\d{3})*\.\d{2})", text):
-        try:
-            n = float(m.group(1).replace(",", ""))
-            if abs(n - value) < tol:
-                return True
-        except ValueError:
-            pass
-    return False
-```
-
-### Searching is more reliable than parsing
-
-The markdown often has multiple amounts on a single line (because of the HTML table extraction: `<td>SUBTOTAL</td><td>$9.99</td><td>13% HST</td><td>$1.30</td>...`). Regex-based parsing of the markdown is fragile. The robust approach is to know the expected value (from filename or ground truth) and search for it.
-
-### Agent lightweight mode
-
-The same script supports agent mode via the `agent_parse()` function. The lightweight mode returns only markdown, no ZIP. **However, in practice the agent API often returns SSL errors on the CDN download.** Use Precision Parse as the default and only fall back to agent mode if Precision Parse fails.
+The same script supports agent mode via `agent_parse()`. **However, in practice the agent API's CDN download returns SSL errors** (cdn-mineru.openxlab.org.cn). Do not fall back to agent mode silently — if Precision Parse fails, **explicitly record the failure** and rely on MiniMax for that image.
 
 ## Tesseract OCR
 
@@ -139,12 +106,12 @@ Use Tesseract only as a sanity check or when both MiniMax and MinerU are unavail
 
 | Tool | Per-image cost | Per-image time |
 |---|---|---|
-| MiniMax | $$ (vision API) | 5-10s |
-| MinerU Precision Parse | $ (PDF parse API) | 20-30s |
-| Tesseract | Free | 1-3s |
-| LLM cross-validation | $ (Claude tokens) | 5-15s |
+| MiniMax | $$ (vision API) | 5–15s |
+| MinerU Precision Parse | $ (PDF parse API) | 20–40s |
+| Tesseract | Free | 1–3s |
+| LLM cross-validation | $ (Claude tokens) | 5–15s |
 
-For a 12-receipt batch: total cost is dominated by MiniMax (~$0.50-$1) and MinerU (~$0.10-$0.30). LLM cross-validation adds ~$0.20 in tokens. Total per batch: roughly $1-2.
+For a 12-receipt batch: total cost dominated by MiniMax (~$0.50–1) and MinerU (~$0.10–0.30). LLM cross-validation adds ~$0.20 in tokens. Total per batch: roughly $1–2.
 
 ## Running tools in parallel
 
@@ -152,7 +119,6 @@ To minimize wall-clock time, run MiniMax and MinerU in parallel using a thread p
 
 ```python
 from concurrent.futures import ThreadPoolExecutor
-import os
 
 def process_one(image_path):
     minimax = run_minimax(image_path)
@@ -163,4 +129,4 @@ with ThreadPoolExecutor(max_workers=4) as pool:
     results = list(pool.map(process_one, image_paths))
 ```
 
-MinerU is the slowest, so 4 workers typically keeps the throughput at ~1 image per 8-10 seconds.
+MinerU is the slowest (~30s per image), so 3–4 workers keeps throughput at ~1 image per 10–15 seconds.

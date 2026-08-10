@@ -1,0 +1,62 @@
+[
+  {
+    "doc_id": "2026-0001",
+    "source_file": "bbq_95.68_11.02.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/bbq_95.68_11.02.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0002",
+    "source_file": "canadiantire_11.29_1.30.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/canadiantire_11.29_1.30.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0003",
+    "source_file": "costco_1315.46_144.62.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/costco_1315.46_144.62.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0004",
+    "source_file": "costco_971.75_111.79.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/costco_971.75_111.79.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0005",
+    "source_file": "hmart_5.5_0.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/hmart_5.5_0.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0006",
+    "source_file": "shoppers_84.69_9.75.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/shoppers_84.69_9.75.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0007",
+    "source_file": "tnt_173.73_7.92.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/tnt_173.73_7.92.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0008",
+    "source_file": "tnt_36.17_3.59.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/tnt_36.17_3.59.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0009",
+    "source_file": "tnt_64.78_0.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/tnt_64.78_0.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0010",
+    "source_file": "walmart_101.98_1.75.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/walmart_101.98_1.75.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0011",
+    "source_file": "walmart_55.48_0.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/walmart_55.48_0.judge_prompt.txt"
+  },
+  {
+    "doc_id": "2026-0012",
+    "source_file": "walmart_60.16_1.19.jpg",
+    "judge_prompt": "/Users/jacky/.agents/skills/invoice-canada-cpa/references/invoices/canada/pilot_run/02_extraction/judge_prompts/walmart_60.16_1.19.judge_prompt.txt"
+  }
+]

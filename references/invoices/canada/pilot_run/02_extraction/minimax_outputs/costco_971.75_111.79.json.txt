@@ -1,0 +1,23 @@
+{
+  "doc_type": "receipt",
+  "vendor": "Markham Honda",
+  "vendor_cn": null,
+  "address": "Markham, ON L3R 1H5",
+  "date": "2026-03-23",
+  "time": "15:17",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {"name": "TIRES", "price": 859.96},
+    {"name": "TIRE LEVY", "price": 20.00},
+    {"name": "Tire Disposal Fee", "price": 111.79}
+  ],
+  "subtotal": 971.75,
+  "discount": null,
+  "tax": 111.79,
+  "tax_label": "HST",
+  "total": 1115.96,
+  "tip": 0.00,
+  "confidence": 0.88,
+  "notes": "Tire Levy $20.00 listed separately. Tire Disposal Fee of $111.79 appears as a line item but may represent HST. Total number of items sold: 4. Invoice/receipt number 20752, Reference 001001010310. Approval 096351, MasterCard ending 0010. Date on receipt shows 03/23/26."
+}

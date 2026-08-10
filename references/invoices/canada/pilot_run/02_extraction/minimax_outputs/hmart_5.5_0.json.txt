@@ -1,0 +1,24 @@
+{
+  "doc_type": "receipt",
+  "vendor": "H MART",
+  "vendor_cn": null,
+  "address": "5323 Yonge St. North York, ON, M2N5R4",
+  "date": "2026-02-26",
+  "time": "16:13",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "TRADITIONAL KOREAN RICE",
+      "price": 5.50
+    }
+  ],
+  "subtotal": 5.50,
+  "discount": 0.00,
+  "tax": 0.00,
+  "tax_label": "N/A",
+  "total": 5.50,
+  "tip": 0.00,
+  "confidence": 0.98,
+  "notes": "The receipt date is printed as Feb 26, 2026."
+}

@@ -1,0 +1,33 @@
+{
+  "doc_type": "receipt",
+  "vendor": "Walmart",
+  "vendor_cn": null,
+  "address": "5000 HWY 7, MARKHAM, ON L3R 4M9",
+  "date": "2026-02-23",
+  "time": "21:05",
+  "currency": "CAD",
+  "payment_method": "Visa",
+  "line_items": [
+    {"name": "CASA HAWAIIA 058336173040", "price": 3.47},
+    {"name": "POT WHT/ RST 033383454850", "price": 3.94},
+    {"name": "POT WHT/ RST 033383454850", "price": 3.94},
+    {"name": "CDM CDN CLAS 058336745700", "price": 3.47},
+    {"name": "CASA ULTIMAT 058336173060", "price": 3.47},
+    {"name": "YFM CROISSAN 627735274270", "price": 5.94},
+    {"name": "YFM CROISSAN 627735274270", "price": 5.94},
+    {"name": "NAT FLTR 2 064420010140", "price": 7.18},
+    {"name": "EGGS 30 627735279720", "price": 9.18},
+    {"name": "INC 40W 4PK 046677569890", "price": 8.98},
+    {"name": "PHL ECOFEE 400505872130", "price": 0.20},
+    {"name": "TABLE SALT 066010001050", "price": 1.63},
+    {"name": "TABLE SALT 066010001050", "price": 1.63}
+  ],
+  "subtotal": 58.97,
+  "discount": 0.00,
+  "tax": 1.19,
+  "tax_label": "HST",
+  "total": 60.16,
+  "tip": 0.00,
+  "confidence": 0.98,
+  "notes": "The date on the receipt is 02/23/26. The receipt lists '# ITEMS SOLD 12' while there are 13 line items, likely because PHL ECOFEE is a fee and not a physical item sold."
+}

@@ -1,0 +1,36 @@
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "大統華",
+  "address": "9255 Woodbine Avenue, Markham, ON L6C 1Y9",
+  "date": "2026-03-14",
+  "time": "18:28",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "HOT FOOD 特色美食",
+      "price": 12.21
+    },
+    {
+      "name": "STEAMED RICE (S) 白飯 (小)",
+      "price": 1.99
+    },
+    {
+      "name": "(SALE) STRAUBERRY (特價) 草莓",
+      "price": 5.00
+    },
+    {
+      "name": "AN FRESH COLD NOODLE 西安新鮮涼皮",
+      "price": 13.38
+    }
+  ],
+  "subtotal": 32.58,
+  "discount": 0.00,
+  "tax": 3.59,
+  "tax_label": "HST",
+  "total": 36.17,
+  "tip": 0.00,
+  "confidence": 0.98,
+  "notes": "The date printed on the receipt is 03/14/26, which appears to be in the future. 'STRAUBERRY' is a misspelling of strawberry as printed. Line item counts match the 'Item count: 6' shown on the receipt (1 hot food, 1 rice, 2 strawberry, 2 noodle packs)."
+}

@@ -1,0 +1,153 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "Haven Party BBQ",
+  "vendor_cn": "有局儿烧烤",
+  "address": "Unit 68, 505 Hwy 7, Thornhill, ON L3T 7T1",
+  "date": "2026-03-16",
+  "time": "17:31",
+  "currency": "CAD",
+  "payment_method": null,
+  "line_items": [
+    {
+      "name": "Lamb Skewers 6pcs 羊肉小串 6pcs",
+      "price": 7.95
+    },
+    {
+      "name": "Signature Clay Pot Beef Tripe 百香瓦罐涮牛肚",
+      "price": 22.95
+    },
+    {
+      "name": "DISCOUNT",
+      "price": -11.48
+    },
+    {
+      "name": "Lean Beef 8pcs 鲜嫩牛里脊 8pcs",
+      "price": 7.95
+    },
+    {
+      "name": "Korea style Pork Belly 4pcs 韩式烤五花肉 4pcs",
+      "price": 6.95
+    },
+    {
+      "name": "Chicken Joints 4pcs 酒局儿鸡脆骨 4pcs",
+      "price": 7.95
+    },
+    {
+      "name": "Grilled Cabbage 烤房白菜",
+      "price": 5.95
+    },
+    {
+      "name": "Grilled Oyster Mushroom 2pcs 清甜烤蚝菇 2pcs",
+      "price": 6.95
+    },
+    {
+      "name": "Baby Cabbage with Garlic Sauce 锡纸娃娃菜",
+      "price": 8.95
+    },
+    {
+      "name": "Traditional Corn and Pork Bone Stew 荠菜玉米猪骨煲",
+      "price": 29.95
+    }
+  ],
+  "subtotal": 94.07,
+  "discount": 9.41,
+  "tax": 11.02,
+  "tax_label": "HST",
+  "total": 95.68,
+  "tip": null,
+  "confidence": 0.85,
+  "notes": "Date appears to be 2026/03/16 (year may be OCR misread; receipt timestamp 05:31:13 PM). Order note 全单少辣 (less spicy). Server: Barry. 10% discount applied. Rounded cash price $95.70. Suggested tips shown (15% $14.35, 18% $17.22, 20% $19.14) but not charged. You saved $20.89."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+BBO Haven Party. 有局 Thorhi11ONL3T 71 8
+
+全单少辣
+
+<table><tr><td>A2 2026/03/1605:313PM Server#:Barry $7.95 羊肉小串 6pcs Lamb Skewers 6pcs $22.95</td></tr><tr><td>百香瓦罐涮牛肚 SignatureClayPotBeefTripe -$11.48 %DISCOUNT $7.95 鲜嫩牛里脊8pcs LeanBeef 8pcs $6.95 韩式烤五花肉4pcs KoreastylePorkBelly4pcs</td></tr><tr><td>$7.95 1酒局儿鸡脆骨 4pcs Chicken Joints 4pcs $5.95 1烤高丽菜 Grilled Cabage $6.95</td></tr><tr><td>1清甜烤蚝菇2pcSs GrilledOysterMushroom2pcs $8.95 锡纸娃娃菜 BabyCabagewithGarlicSauce $29.95 荞菜玉米猪骨煲 TraditinCorandorkBone</td></tr><tr><td>Stew 894.07 SubTotal $9.41 1O0DSCOUNT $11.02 H.S.T. 405.68</td></tr></table>
+
+RoundedifPayingCash TOTAL \$95.68 \$95.70   
+Tip 15% 18% \*\*SGGESTEDTPS\* Amount \$14.35 \$17.22 Total \$110.03 \$112.90 \$114.82   
+20% \$19.14
+
+YOUSAVE S20.89
+
+ThakYouandCoe Again
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

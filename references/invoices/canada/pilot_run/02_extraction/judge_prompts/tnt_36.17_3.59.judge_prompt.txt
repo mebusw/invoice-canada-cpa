@@ -1,0 +1,151 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "大統華",
+  "address": "9255 Woodbine Avenue, Markham, ON L6C 1Y9",
+  "date": "2026-03-14",
+  "time": "18:28",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "HOT FOOD 特色美食",
+      "price": 12.21
+    },
+    {
+      "name": "STEAMED RICE (S) 白飯 (小)",
+      "price": 1.99
+    },
+    {
+      "name": "(SALE) STRAUBERRY (特價) 草莓",
+      "price": 5.0
+    },
+    {
+      "name": "AN FRESH COLD NOODLE 西安新鮮涼皮",
+      "price": 13.38
+    }
+  ],
+  "subtotal": 32.58,
+  "discount": 0.0,
+  "tax": 3.59,
+  "tax_label": "HST",
+  "total": 36.17,
+  "tip": 0.0,
+  "confidence": 0.98,
+  "notes": "The date printed on the receipt is 03/14/26, which appears to be in the future. 'STRAUBERRY' is a misspelling of strawberry as printed. Line item counts match the 'Item count: 6' shown on the receipt (1 hot food, 1 rice, 2 strawberry, 2 noodle packs)."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+NOTAMEMBERYET?DOWNLOAD&JOINNOW! APP加入大统分计
+
+·GETEXCIUSIVEOFFERS
+
+EROOYONL INC GROCERY DELIVER
+
+捷达缓感和情分商动
+
+<!-- image-->
+
+生能品配送刻
+
+## T&T Supermarket
+
+03/14/265:28:38PH
+
+T&T SUPERMARKET #021  
+9255  
+MARKHAM、ON L6C Y9（905)PURCHASE
+
+1426182903536210021
+
+FULLDETAILS OFT&TSUPERHARKET'S REFUNDPOLIY ARE UAILABLE AT IN-STORE.
+
+T&rCustoner Seruice Line1-833-868-1616 uu.tntsuperna .CO
+
+TELL US HOU UE DIDTODAY
+
+othy chncestqinsPCiftCardorion
+
+Hov likely are you toreconnend T&T toyour friends?
+
+Uisit uuu.storeopinion.ca or Call 1-8o0-531-2928 for full contest rules.
+
+Eligibleaountforointcalculation58
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.

@@ -18,14 +18,14 @@ CPA 会把 GIFI code 录入 ProFile / Taxprep 完成 T2 申报。**AI 给出的 
 | 8862 | Accounting fees | CPA、记账 | 100% | 父项 8860 |
 | 8861 | Legal fees | 律师、公证 | 视情况 | 资本性 vs 经营性需区分 |
 | 8690 | Insurance | 商业保险 | 100% | |
-| 8710 | Interest and bank charges | 银行手续费、利息 | 视资金用途 | 明细 8715 / 8716 |
+| 8710 | Interest and bank charges | 银行手续费、利息 | 视资金用途 | 明细 8715/8716 |
 | 8911 | Real estate rental | 办公室租金 | 100% | 租金是 8911，**不是 8530** |
 | 8960 | Repairs and maintenance | 设备/办公室维修 | 视情况 | **可能是资本性支出** |
 | 9060 | Salaries and wages | 员工工资 | 100% | 工资是 9060，**不是 8540** |
 | 9130 | Supplies | 经营耗材 | 100% | |
 | 9150 | Computer-related expenses | 电脑、软件、SaaS 订阅 | 100% | 软件订阅是 9150，**不是 9270** |
 | 9200 | Travel expenses | 机票、酒店、住宿 | 100% | 差旅是 9200，**不是 8523** |
-| 9201 | Meetings and conventions | 参加会议/研讨会 | 100% | |
+| 9201 | Meetings and conventions | 参加会议会议 | 100% | |
 | 9220 | Utilities | 水电燃气 | 按业务比例 | 9225 电话通讯 |
 | 9270 | Other expenses | 归不进去的 | 视情况 | catch-all 是 9270，尽量少用 |
 | 9281 | Vehicle expenses | 汽油、轮胎、洗车、车辆维修 | 100% | 车辆费用是 9281，**不是 8520** |
@@ -48,15 +48,13 @@ CPA 会把 GIFI code 录入 ProFile / Taxprep 完成 T2 申报。**AI 给出的 
 
 ## 车辆费用与资本化（9281 / CCA Class 10）
 
-**默认：车辆运行费用走 9281 当期费用化。** CRA 在 9281 下明确列举 automobile expenses、gas、motor vehicle fuel、**tires**、vehicle washing。
+**默认：车辆运行费用走 9281 当期费用化。** CRA 在 9281 下明确列举 automobile附件、gas、motor vehicle fuel、**tires**、vehicle washing。
 
 因此：
 - 单独更换轮胎、换机油、洗车、日常维修 → **9281 当期费用**，不资本化
 - 车辆维修若金额大且延长寿命 → 可能落 8962（Repairs and maintenance – Vehicles），并需判断资本性
 - 只有**取得车辆本身**（或随车购置的整体资产）才计入资本性资产，按 CCA Class 10（30% 余额递减）折旧
 - 租车 → 8915 Motor vehicle rentals，与自有车辆的 9281 区分
-
-**参照案例**：4 条轮胎单价 $209.99（$839.96 + $20 环保费）合计 $971.75。金额虽大，但按 CRA 列举仍属 9281 营运费用。**不要自行认定为资本支出** —— 标记 `review_required = true` 交 CPA 判断。
 
 > 历史错误：早期版本把轮胎写成「>$500 即资本化 CCA Class 10」，且 GIFI 填 8520（实为广告推广）。两处都是错的。
 
@@ -69,27 +67,23 @@ T2 处理：
 - 不要把境外税额单列为「可抵扣」
 - 工作底稿注明：「Foreign VAT, non-recoverable per ITA」
 
-当前数据集全部为境内收据，本节为备查。
+## 商户 → GIFI 启发式
 
-## 商户 → GIFI 映射（基于 12 张收据测试集）
-
-| 商户 | GIFI | 依据 |
+| 商户类型 | GIFI | 依据 |
 |---|---|---|
-| Walmart | 8810 / 8811（办公）或 8523（餐饮） | 消耗品 → 办公；员工食材 → 餐饮 |
-| Costco | 8810 / 8811（办公）或 9281（轮胎） | 大宗消耗品 → 办公；轮胎 → 车辆费用 |
-| Shoppers Drug Mart | 8810 | 药品/健康用品，一般计办公室急救 |
-| T&T Supermarket | 8523 或 9130 | 熟食/备餐 → 8523；一般食材看用途 |
-| H Mart | 8523 | 同 T&T |
-| Canadian Tire | 9281 | 汽车配件、机油、保养用品 |
-| BBQ / 各类餐厅 | 8523 | 餐饮招待，50% 限制 |
+| 加油站、汽车配件、轮胎店 | 9281 | 汽车维护 |
+| 餐厅、外卖、熟食柜、咖啡店 | 8523 | 餐饮 |
+| 超市杂货（无餐饮） | 8810 / 9130 | 消耗品 |
+| 药店、健康用品 | 8810 | 急救/办公 |
 | 航空、酒店 | 9200 | 差旅 |
 | 会议、研讨会 | 9201 | 参会 |
+| 加油站 / 轮胎店 / 汽车配件 | 9281 | 车辆 |
 
-这些是启发式。CPA 会根据以下因素调整：物品的实际用途、公司是否有在岗用餐的员工、业务是否涉及车队。
+**不要硬编码商户名映射**。LLM 看语义比看字符串好。Costco 可能是 8810（杂货）也可能是 9281（轮胎）；T&T 可能 9130（基本食材）也可能是 8523（热食）；最终由 line_items + 商户类型联合决定。
 
 ## 何时标记为需要复核
 
-出现以下情况时置 `gifi_review_needed = true` 并在 Validation_Report 中列出：
+出现以下情况时置 `review_required = true` 并在 Validation_Report 中列出：
 
 - 一张收据混合多类物品（食材 + 家用 + 办公用品）
 - 商户罕见、无归类先例

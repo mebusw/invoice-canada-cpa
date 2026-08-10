@@ -1,0 +1,170 @@
+You are the cross-validation judge for a Canadian receipt.
+
+═══════════════════════════════════════════════════════════
+SOURCE A — MiniMax vision (full JSON, semantic understanding)
+═══════════════════════════════════════════════════════════
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "T&T 超级市场",
+  "address": "9255 Woodbine Avenue, Markham, ON L6C 1Y9",
+  "date": "2026-03-21",
+  "time": "17:58",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "(SALE) ERI SWEET BEAN PASTE 400G 3 @ $1.79ea",
+      "price": 5.37
+    },
+    {
+      "name": "PORK NECKBONE 1.394 kg @ $4.39/kg",
+      "price": 6.12
+    },
+    {
+      "name": "(SALE) RWA GROUND PORK-LEAN 0.420 kg @ $8.80/kg",
+      "price": 3.77
+    },
+    {
+      "name": "(SALE) RWA GROUND PORK-LEAN 0.466 kg @ $8.80/kg",
+      "price": 4.12
+    },
+    {
+      "name": "(SALE) FRESH ATLANTIC SALMON STEAK 0.752 kg @ $15.39/kg",
+      "price": 11.57
+    },
+    {
+      "name": "(SALE) GREEN ONION 2 @ $0.98ea",
+      "price": 1.96
+    },
+    {
+      "name": "CHINESE FUJI APPLE 1.115 kg @ $3.95/kg",
+      "price": 4.4
+    },
+    {
+      "name": "CHINESE FUJI APPLE 1.675 kg @ $3.95/kg",
+      "price": 6.62
+    },
+    {
+      "name": "(SALE) SUNKIST ORANGES 1.325 kg @ $2.18/kg",
+      "price": 2.89
+    },
+    {
+      "name": "(SALE) TAIWAN BOK CHOY 1.260 kg @ $3.04/kg",
+      "price": 3.83
+    },
+    {
+      "name": "(SALE) YU CHOY SPROUTS 0.555 kg @ $5.03/kg",
+      "price": 2.79
+    },
+    {
+      "name": "(SALE) LONGAN (CASE) 2 @ $2.69ea",
+      "price": 5.36
+    },
+    {
+      "name": "(SALE) AN CHUNG BLACK SESAME RICEBALL 2 @ $2.99ea",
+      "price": 5.98
+    }
+  ],
+  "subtotal": 64.78,
+  "discount": 0.0,
+  "tax": 0.0,
+  "tax_label": "N/A",
+  "total": 64.78,
+  "tip": 0.0,
+  "confidence": 0.95,
+  "notes": "Bilingual EN/CN receipt. No tax shown explicitly (Ontario receipts typically show HST on regular items but none listed here, possibly zero-rated or omitted on this copy). Item count 18. Points earned: 62 (balance 5980). Transaction #064779, MID 5532211, Auth# 085352, MasterCard ending 4799. Terminal 050108015-021011. Store 10021."
+}
+
+═══════════════════════════════════════════════════════════
+SOURCE B — MinerU Precision Parse markdown (table-faithful, numeric)
+═══════════════════════════════════════════════════════════
+NOTEEO
+
+GELEXCIUMARDS
+
+·ENKOYONIINE
+
+<!-- image-->
+
+提家促惠和楼分限 生 甜品配活刻滚
+
+T&TSupermarket
+
+<table><tr><td>95527-9113/st3577 03721/26358</td><td>Counter $0.00</td></tr><tr><td>040889288 </td><td>W $5.37</td></tr><tr><td>猪類摄 (SLE）RUAGROUNDPORK-LEAN</td><td>U s6.12</td></tr><tr><td></td><td>U s3.77 W $4.12</td></tr><tr><td>SEAFOOD (SALE)FRESHATLANTICSALHON STEAK</td><td>V $11.57</td></tr><tr><td>COSEE OEIO PRODUCE.. 特青 CHINESE FUJI APPLE</td><td>WS1.96</td></tr><tr><td>1.115kgS3.95/kg 中國高原果 CHINESE FUJI APPLE 1.675kgS3.95/kg 中国高原果</td><td>V$4.40 W$6.62</td></tr><tr><td>(SALE)SUNKIST ORANGES 1.325kg$2.18/kg （特新奇士检（香吉士） （SALE) TAIUAN BOK CHOY</td><td> s2.89</td></tr><tr><td>1.260kg$3.04/kg （特價台满白菜 (SALE)YU CHOY SPROUTS 0.555kg$5.03/kg （特價）油菜苗</td><td>WS3.83 Vs2.79</td></tr><tr><td>（SALE)LONGAN （CASE） 2@$2.68e8. 特能眼箱 SLE）ANCHGBLCKSESEICEBALL DELI 特安井皮黑芝麻易圆 20$2.99e</td><td>U S5.36 V S5.98</td></tr><tr><td>Points60 e 03/21/265:58:17PM</td><td>S0.00 64-78</td></tr><tr><td>Trans:664779 MID:5532211 TID:U5532211 AUTH:085352 HasterCard 4739P Total</td><td>Service Counter)2 Terninal:050108015-02101 TT SUPERHARKET 021 9255U00DBINEAUENUE NARKHAH.ONL6C1Y9 （905)927-9113 PURCHASE Ref25 Seq.#209001001250</td></tr><tr><td></td><td>17:59.51 64./70 00APPROUED 08535Z 001</td></tr><tr><td>HASTERCARD AID:00001010 TUR:0000008001 OFGOOD/RSERUICESITHE CUSTOHER COPY STORE:10021</td><td>CARDHOLDERACKNOJLEDGESRECEIPT AHOUNTOFTHETOTALSHOUNABDUE Pleese Cone Again! Thank You/Herci!</td></tr></table>
+
+STORE:10021   
+CODE:032126 1759014779 10021
+
+TELL US HOU Honthiy cee16 ww.tntsuperar
+
+═══════════════════════════════════════════════════════════
+DECISION REQUIRED
+═══════════════════════════════════════════════════════════
+
+Read both sources carefully. For each field, pick the value you trust more.
+If sources disagree and you can't reconcile, prefer Source A (MiniMax) for
+vendor / vendor_cn / address / date / line_items / payment_method, and prefer
+Source B (MinerU) for subtotal / discount / tax / total — but if B is missing
+or clearly garbled (rotated image, OCR jumble), use A's value.
+
+Tie-out: subtotal − discount + tax must equal total (within $0.05). If neither
+source reconciles, set tieout_status = "FAIL" and review_required = true.
+
+Province: detect from vendor / address. If address has no province, look at
+city name (Markham/Thornhill/Toronto → ON; Vancouver → BC; etc.) or the
+receipt itself. Then compute effective_rate = tax / subtotal.
+
+Return ONLY a JSON object (no markdown fences, no commentary) with this shape:
+
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "...",
+  "vendor_cn": "...",
+  "address": "...",
+  "date": "YYYY-MM-DD",
+  "currency": "CAD",
+  "payment_method": "...",
+  "line_items": [...],
+  "line_items_count": N,
+  "line_items_source": "MiniMax | MinerU | both",
+  "subtotal": 0.00,
+  "subtotal_source": "MiniMax | MinerU | MiniMax (MinerU missing) | DERIVED",
+  "discount": 0.00,
+  "discount_source": "MiniMax | MinerU | n/a",
+  "tax": 0.00,
+  "tax_source": "MiniMax | MinerU",
+  "tax_label": "HST | GST | PST | N/A",
+  "total": 0.00,
+  "total_source": "MiniMax | MinerU",
+  "province": "ON | BC | AB | ...",
+  "tieout_status": "PASS | FAIL | SKIP",
+  "tieout_note": "...",
+  "rate_status": "PASS | NOTE | ERROR | REVIEW_REQUIRED | SKIP",
+  "rate_note": "rate X% vs statutory Y% (Z) — mixed basket / exact / over",
+  "expense_category": "Meals and Entertainment | Vehicle Expenses | | ...",
+  "gifi_code": 0,
+  "gifi_name": "...",
+  "gifi_parent": 0,
+  "is_generic": false,
+  "tax_treatment": "Deductible — ... | 50% (ITA 67.1) | ...",
+  "deductible_pct": "100% | 50% (ITA 67.1) | CPA to confirm",
+  "schedule_1_flag": false,
+  "confidence": 0.0,
+  "review_required": false,
+  "notes": "any reconciliation anomalies, classification caveats, CPA handoff flags"
+}
+
+Rules to apply:
+- Tire purchases (line items mention tire) → 9281 Vehicle expenses. CRA lists
+  "tires" explicitly. Current expense by default; flag review_required if amount
+  large.
+- Restaurant / BBQ / cooked food with HST → 8523 Meals and entertainment,
+  50% (ITA 67.1), schedule_1_flag = true.
+- Zero-tax groceries (basic foodstuffs) → 9130 Supplies or 8810 Office. If no
+  specific child code, set is_generic = true and review_required = true.
+- Mixed-basket receipts (effective rate < statutory) → keep specific GIFI
+  based on what's actually purchased, but note "mixed basket" in rate_note.
+- When in doubt, prefer specific child code over generic parent.
+- Generic block headers (8520, 8710, 8760, 8860, 8960, 9130, 9150, 9220) are
+  only acceptable when no specific child fits — mark is_generic = true.
