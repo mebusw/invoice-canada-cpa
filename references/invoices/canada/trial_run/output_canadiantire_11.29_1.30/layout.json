@@ -1,0 +1,1174 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        170,
+                        493,
+                        280,
+                        504
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                170,
+                                493,
+                                280,
+                                504
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        170,
+                                        493,
+                                        280,
+                                        504
+                                    ],
+                                    "type": "text",
+                                    "content": "0012626032638230000000010056"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        140,
+                        57,
+                        279,
+                        94
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                140,
+                                57,
+                                279,
+                                94
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        57,
+                                        279,
+                                        94
+                                    ],
+                                    "type": "text",
+                                    "content": "CANADIAN TIRE #128\n6310 Yonge St. @ Steeles Ave.\nWillowdale, Ontario\n416-222-2511"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        253,
+                        53,
+                        282,
+                        68
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                253,
+                                53,
+                                282,
+                                68
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        253,
+                                        53,
+                                        282,
+                                        68
+                                    ],
+                                    "type": "text",
+                                    "content": "#126"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        139,
+                        93,
+                        280,
+                        131
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                93,
+                                280,
+                                131
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        93,
+                                        280,
+                                        131
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You For Shopping With Us!\nNO REFUNDS OR EXCHANGES WITHOUT RECEIPT\nREG #:4 03/26/2026 19:40:14 TRANS #:56\nOPERATOR #: 823 Float: 001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        139,
+                        133,
+                        285,
+                        148
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                133,
+                                285,
+                                148
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        133,
+                                        285,
+                                        148
+                                    ],
+                                    "type": "text",
+                                    "content": "017-5509-4 PH4967 OIL FILT $ 9.99"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        189,
+                        151,
+                        285,
+                        188
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                189,
+                                151,
+                                285,
+                                188
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        151,
+                                        285,
+                                        188
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                189,
+                                                151,
+                                                285,
+                                                188
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>SUBTOTAL</td><td>$ 9.99</td></tr><tr><td>13% HST</td><td>$ 1.30</td></tr><tr><td>TOTAL</td><td>$ 11.29</td></tr><tr><td>VISA TEND</td><td>$ 11.29</td></tr></table>",
+                                            "image_path": "810cc508a9c09c2e466e784884a5de4fd6cdcbcf65eac354a1d6c93db57d2aab.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        155,
+                        267,
+                        273,
+                        295
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                267,
+                                273,
+                                295
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        267,
+                                        273,
+                                        295
+                                    ],
+                                    "type": "text",
+                                    "content": "01 APPROVED - THANK YOU 027\nIMPORTANT\nRetain this copy for your records"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        300,
+                        287,
+                        354
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                300,
+                                287,
+                                354
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        300,
+                                        287,
+                                        354
+                                    ],
+                                    "type": "text",
+                                    "content": "Collect 4% in CT Money at Canadian Tire and get back 5¢ per litre in CT Money on regular gas at participating Gas+ locations with a Triangle Mastercard. *Calculated pre-tax. Terms & conditions apply. Visit Triangle.com for details."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        189,
+                        366,
+                        238,
+                        377
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                189,
+                                366,
+                                238,
+                                377
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        366,
+                                        238,
+                                        377
+                                    ],
+                                    "type": "text",
+                                    "content": "CUSTOMER COPY"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        143,
+                        383,
+                        277,
+                        403
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                383,
+                                277,
+                                403
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        383,
+                                        277,
+                                        403
+                                    ],
+                                    "type": "text",
+                                    "content": "Visit canadianire.ca or download the Canadian Tire Mobile App today!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        408,
+                        285,
+                        445
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                408,
+                                285,
+                                445
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        408,
+                                        285,
+                                        445
+                                    ],
+                                    "type": "text",
+                                    "content": "Take our survey each month for a chance to win a $1000 Canadian Tire gift card. No purchase necessary. Conditions apply. Visit telldontire.com and enter code:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        179,
+                        449,
+                        253,
+                        461
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                449,
+                                253,
+                                461
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        449,
+                                        253,
+                                        461
+                                    ],
+                                    "type": "text",
+                                    "content": "8326-6010-52600-1239"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        164,
+                        472,
+                        286,
+                        494
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                164,
+                                472,
+                                286,
+                                494
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        472,
+                                        286,
+                                        494
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                164,
+                                                472,
+                                                286,
+                                                494
+                                            ],
+                                            "type": "image",
+                                            "image_path": "8bae761413d8c796ec24fcc0fc90ad1af3848f3f34d410717d4695ada6c3f46a.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        145,
+                        505,
+                        287,
+                        555
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                505,
+                                287,
+                                555
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        505,
+                                        287,
+                                        555
+                                    ],
+                                    "type": "text",
+                                    "content": "EXCHANGE ONLY ON OPENED/USED PRODUCTS\nNO RETURNS/EXCHANGE ON BIKE, TINTED PAINT\nCUT GOODS/AUTO ELECTRICAL/GENERATORS\nEXCHANGE ONLY ON ALL CAMPING PRODUCTS\nNO RETURNS/EXCHANGE ON CHRISTMAS ITEMS\nAFTER DECEMBER 19TH"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        556,
+                        286,
+                        591
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                556,
+                                286,
+                                591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        556,
+                                        286,
+                                        591
+                                    ],
+                                    "type": "text",
+                                    "content": "CAR BATTERIES/ CHARGERS NONREFUNDABLE\nALL CLEARANCE/LIVE GOODS ARE FINAL SALE\nSOME RETURNS HAVE 7 DAYS/SPECIAL POLICY\nHST # 86621 8696 RT0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        310,
+                        1,
+                        460,
+                        614
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                310,
+                                1,
+                                460,
+                                614
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        310,
+                                        1,
+                                        460,
+                                        614
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                310,
+                                                1,
+                                                460,
+                                                614
+                                            ],
+                                            "type": "image",
+                                            "image_path": "80757fc04a0f88e78fb1d9d0a70e37a3258063c100b4cb4a56efe4ec895790b4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 15
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        170,
+                        493,
+                        280,
+                        504
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                170,
+                                493,
+                                280,
+                                504
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        170,
+                                        493,
+                                        280,
+                                        504
+                                    ],
+                                    "type": "text",
+                                    "content": "0012626032638230000000010056"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        140,
+                        57,
+                        279,
+                        94
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                140,
+                                57,
+                                279,
+                                94
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        57,
+                                        279,
+                                        94
+                                    ],
+                                    "type": "text",
+                                    "content": "CANADIAN TIRE #128\n6310 Yonge St. @ Steeles Ave.\nWillowdale, Ontario\n416-222-2511"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        253,
+                        53,
+                        282,
+                        68
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                253,
+                                53,
+                                282,
+                                68
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        253,
+                                        53,
+                                        282,
+                                        68
+                                    ],
+                                    "type": "text",
+                                    "content": "#126"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        139,
+                        93,
+                        280,
+                        131
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                93,
+                                280,
+                                131
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        93,
+                                        280,
+                                        131
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You For Shopping With Us!\nNO REFUNDS OR EXCHANGES WITHOUT RECEIPT\nREG #:4 03/26/2026 19:40:14 TRANS #:56\nOPERATOR #: 823 Float: 001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        139,
+                        133,
+                        285,
+                        148
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                133,
+                                285,
+                                148
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        133,
+                                        285,
+                                        148
+                                    ],
+                                    "type": "text",
+                                    "content": "017-5509-4 PH4967 OIL FILT $ 9.99"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        189,
+                        151,
+                        285,
+                        188
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                189,
+                                151,
+                                285,
+                                188
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        151,
+                                        285,
+                                        188
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                189,
+                                                151,
+                                                285,
+                                                188
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>SUBTOTAL</td><td>$ 9.99</td></tr><tr><td>13% HST</td><td>$ 1.30</td></tr><tr><td>TOTAL</td><td>$ 11.29</td></tr><tr><td>VISA TEND</td><td>$ 11.29</td></tr></table>",
+                                            "image_path": "810cc508a9c09c2e466e784884a5de4fd6cdcbcf65eac354a1d6c93db57d2aab.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        155,
+                        267,
+                        273,
+                        295
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                267,
+                                273,
+                                295
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        267,
+                                        273,
+                                        295
+                                    ],
+                                    "type": "text",
+                                    "content": "01 APPROVED - THANK YOU 027\nIMPORTANT\nRetain this copy for your records"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        300,
+                        287,
+                        354
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                300,
+                                287,
+                                354
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        300,
+                                        287,
+                                        354
+                                    ],
+                                    "type": "text",
+                                    "content": "Collect 4% in CT Money at Canadian Tire and get back 5¢ per litre in CT Money on regular gas at participating Gas+ locations with a Triangle Mastercard. *Calculated pre-tax. Terms & conditions apply. Visit Triangle.com for details."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        189,
+                        366,
+                        238,
+                        377
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                189,
+                                366,
+                                238,
+                                377
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        366,
+                                        238,
+                                        377
+                                    ],
+                                    "type": "text",
+                                    "content": "CUSTOMER COPY"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        143,
+                        383,
+                        277,
+                        403
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                383,
+                                277,
+                                403
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        383,
+                                        277,
+                                        403
+                                    ],
+                                    "type": "text",
+                                    "content": "Visit canadianire.ca or download the Canadian Tire Mobile App today!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        408,
+                        285,
+                        445
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                408,
+                                285,
+                                445
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        408,
+                                        285,
+                                        445
+                                    ],
+                                    "type": "text",
+                                    "content": "Take our survey each month for a chance to win a $1000 Canadian Tire gift card. No purchase necessary. Conditions apply. Visit telldontire.com and enter code:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        179,
+                        449,
+                        253,
+                        461
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                449,
+                                253,
+                                461
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        449,
+                                        253,
+                                        461
+                                    ],
+                                    "type": "text",
+                                    "content": "8326-6010-52600-1239"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        164,
+                        472,
+                        286,
+                        494
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                164,
+                                472,
+                                286,
+                                494
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        472,
+                                        286,
+                                        494
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                164,
+                                                472,
+                                                286,
+                                                494
+                                            ],
+                                            "type": "image",
+                                            "image_path": "8bae761413d8c796ec24fcc0fc90ad1af3848f3f34d410717d4695ada6c3f46a.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 12
+                        }
+                    ],
+                    "index": 12
+                },
+                {
+                    "bbox": [
+                        145,
+                        505,
+                        287,
+                        555
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                505,
+                                287,
+                                555
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        505,
+                                        287,
+                                        555
+                                    ],
+                                    "type": "text",
+                                    "content": "EXCHANGE ONLY ON OPENED/USED PRODUCTS\nNO RETURNS/EXCHANGE ON BIKE, TINTED PAINT\nCUT GOODS/AUTO ELECTRICAL/GENERATORS\nEXCHANGE ONLY ON ALL CAMPING PRODUCTS\nNO RETURNS/EXCHANGE ON CHRISTMAS ITEMS\nAFTER DECEMBER 19TH"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        556,
+                        286,
+                        591
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                556,
+                                286,
+                                591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        556,
+                                        286,
+                                        591
+                                    ],
+                                    "type": "text",
+                                    "content": "CAR BATTERIES/ CHARGERS NONREFUNDABLE\nALL CLEARANCE/LIVE GOODS ARE FINAL SALE\nSOME RETURNS HAVE 7 DAYS/SPECIAL POLICY\nHST # 86621 8696 RT0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        310,
+                        1,
+                        460,
+                        614
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                310,
+                                1,
+                                460,
+                                614
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        310,
+                                        1,
+                                        460,
+                                        614
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                310,
+                                                1,
+                                                460,
+                                                614
+                                            ],
+                                            "type": "image",
+                                            "image_path": "80757fc04a0f88e78fb1d9d0a70e37a3258063c100b4cb4a56efe4ec895790b4.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 15
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

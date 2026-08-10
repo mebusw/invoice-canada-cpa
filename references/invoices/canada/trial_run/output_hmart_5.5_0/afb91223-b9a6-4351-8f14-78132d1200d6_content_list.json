@@ -1,0 +1,183 @@
+[
+    {
+        "type": "text",
+        "text": "G MART",
+        "text_level": 1,
+        "bbox": [
+            394,
+            80,
+            721,
+            150
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5323 Yonge St. North York ON. M2N5R4\n416-792-1131",
+        "bbox": [
+            437,
+            145,
+            701,
+            184
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Yun(03)",
+        "bbox": [
+            675,
+            193,
+            730,
+            208
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Feb 26, 2026 16 13:40",
+        "bbox": [
+            385,
+            204,
+            539,
+            226
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Qty Description\n1 TRADITIONAL KOREAN RICE @\\$5.50 5.50",
+        "bbox": [
+            385,
+            230,
+            733,
+            278
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/a51ad7b2e8eb5daeee72bacb7c7858a193bee6972ea6ad3df9e0c1f69406d1dd.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td colspan=\"2\">Total 1 Items</td></tr><tr><td>Sub Total</td><td>5.50</td></tr><tr><td>Total Due</td><td>5.50</td></tr><tr><td>Master</td><td>5.50</td></tr><tr><td>Change Due</td><td>0.00</td></tr></table>",
+        "bbox": [
+            434,
+            286,
+            736,
+            376
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Tran # 23364\nTrace # 235283\nPurchase\nMasterCard\nxxxxxxxxxx4739\nAID: A0000000041010\nApp Name: MASTERCARD\nAPPROVED\nAmount CAD\\$5.50\nNo signature required\nRRN: 000000761555 P\nAuth. # 00173Z\nTVR: 0000008001\nTSI: A800\nHMART55CS03/HMART55CC03\n.00 (001)\n02/26/2026 4:13:38 PM",
+        "bbox": [
+            449,
+            386,
+            698,
+            617
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Don't forget your H point value it",
+        "bbox": [
+            472,
+            628,
+            678,
+            652
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Today's H Point Value is 10 P",
+        "text_level": 1,
+        "bbox": [
+            457,
+            654,
+            698,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "If you want to sign up for H Marl Membership, please contact customer center for more details",
+        "bbox": [
+            431,
+            678,
+            724,
+            715
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "General merchandise must be returned within 7 days. Meat, Fish, Produce, Bakery and frozen/daily products must be returned or exchanged within 24 hours. Opened or used cosmetics cannot be exchanged or returned. All merchandise must be in original condition with the original receipt for return or exchange",
+        "bbox": [
+            414,
+            710,
+            750,
+            791
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1. 2017年，公司与上海浦东发展银行股份有限公司上海市分行签订了《最高额保证合同》，约定在2017年1月1日、2017年1月2日、2017年1月3日、2017年1月4日、2017年1月5日、2017年1月6日、2017年1月7日、2017年1月8日、2017年1月9日、2017年1月10日、2017年1月11日、2017年1月12日、2017年1月13日、2017年1月14日、2017年1月15日、2017年1月16日、2017年1月17日、2017年1月18日、2017年1月19日、2017年1月20日、2017年1月21日、2017年1月22日、2017年1月23日、2017年1月24日、2017年1月25日、2017年1月26日、2017年1月27日、2017年1月28日、2017年1月29日、2017年1月30日、2017年1月31日、2017年1月32日、2017年1月33日、2017年1月34日、2017年1月35日、2017年1月36日、2017年1月37日、2017年1月38日、2017年1月39日、2017年1月40日、2017年1月41日、2017年1月42日、2017年1月43日、2017年1月44日、2017年1月45日、2017年1月46日、2017年1月47日、2017年1月48日、2017年1月49日、2017年1月50日、2017年1月51日、2017年1月52日、2017年1月53日、2017年1月54日、2017年1月55日、2017年1月56日、2017年1月57日、2017年1月58日、2017年1月59日、2017年1月60日、2017年1月61日、2017年1月62日、2017年1月63日、2017年1月64日、2017年1月65日、2017年1月66日、2017年1月67日、2017年1月68日、2017年1月69日、2017年1月70日、2017年1月71日、2017年1月72日、2017年1月73日、2017年1月74日、2017年1月75日、2017年1月76日、2017年1月77日、2017年1月78日、2017年1月79日、2017年1月80日、2017年1月81日、2017年1月82日、2017年1月83日、2017年1月84日、2017年1月85日、2017年1月86日、2017年1月87日、2017年1月88日、2017年1月89日、2017年1月90日、20",
+        "bbox": [
+            417,
+            786,
+            721,
+            847
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TAX Reg # 850075786",
+        "bbox": [
+            417,
+            850,
+            556,
+            867
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4403260005024",
+        "bbox": [
+            628,
+            843,
+            730,
+            860
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "1640320050526",
+        "bbox": [
+            457,
+            865,
+            698,
+            910
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "Thank You for shopping",
+        "bbox": [
+            469,
+            913,
+            695,
+            930
+        ],
+        "page_idx": 0
+    }
+]

@@ -1,0 +1,1742 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        139,
+                        51,
+                        275,
+                        79
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                51,
+                                275,
+                                79
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        51,
+                                        275,
+                                        79
+                                    ],
+                                    "type": "text",
+                                    "content": "SHOPPERS DRUG MART"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        152,
+                        79,
+                        257,
+                        90
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                152,
+                                79,
+                                257,
+                                90
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        152,
+                                        79,
+                                        257,
+                                        90
+                                    ],
+                                    "type": "text",
+                                    "content": "JORDAN WONG PHARMACY INC."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        134,
+                        87,
+                        280,
+                        101
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                134,
+                                87,
+                                280,
+                                101
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        87,
+                                        280,
+                                        101
+                                    ],
+                                    "type": "text",
+                                    "content": "7060 WARDEN AVE, MARKHAM, ON, L3R 5Y2"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        179,
+                        98,
+                        234,
+                        108
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                98,
+                                234,
+                                108
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        98,
+                                        234,
+                                        108
+                                    ],
+                                    "type": "text",
+                                    "content": "905-474-1414"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        158,
+                        106,
+                        251,
+                        117
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                106,
+                                251,
+                                117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        106,
+                                        251,
+                                        117
+                                    ],
+                                    "type": "text",
+                                    "content": "Mar 05,202612:40PM"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        113,
+                        116,
+                        271,
+                        130
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                113,
+                                116,
+                                271,
+                                130
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        113,
+                                        116,
+                                        271,
+                                        130
+                                    ],
+                                    "type": "text",
+                                    "content": "0847 1032 370117 400032 3\nSelf CheckOut"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        113,
+                        130,
+                        179,
+                        141
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                113,
+                                130,
+                                179,
+                                141
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        113,
+                                        130,
+                                        179,
+                                        141
+                                    ],
+                                    "type": "text",
+                                    "content": "6 X BLINK DROPS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        195,
+                        133,
+                        275,
+                        143
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                195,
+                                133,
+                                275,
+                                143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        195,
+                                        133,
+                                        275,
+                                        143
+                                    ],
+                                    "type": "text",
+                                    "content": "12.49 GP 74.94"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        183,
+                        141,
+                        275,
+                        152
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                183,
+                                141,
+                                275,
+                                152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        183,
+                                        141,
+                                        275,
+                                        152
+                                    ],
+                                    "type": "text",
+                                    "content": "SUBTOTAL: 74.94"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        198,
+                        151,
+                        273,
+                        160
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                151,
+                                273,
+                                160
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        151,
+                                        273,
+                                        160
+                                    ],
+                                    "type": "text",
+                                    "content": "HST: 9.75"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        111,
+                        161,
+                        147,
+                        179
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                111,
+                                161,
+                                147,
+                                179
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        111,
+                                        161,
+                                        147,
+                                        179
+                                    ],
+                                    "type": "text",
+                                    "content": "6 Items VISA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        159,
+                        273,
+                        176
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                159,
+                                273,
+                                176
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        159,
+                                        273,
+                                        176
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL: $84.69"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        179,
+                        264,
+                        207
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                179,
+                                264,
+                                207
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        179,
+                                        264,
+                                        207
+                                    ],
+                                    "type": "text",
+                                    "content": "On your next visit you could Save up to $20.00 If you REDEEM 20000 points"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        107,
+                        249,
+                        290,
+                        297
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                107,
+                                249,
+                                290,
+                                297
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        107,
+                                        249,
+                                        290,
+                                        297
+                                    ],
+                                    "type": "text",
+                                    "content": "You earned the most Bonus Points possible! We've checked all valid in-store, flyer & digital bonus offers to make sure you get the best rewards available to you. Get the most out of your PC Optimum Membership."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        295,
+                        238,
+                        305
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                295,
+                                238,
+                                305
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        295,
+                                        238,
+                                        305
+                                    ],
+                                    "type": "text",
+                                    "content": "83807 4995 RT0002"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        122,
+                        302,
+                        280,
+                        321
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                122,
+                                302,
+                                280,
+                                321
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        122,
+                                        302,
+                                        280,
+                                        321
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                122,
+                                                302,
+                                                280,
+                                                321
+                                            ],
+                                            "type": "image",
+                                            "image_path": "d24bbc9b010f4af67173649364913fac6be88407d64d6f2bc518ce42b48facfc.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        152,
+                        317,
+                        250,
+                        329
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                152,
+                                317,
+                                250,
+                                329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        152,
+                                        317,
+                                        250,
+                                        329
+                                    ],
+                                    "type": "text",
+                                    "content": "9990208471032003701172"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        132,
+                        335,
+                        260,
+                        352
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                132,
+                                335,
+                                260,
+                                352
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        335,
+                                        260,
+                                        352
+                                    ],
+                                    "type": "text",
+                                    "content": "How was your experience today?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        129,
+                        350,
+                        263,
+                        362
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                129,
+                                350,
+                                263,
+                                362
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        350,
+                                        263,
+                                        362
+                                    ],
+                                    "type": "text",
+                                    "content": "Complete the customer survey at:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        128,
+                        361,
+                        270,
+                        387
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                128,
+                                361,
+                                270,
+                                387
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        128,
+                                        361,
+                                        270,
+                                        387
+                                    ],
+                                    "type": "text",
+                                    "content": "www.surveysdm.com Or call 1-800-701-9163"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        117,
+                        385,
+                        267,
+                        417
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                117,
+                                385,
+                                267,
+                                417
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        117,
+                                        385,
+                                        267,
+                                        417
+                                    ],
+                                    "type": "text",
+                                    "content": "WIN!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        116,
+                        416,
+                        290,
+                        450
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                116,
+                                416,
+                                290,
+                                450
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        116,
+                                        416,
+                                        290,
+                                        450
+                                    ],
+                                    "type": "text",
+                                    "content": "A chance of 1 of 2 Monthly prizes of 1 Million PC Optimum™ points OR $1,000 in @irt Cardel"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        109,
+                        449,
+                        289,
+                        496
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                109,
+                                449,
+                                289,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        109,
+                                        449,
+                                        289,
+                                        496
+                                    ],
+                                    "type": "text",
+                                    "content": "Contest rules apply. See survey website for full details.\nCertificate Number:00485536-4617524"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        104,
+                        497,
+                        172,
+                        515
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                104,
+                                497,
+                                172,
+                                515
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        104,
+                                        497,
+                                        172,
+                                        515
+                                    ],
+                                    "type": "text",
+                                    "content": "TYPE: PURCHASE\nACCT: VISA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        237,
+                        509,
+                        286,
+                        518
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                237,
+                                509,
+                                286,
+                                518
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        237,
+                                        509,
+                                        286,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": "CAD$ 84.69"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        139,
+                        51,
+                        275,
+                        79
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                139,
+                                51,
+                                275,
+                                79
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        139,
+                                        51,
+                                        275,
+                                        79
+                                    ],
+                                    "type": "text",
+                                    "content": "SHOPPERS DRUG MART"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        152,
+                        79,
+                        257,
+                        90
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                152,
+                                79,
+                                257,
+                                90
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        152,
+                                        79,
+                                        257,
+                                        90
+                                    ],
+                                    "type": "text",
+                                    "content": "JORDAN WONG PHARMACY INC."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        134,
+                        87,
+                        280,
+                        101
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                134,
+                                87,
+                                280,
+                                101
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        134,
+                                        87,
+                                        280,
+                                        101
+                                    ],
+                                    "type": "text",
+                                    "content": "7060 WARDEN AVE, MARKHAM, ON, L3R 5Y2"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        179,
+                        98,
+                        234,
+                        108
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                179,
+                                98,
+                                234,
+                                108
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        179,
+                                        98,
+                                        234,
+                                        108
+                                    ],
+                                    "type": "text",
+                                    "content": "905-474-1414"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        158,
+                        106,
+                        251,
+                        117
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                106,
+                                251,
+                                117
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        106,
+                                        251,
+                                        117
+                                    ],
+                                    "type": "text",
+                                    "content": "Mar 05,202612:40PM"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        113,
+                        116,
+                        271,
+                        130
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                113,
+                                116,
+                                271,
+                                130
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        113,
+                                        116,
+                                        271,
+                                        130
+                                    ],
+                                    "type": "text",
+                                    "content": "0847 1032 370117 400032 3\nSelf CheckOut"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        113,
+                        130,
+                        179,
+                        141
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                113,
+                                130,
+                                179,
+                                141
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        113,
+                                        130,
+                                        179,
+                                        141
+                                    ],
+                                    "type": "text",
+                                    "content": "6 X BLINK DROPS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        195,
+                        133,
+                        275,
+                        143
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                195,
+                                133,
+                                275,
+                                143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        195,
+                                        133,
+                                        275,
+                                        143
+                                    ],
+                                    "type": "text",
+                                    "content": "12.49 GP 74.94"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        183,
+                        141,
+                        275,
+                        152
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                183,
+                                141,
+                                275,
+                                152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        183,
+                                        141,
+                                        275,
+                                        152
+                                    ],
+                                    "type": "text",
+                                    "content": "SUBTOTAL: 74.94"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        198,
+                        151,
+                        273,
+                        160
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                198,
+                                151,
+                                273,
+                                160
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        198,
+                                        151,
+                                        273,
+                                        160
+                                    ],
+                                    "type": "text",
+                                    "content": "HST: 9.75"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        111,
+                        161,
+                        147,
+                        179
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                111,
+                                161,
+                                147,
+                                179
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        111,
+                                        161,
+                                        147,
+                                        179
+                                    ],
+                                    "type": "text",
+                                    "content": "6 Items VISA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        159,
+                        273,
+                        176
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                159,
+                                273,
+                                176
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        159,
+                                        273,
+                                        176
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL: $84.69"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        179,
+                        264,
+                        207
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                179,
+                                264,
+                                207
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        179,
+                                        264,
+                                        207
+                                    ],
+                                    "type": "text",
+                                    "content": "On your next visit you could Save up to $20.00 If you REDEEM 20000 points"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        107,
+                        249,
+                        290,
+                        297
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                107,
+                                249,
+                                290,
+                                297
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        107,
+                                        249,
+                                        290,
+                                        297
+                                    ],
+                                    "type": "text",
+                                    "content": "You earned the most Bonus Points possible! We've checked all valid in-store, flyer & digital bonus offers to make sure you get the best rewards available to you. Get the most out of your PC Optimum Membership."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        295,
+                        238,
+                        305
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                295,
+                                238,
+                                305
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        295,
+                                        238,
+                                        305
+                                    ],
+                                    "type": "text",
+                                    "content": "83807 4995 RT0002"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        122,
+                        302,
+                        280,
+                        321
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                122,
+                                302,
+                                280,
+                                321
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        122,
+                                        302,
+                                        280,
+                                        321
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                122,
+                                                302,
+                                                280,
+                                                321
+                                            ],
+                                            "type": "image",
+                                            "image_path": "d24bbc9b010f4af67173649364913fac6be88407d64d6f2bc518ce42b48facfc.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 15
+                        }
+                    ],
+                    "index": 15
+                },
+                {
+                    "bbox": [
+                        152,
+                        317,
+                        250,
+                        329
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                152,
+                                317,
+                                250,
+                                329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        152,
+                                        317,
+                                        250,
+                                        329
+                                    ],
+                                    "type": "text",
+                                    "content": "9990208471032003701172"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        132,
+                        335,
+                        260,
+                        352
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                132,
+                                335,
+                                260,
+                                352
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        335,
+                                        260,
+                                        352
+                                    ],
+                                    "type": "text",
+                                    "content": "How was your experience today?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        129,
+                        350,
+                        263,
+                        362
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                129,
+                                350,
+                                263,
+                                362
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        129,
+                                        350,
+                                        263,
+                                        362
+                                    ],
+                                    "type": "text",
+                                    "content": "Complete the customer survey at:"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        128,
+                        361,
+                        270,
+                        387
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                128,
+                                361,
+                                270,
+                                387
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        128,
+                                        361,
+                                        270,
+                                        387
+                                    ],
+                                    "type": "text",
+                                    "content": "www.surveysdm.com Or call 1-800-701-9163"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        117,
+                        385,
+                        267,
+                        417
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                117,
+                                385,
+                                267,
+                                417
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        117,
+                                        385,
+                                        267,
+                                        417
+                                    ],
+                                    "type": "text",
+                                    "content": "WIN!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        116,
+                        416,
+                        290,
+                        450
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                116,
+                                416,
+                                290,
+                                450
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        116,
+                                        416,
+                                        290,
+                                        450
+                                    ],
+                                    "type": "text",
+                                    "content": "A chance of 1 of 2 Monthly prizes of 1 Million PC Optimum™ points OR $1,000 in @irt Cardel"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        109,
+                        449,
+                        289,
+                        496
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                109,
+                                449,
+                                289,
+                                496
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        109,
+                                        449,
+                                        289,
+                                        496
+                                    ],
+                                    "type": "text",
+                                    "content": "Contest rules apply. See survey website for full details.\nCertificate Number:00485536-4617524"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        104,
+                        497,
+                        172,
+                        515
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                104,
+                                497,
+                                172,
+                                515
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        104,
+                                        497,
+                                        172,
+                                        515
+                                    ],
+                                    "type": "text",
+                                    "content": "TYPE: PURCHASE\nACCT: VISA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        237,
+                        509,
+                        286,
+                        518
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                237,
+                                509,
+                                286,
+                                518
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        237,
+                                        509,
+                                        286,
+                                        518
+                                    ],
+                                    "type": "text",
+                                    "content": "CAD$ 84.69"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

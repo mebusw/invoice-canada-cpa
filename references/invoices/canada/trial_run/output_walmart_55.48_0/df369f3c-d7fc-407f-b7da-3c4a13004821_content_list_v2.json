@@ -1,0 +1,599 @@
+[
+    [
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8ba260f5f46a45c38c8596f86ceb9a7a4428a1c6f4aa6621b9d6e0da1a4be282.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                334,
+                154,
+                443,
+                224
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Walmart"
+                    }
+                ]
+            },
+            "bbox": [
+                400,
+                61,
+                586,
+                94
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "How did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA"
+                    }
+                ]
+            },
+            "bbox": [
+                336,
+                89,
+                647,
+                154
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "WIN!\n1 of 3 $1000\ngift cards"
+                    }
+                ]
+            },
+            "bbox": [
+                473,
+                146,
+                639,
+                223
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Rules and regulations apply.\nSee contest rules for details."
+                    }
+                ]
+            },
+            "bbox": [
+                365,
+                229,
+                606,
+                267
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "STORE 3053"
+                    }
+                ]
+            },
+            "bbox": [
+                421,
+                273,
+                526,
+                294
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "5000 HWY 7"
+                    }
+                ]
+            },
+            "bbox": [
+                421,
+                294,
+                526,
+                314
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MARKHAM, ON"
+                    }
+                ]
+            },
+            "bbox": [
+                415,
+                314,
+                526,
+                333
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "L3R 4M9"
+                    }
+                ]
+            },
+            "bbox": [
+                432,
+                333,
+                506,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "905-477-6060"
+                    }
+                ]
+            },
+            "bbox": [
+                417,
+                351,
+                534,
+                371
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ST# 03053 OP# 009080 TE# 80 TR# 01433"
+                    }
+                ]
+            },
+            "bbox": [
+                304,
+                369,
+                647,
+                390
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "YFM CROISSAN 62'735274270 $5.94 D"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                389,
+                658,
+                408
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CH STRIPS VF 627735019090 $10.98 D"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                407,
+                658,
+                426
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "3.410 kg @ $4.34 /kg $14.80 D"
+                    }
+                ]
+            },
+            "bbox": [
+                321,
+                442,
+                658,
+                462
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ORANGE 686201111240 $11.88 D"
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                460,
+                660,
+                480
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ORANGE 686201111240 $11.88 D"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                477,
+                660,
+                498
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SUBTOTAL $55.48"
+                    }
+                ]
+            },
+            "bbox": [
+                463,
+                514,
+                632,
+                534
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TOTAL $55.48"
+                    }
+                ]
+            },
+            "bbox": [
+                489,
+                534,
+                632,
+                550
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MCARD TEND $55.48"
+                    }
+                ]
+            },
+            "bbox": [
+                447,
+                548,
+                632,
+                566
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CHANGE DUE $0.00"
+                    }
+                ]
+            },
+            "bbox": [
+                447,
+                565,
+                632,
+                584
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "MASTERCARD **** 1**** **** 4739 RF"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                592,
+                604,
+                615
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "$55.48 TOTAL PURCHASE"
+                    }
+                ]
+            },
+            "bbox": [
+                326,
+                610,
+                523,
+                628
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "APPROVAL # 042392"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                625,
+                465,
+                643
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "REN # 605100731786"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                641,
+                471,
+                659
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "AID A0000000C410'0"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                674,
+                473,
+                692
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TC BE2EB3389E460EE8"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                690,
+                482,
+                708
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TERMINAL ID LMTUP018955"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                706,
+                515,
+                723
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "*No Signature Required"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                723,
+                508,
+                739
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "02/19/26 20:58:06"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                754,
+                500,
+                775
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "GST/HST 137466199 RT 0001"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                791,
+                534,
+                811
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "QST 1016551356 T0 0001"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                809,
+                506,
+                828
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "# ITEMS SOLD 5"
+                    }
+                ]
+            },
+            "bbox": [
+                410,
+                828,
+                543,
+                846
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TC# 2810 42'0 8692 3910 8218"
+                    }
+                ]
+            },
+            "bbox": [
+                356,
+                846,
+                606,
+                864
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "1"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                861,
+                676,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "02/19/26 20:58:11"
+                    }
+                ]
+            },
+            "bbox": [
+                380,
+                882,
+                569,
+                903
+            ]
+        }
+    ]
+]

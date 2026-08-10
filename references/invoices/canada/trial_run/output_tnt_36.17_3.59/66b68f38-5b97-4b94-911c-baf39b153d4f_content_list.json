@@ -1,0 +1,174 @@
+[
+    {
+        "type": "table",
+        "img_path": "images/c10efdf46c30902ee8b9b33dedec2abe8fb4c51dff28bb95009bb47b1874b34c.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>***040889288</td><td>$0.00</td></tr><tr><td>FOOD</td><td></td></tr><tr><td>HOT FOOD</td><td></td></tr><tr><td>0.490 kg @ $24.91/kg</td><td></td></tr><tr><td>&quot;fara removed; &quot;0.035 kg</td><td>V $12.21 GF</td></tr><tr><td>特色美食</td><td></td></tr><tr><td>STEAMED RICE (S)</td><td>V $1.99 GF</td></tr><tr><td>白飯(小)</td><td></td></tr><tr><td>PRODUCE</td><td></td></tr><tr><td>(SALE) STRAUBERRY</td><td></td></tr><tr><td>532391 2.92/$5.00</td><td>V $5.00</td></tr><tr><td>(特價) 草每</td><td></td></tr><tr><td>DELT</td><td></td></tr><tr><td>ON FRESH COLD NOODLE</td><td></td></tr><tr><td>2. @ $6.69ea.</td><td>V $13.38 GP</td></tr><tr><td>小安新鮮凍皮</td><td></td></tr><tr><td>Points 20</td><td>$0.00</td></tr><tr><td>SUB TOTAL</td><td>$32.58</td></tr><tr><td>HST (TOTAL GST+PST)</td><td>$3.59</td></tr><tr><td>TOTAL</td><td>$36.17</td></tr><tr><td>Master</td><td>$36.17</td></tr><tr><td>Points in this transaction: 20</td><td></td></tr><tr><td>Points balance : 4940</td><td></td></tr><tr><td>Item Count: 6</td><td></td></tr><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>Trans:645362</td><td>Terminal:050108015-021003</td></tr></table>",
+        "bbox": [
+            304,
+            224,
+            639,
+            809
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "NOT A MEMBER YET? DOWNLOAD & JOIN NOW!\n立即下载APP，加入大統雜積分獎勵計劃",
+        "bbox": [
+            343,
+            92,
+            576,
+            125
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "• GET EXCLUSIVE OFFERS AND EARN REWARDS • ENJOY ONLINE GROCERY DELIVERY.",
+        "bbox": [
+            347,
+            125,
+            465,
+            149
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "bbox": [
+            347,
+            146,
+            473,
+            169
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\* 獭旅優應和積分碼點",
+        "bbox": [
+            347,
+            169,
+            458,
+            184
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/fc13e73ce258bae309753924b65c02a7fac7098c8c89da3873ee9d94a486cd14.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            486,
+            123,
+            567,
+            192
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\* 注：请阅读配送表单。",
+        "bbox": [
+            347,
+            182,
+            447,
+            195
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "T&T Supermarket",
+        "text_level": 2,
+        "bbox": [
+            380,
+            206,
+            550,
+            232
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "FULL DETAILS OF T&T SUPERMARKET'S REFUND POLICY ARE AVAILABLE AT IN-STORE.",
+        "bbox": [
+            308,
+            814,
+            608,
+            842
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "T&T Customer Service Line:1-833-868-1616\nwww.tntsupermarket.com",
+        "bbox": [
+            356,
+            842,
+            591,
+            868
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TELL US HOW WE DID TODAY!",
+        "bbox": [
+            310,
+            869,
+            465,
+            884
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Monthly chances to win \\$1,000 PC Gift Card or 1 Million PC Optimum points!",
+        "bbox": [
+            310,
+            877,
+            632,
+            897
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "How likely are you to recommend T&T to your friends?",
+        "bbox": [
+            310,
+            897,
+            615,
+            912
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Visit www.storeopinion.ca or Call 1-800-531-2928 for full contest rules.",
+        "bbox": [
+            310,
+            910,
+            613,
+            931
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Eligible amount for point calculation: \\$32.58",
+        "bbox": [
+            310,
+            934,
+            576,
+            952
+        ],
+        "page_idx": 0
+    }
+]

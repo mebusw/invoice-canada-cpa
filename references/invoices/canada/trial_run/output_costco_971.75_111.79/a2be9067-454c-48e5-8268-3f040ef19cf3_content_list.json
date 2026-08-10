@@ -1,0 +1,333 @@
+[
+    {
+        "type": "text",
+        "text": "Markham 14751 Yorktech\nMarkham, ON LEG 185",
+        "bbox": [
+            226,
+            133,
+            415,
+            188
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TIRES",
+        "text_level": 2,
+        "bbox": [
+            289,
+            192,
+            373,
+            221
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TIRE SHOP ORDER # 1510202522",
+        "bbox": [
+            160,
+            224,
+            432,
+            252
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4 209.99",
+        "bbox": [
+            165,
+            242,
+            267,
+            258
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "590469 215/60316",
+        "bbox": [
+            210,
+            257,
+            365,
+            278
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "4 8 5.00",
+        "bbox": [
+            167,
+            270,
+            252,
+            289
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "H",
+        "bbox": [
+            382,
+            258,
+            500,
+            283
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TIME LEVY",
+        "bbox": [
+            278,
+            286,
+            367,
+            304
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "SUBTOTAL.",
+        "bbox": [
+            232,
+            302,
+            315,
+            320
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "20.00 H",
+        "bbox": [
+            426,
+            289,
+            502,
+            309
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "859.96",
+        "bbox": [
+            421,
+            306,
+            478,
+            322
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "(×H9) TOTAL.",
+        "bbox": [
+            193,
+            332,
+            289,
+            350
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "111.79",
+        "bbox": [
+            421,
+            320,
+            480,
+            335
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "100000000000000",
+        "bbox": [
+            371,
+            333,
+            486,
+            351
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "XXX (XX)XXXXX4739",
+        "bbox": [
+            165,
+            359,
+            319,
+            377
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ACCT: MASTERCARD",
+        "bbox": [
+            165,
+            377,
+            319,
+            394
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "REFERENCE #: 0010010510 H",
+        "bbox": [
+            165,
+            390,
+            400,
+            408
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "BUT-#20752",
+        "bbox": [
+            167,
+            408,
+            295,
+            423
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Invoice Number: 096251",
+        "bbox": [
+            169,
+            421,
+            373,
+            438
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Purchase - MASTERCARD",
+        "bbox": [
+            169,
+            436,
+            369,
+            452
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "A001000041010",
+        "bbox": [
+            169,
+            452,
+            308,
+            467
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "0002008001 1800",
+        "bbox": [
+            171,
+            465,
+            315,
+            483
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "01 APPROVED - THANK YOU 027",
+        "bbox": [
+            173,
+            488,
+            421,
+            511
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "IMPORTANT - retain this COPY\nfor your records\nCUSTOMER COPY\nMasterCard 971.75\nCHANGE 0.00",
+        "bbox": [
+            223,
+            558,
+            497,
+            644
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "P HOPST 132",
+        "bbox": [
+            173,
+            654,
+            302,
+            677
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "OP#: 82 Naim: MUSKAN M",
+        "bbox": [
+            169,
+            750,
+            384,
+            781
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Thank You!\nPlease Come Again",
+        "bbox": [
+            210,
+            780,
+            489,
+            825
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "H = HST G=GST\nHST/GST B1 21475329HT\nTRn:96 Trn:16 DP:83",
+        "bbox": [
+            258,
+            822,
+            445,
+            885
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Items Sold: 4\nYN 2026/03/28 15:17",
+        "bbox": [
+            197,
+            899,
+            508,
+            970
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "COVEYCO\nWHICLESALE",
+        "bbox": [
+            186,
+            60,
+            460,
+            136
+        ],
+        "page_idx": 0
+    }
+]

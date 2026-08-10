@@ -1,0 +1,279 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "0012626032638230000000010056"
+                    }
+                ]
+            },
+            "bbox": [
+                369,
+                802,
+                608,
+                820
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CANADIAN TIRE #128\n6310 Yonge St. @ Steeles Ave.\nWillowdale, Ontario\n416-222-2511"
+                    }
+                ]
+            },
+            "bbox": [
+                304,
+                92,
+                606,
+                153
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "#126"
+                    }
+                ]
+            },
+            "bbox": [
+                550,
+                86,
+                613,
+                110
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Thank You For Shopping With Us!\nNO REFUNDS OR EXCHANGES WITHOUT RECEIPT\nREG #:4 03/26/2026 19:40:14 TRANS #:56\nOPERATOR #: 823 Float: 001"
+                    }
+                ]
+            },
+            "bbox": [
+                302,
+                151,
+                608,
+                213
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "017-5509-4 PH4967 OIL FILT $ 9.99"
+                    }
+                ]
+            },
+            "bbox": [
+                302,
+                216,
+                619,
+                241
+            ]
+        },
+        {
+            "type": "table",
+            "content": {
+                "image_source": {
+                    "path": "images/810cc508a9c09c2e466e784884a5de4fd6cdcbcf65eac354a1d6c93db57d2aab.jpg"
+                },
+                "table_caption": [],
+                "table_footnote": [],
+                "html": "<table><tr><td>SUBTOTAL</td><td>$ 9.99</td></tr><tr><td>13% HST</td><td>$ 1.30</td></tr><tr><td>TOTAL</td><td>$ 11.29</td></tr><tr><td>VISA TEND</td><td>$ 11.29</td></tr></table>",
+                "table_type": "simple_table",
+                "table_nest_level": 1
+            },
+            "bbox": [
+                410,
+                245,
+                619,
+                306
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "01 APPROVED - THANK YOU 027\nIMPORTANT\nRetain this copy for your records"
+                    }
+                ]
+            },
+            "bbox": [
+                336,
+                434,
+                593,
+                480
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Collect 4% in CT Money at Canadian Tire and get back 5¢ per litre in CT Money on regular gas at participating Gas+ locations with a Triangle Mastercard. *Calculated pre-tax. Terms & conditions apply. Visit Triangle.com for details."
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                488,
+                623,
+                576
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "CUSTOMER COPY"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                410,
+                596,
+                517,
+                614
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Visit canadianire.ca or download the Canadian Tire Mobile App today!"
+                    }
+                ]
+            },
+            "bbox": [
+                310,
+                623,
+                602,
+                656
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Take our survey each month for a chance to win a $1000 Canadian Tire gift card. No purchase necessary. Conditions apply. Visit telldontire.com and enter code:"
+                    }
+                ]
+            },
+            "bbox": [
+                313,
+                664,
+                619,
+                724
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "8326-6010-52600-1239"
+                    }
+                ]
+            },
+            "bbox": [
+                389,
+                731,
+                550,
+                750
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/8bae761413d8c796ec24fcc0fc90ad1af3848f3f34d410717d4695ada6c3f46a.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                356,
+                768,
+                621,
+                804
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "EXCHANGE ONLY ON OPENED/USED PRODUCTS\nNO RETURNS/EXCHANGE ON BIKE, TINTED PAINT\nCUT GOODS/AUTO ELECTRICAL/GENERATORS\nEXCHANGE ONLY ON ALL CAMPING PRODUCTS\nNO RETURNS/EXCHANGE ON CHRISTMAS ITEMS\nAFTER DECEMBER 19TH"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                822,
+                623,
+                903
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CAR BATTERIES/ CHARGERS NONREFUNDABLE\nALL CLEARANCE/LIVE GOODS ARE FINAL SALE\nSOME RETURNS HAVE 7 DAYS/SPECIAL POLICY\nHST # 86621 8696 RT0001"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                905,
+                621,
+                962
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/80757fc04a0f88e78fb1d9d0a70e37a3258063c100b4cb4a56efe4ec895790b4.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                673,
+                1,
+                1000,
+                1000
+            ]
+        }
+    ]
+]

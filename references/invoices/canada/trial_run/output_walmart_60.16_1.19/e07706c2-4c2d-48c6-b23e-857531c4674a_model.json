@@ -1,0 +1,702 @@
+[
+    [
+        {
+            "type": "header",
+            "bbox": [
+                0.276,
+                0.042,
+                0.562,
+                0.129
+            ],
+            "angle": 0,
+            "content": "Walmart >*\nHow did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA"
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.284,
+                0.132,
+                0.381,
+                0.202
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.407,
+                0.124,
+                0.549,
+                0.203
+            ],
+            "angle": 0,
+            "content": "WIN!\n1 of 3 $1000\ngift cards",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.31,
+                0.207,
+                0.523,
+                0.239
+            ],
+            "angle": 0,
+            "content": "Rules and regulations apply. See contest rules for details.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.362,
+                0.246,
+                0.455,
+                0.263
+            ],
+            "angle": 0,
+            "content": "STORE 3053",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.363,
+                0.263,
+                0.455,
+                0.28
+            ],
+            "angle": 0,
+            "content": "5000 HWY 7",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.357,
+                0.28,
+                0.456,
+                0.297
+            ],
+            "angle": 0,
+            "content": "MARKHAM, ON",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.375,
+                0.297,
+                0.44,
+                0.313
+            ],
+            "angle": 0,
+            "content": "L3R 4M9",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.359,
+                0.313,
+                0.465,
+                0.33
+            ],
+            "angle": 0,
+            "content": "905-477-6000",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.257,
+                0.328,
+                0.584,
+                0.554
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>ST# 03053 OP#</td><td>009034 TE# 34 TR#</td><td>00559</td></tr><tr><td>CASA HAWAIIA</td><td>058336173040</td><td>$3.47 D</td></tr><tr><td>POT WHT/ RST</td><td>033383454850</td><td>$3.94 D</td></tr><tr><td>POT WHT/ RST</td><td>033383454850</td><td>$3.94 D</td></tr><tr><td>CDM CON CLAS</td><td>058336745700</td><td>$3.47 D</td></tr><tr><td>CASA ULTIMAT</td><td>058336173060</td><td>$3.47 D</td></tr><tr><td>YFM CROISSAN</td><td>627, 5274270</td><td>$5.94 D</td></tr><tr><td>YFM CROISSAN</td><td>627735274270</td><td>$5.94 D</td></tr><tr><td>NAT FLTR 2</td><td>064420010140</td><td>$7.18 D</td></tr><tr><td>EGGS 30</td><td>627735279720</td><td>$9.18 D</td></tr><tr><td>INC 40W 4PK</td><td>046677569890</td><td>$8.98 J</td></tr><tr><td>PHL ECOFEE</td><td>400505872130</td><td>$0.20 A</td></tr><tr><td>TABLE SALT</td><td>066010001050</td><td>$1.63 D</td></tr><tr><td>TABLE SALT</td><td>066010001050</td><td>$1.63 D</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.408,
+                0.564,
+                0.562,
+                0.583
+            ],
+            "angle": 0,
+            "content": "SUBTOTAL $58.97",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.359,
+                0.581,
+                0.564,
+                0.601
+            ],
+            "angle": 0,
+            "content": "HST 13.0000 % $1.19",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.402,
+                0.612,
+                0.568,
+                0.632
+            ],
+            "angle": 0,
+            "content": "VISA TEND $60.16",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.436,
+                0.597,
+                0.566,
+                0.614
+            ],
+            "angle": 0,
+            "content": "TOTAL $60.16",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.395,
+                0.629,
+                0.569,
+                0.649
+            ],
+            "angle": 0,
+            "content": "CHANGE DUE $0.00",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.27,
+                0.661,
+                0.553,
+                0.683
+            ],
+            "angle": 0,
+            "content": "VISA CREDIT **** **** **** 4562 RF",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.286,
+                0.681,
+                0.473,
+                0.699
+            ],
+            "angle": 0,
+            "content": "$60.16 TOTAL PURCHASE",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.273,
+                0.698,
+                0.416,
+                0.715
+            ],
+            "angle": 0,
+            "content": "AF OVAL # 202993",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.273,
+                0.715,
+                0.401,
+                0.731
+            ],
+            "angle": 0,
+            "content": "RRN # 001001840",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.273,
+                0.73,
+                0.493,
+                0.746
+            ],
+            "angle": 0,
+            "content": "TRANS ID - 306055075326778",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.278,
+                0.761,
+                0.43,
+                0.778
+            ],
+            "angle": 0,
+            "content": "AID A0000000031010",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.28,
+                0.777,
+                0.438,
+                0.793
+            ],
+            "angle": 0,
+            "content": "TC C6482E59D1795D29",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.281,
+                0.793,
+                0.473,
+                0.81
+            ],
+            "angle": 0,
+            "content": "TERMINAL ID WMTJP001443",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.282,
+                0.824,
+                0.456,
+                0.843
+            ],
+            "angle": 0,
+            "content": "02/23/26 21:05:31",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.285,
+                0.855,
+                0.493,
+                0.874
+            ],
+            "angle": 0,
+            "content": "GST/HST 137466199 RT 0001",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.287,
+                0.871,
+                0.469,
+                0.888
+            ],
+            "angle": 0,
+            "content": "QST 1016551356 TQ 0001",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.376,
+                0.887,
+                0.504,
+                0.903
+            ],
+            "angle": 0,
+            "content": "# ITEMS SOLD 12",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.33,
+                0.899,
+                0.562,
+                0.915
+            ],
+            "angle": 0,
+            "content": "TC# 7030 4111 8822 3316 0288",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.293,
+                0.911,
+                0.623,
+                0.931
+            ],
+            "angle": 0,
+            "content": "1",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.355,
+                0.93,
+                0.533,
+                0.947
+            ],
+            "angle": 0,
+            "content": "02/23/26 21:05:36",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.403,
+                0.122,
+                0.549,
+                0.161
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.409,
+                0.156,
+                0.547,
+                0.177
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.403,
+                0.175,
+                0.502,
+                0.199
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.308,
+                0.207,
+                0.522,
+                0.222
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.308,
+                0.224,
+                0.521,
+                0.237
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.36,
+                0.245,
+                0.455,
+                0.263
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.36,
+                0.262,
+                0.455,
+                0.279
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.353,
+                0.279,
+                0.456,
+                0.296
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.373,
+                0.295,
+                0.441,
+                0.313
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.356,
+                0.314,
+                0.465,
+                0.328
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.405,
+                0.566,
+                0.561,
+                0.581
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.355,
+                0.582,
+                0.565,
+                0.598
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.398,
+                0.613,
+                0.569,
+                0.629
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.434,
+                0.597,
+                0.566,
+                0.612
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.392,
+                0.629,
+                0.57,
+                0.646
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.267,
+                0.663,
+                0.552,
+                0.681
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.284,
+                0.681,
+                0.473,
+                0.697
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.271,
+                0.698,
+                0.415,
+                0.713
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.27,
+                0.715,
+                0.401,
+                0.73
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.271,
+                0.729,
+                0.493,
+                0.746
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.276,
+                0.759,
+                0.43,
+                0.778
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.277,
+                0.776,
+                0.438,
+                0.793
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.28,
+                0.793,
+                0.472,
+                0.809
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.28,
+                0.822,
+                0.382,
+                0.843
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.383,
+                0.824,
+                0.456,
+                0.843
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.284,
+                0.855,
+                0.492,
+                0.872
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.287,
+                0.872,
+                0.468,
+                0.886
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.373,
+                0.885,
+                0.505,
+                0.904
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.33,
+                0.9,
+                0.561,
+                0.913
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.293,
+                0.912,
+                0.62,
+                0.93
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.352,
+                0.93,
+                0.533,
+                0.946
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

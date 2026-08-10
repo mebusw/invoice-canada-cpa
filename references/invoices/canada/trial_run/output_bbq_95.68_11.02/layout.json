@@ -1,0 +1,452 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        132,
+                        86,
+                        225,
+                        129
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                132,
+                                86,
+                                225,
+                                129
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        86,
+                                        225,
+                                        129
+                                    ],
+                                    "type": "text",
+                                    "content": "Haven Party BBQ\n有局儿烧烤\nUnit 68, 505 Hwy 7\nThornhill, ON L3T 7T1"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        126,
+                        136,
+                        180,
+                        152
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                126,
+                                136,
+                                180,
+                                152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        126,
+                                        136,
+                                        180,
+                                        152
+                                    ],
+                                    "type": "text",
+                                    "content": "全单少辣"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        114,
+                        154,
+                        269,
+                        474
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                114,
+                                154,
+                                269,
+                                474
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        114,
+                                        154,
+                                        269,
+                                        474
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                114,
+                                                154,
+                                                269,
+                                                474
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>1</td><td>羊肉小串 6pcs</td><td>$7.95</td></tr><tr><td></td><td>Lamb Skewers 6pcs</td><td></td></tr><tr><td>1</td><td>百香瓦罐涮牛肚</td><td>$22.95</td></tr><tr><td></td><td>Signature Clay Pot Beef Tripe *DISCOUNT</td><td>-$11.48</td></tr><tr><td>1</td><td>鲜嫩牛里脊 8pcs</td><td>$7.95</td></tr><tr><td></td><td>Lean Beef 8pcs</td><td></td></tr><tr><td>1</td><td>韩式烤五花肉 4pcs</td><td>$6.95</td></tr><tr><td></td><td>Korea style Pork Belly 4pcs</td><td></td></tr><tr><td>1</td><td>酒局儿鸡脆骨 4pcs</td><td>$7.95</td></tr><tr><td></td><td>Chicken Joints 4pcs</td><td></td></tr><tr><td>1</td><td>烤高丽菜</td><td>$5.95</td></tr><tr><td></td><td>Grilled Cabbage</td><td></td></tr><tr><td>1</td><td>清甜烤蚝菇 2pcs</td><td>$6.95</td></tr><tr><td></td><td>Grilled Oyster Mushroom 2pcs</td><td></td></tr><tr><td>1</td><td>锡纸娃娃菜</td><td>$8.95</td></tr><tr><td></td><td>Baby Cabbage with Garlic Sauce</td><td></td></tr><tr><td>1</td><td>荠菜玉米猪骨煲 Traditional Corn and Pork Bone Stew</td><td>$29.95</td></tr></table>",
+                                            "image_path": "143d89714311d700bbf417bd492db6a949ac1e6ec244a6e6cccbb0d1574e8226.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        145,
+                        462,
+                        264,
+                        534
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                462,
+                                264,
+                                534
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        462,
+                                        264,
+                                        534
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL $95.68\nRounded if Paying Cash $95.70\n***SUGGESTED TIPS***\nTip Amount Total\n15% $14.35 $110.03\n18% $17.22 $112.90\n20% $19.14 $114.82"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        177,
+                        536,
+                        231,
+                        556
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                177,
+                                536,
+                                231,
+                                556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        177,
+                                        536,
+                                        231,
+                                        556
+                                    ],
+                                    "type": "text",
+                                    "content": "YOU SAVED $20.89"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        165,
+                        554,
+                        245,
+                        572
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                165,
+                                554,
+                                245,
+                                572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        165,
+                                        554,
+                                        245,
+                                        572
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You and Come Again"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        132,
+                        86,
+                        225,
+                        129
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                132,
+                                86,
+                                225,
+                                129
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        132,
+                                        86,
+                                        225,
+                                        129
+                                    ],
+                                    "type": "text",
+                                    "content": "Haven Party BBQ\n有局儿烧烤\nUnit 68, 505 Hwy 7\nThornhill, ON L3T 7T1"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        126,
+                        136,
+                        180,
+                        152
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                126,
+                                136,
+                                180,
+                                152
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        126,
+                                        136,
+                                        180,
+                                        152
+                                    ],
+                                    "type": "text",
+                                    "content": "全单少辣"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        114,
+                        154,
+                        269,
+                        474
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                114,
+                                154,
+                                269,
+                                474
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        114,
+                                        154,
+                                        269,
+                                        474
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                114,
+                                                154,
+                                                269,
+                                                474
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>1</td><td>羊肉小串 6pcs</td><td>$7.95</td></tr><tr><td></td><td>Lamb Skewers 6pcs</td><td></td></tr><tr><td>1</td><td>百香瓦罐涮牛肚</td><td>$22.95</td></tr><tr><td></td><td>Signature Clay Pot Beef Tripe *DISCOUNT</td><td>-$11.48</td></tr><tr><td>1</td><td>鲜嫩牛里脊 8pcs</td><td>$7.95</td></tr><tr><td></td><td>Lean Beef 8pcs</td><td></td></tr><tr><td>1</td><td>韩式烤五花肉 4pcs</td><td>$6.95</td></tr><tr><td></td><td>Korea style Pork Belly 4pcs</td><td></td></tr><tr><td>1</td><td>酒局儿鸡脆骨 4pcs</td><td>$7.95</td></tr><tr><td></td><td>Chicken Joints 4pcs</td><td></td></tr><tr><td>1</td><td>烤高丽菜</td><td>$5.95</td></tr><tr><td></td><td>Grilled Cabbage</td><td></td></tr><tr><td>1</td><td>清甜烤蚝菇 2pcs</td><td>$6.95</td></tr><tr><td></td><td>Grilled Oyster Mushroom 2pcs</td><td></td></tr><tr><td>1</td><td>锡纸娃娃菜</td><td>$8.95</td></tr><tr><td></td><td>Baby Cabbage with Garlic Sauce</td><td></td></tr><tr><td>1</td><td>荠菜玉米猪骨煲 Traditional Corn and Pork Bone Stew</td><td>$29.95</td></tr></table>",
+                                            "image_path": "143d89714311d700bbf417bd492db6a949ac1e6ec244a6e6cccbb0d1574e8226.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        145,
+                        462,
+                        264,
+                        534
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                462,
+                                264,
+                                534
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        462,
+                                        264,
+                                        534
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL $95.68\nRounded if Paying Cash $95.70\n***SUGGESTED TIPS***\nTip Amount Total\n15% $14.35 $110.03\n18% $17.22 $112.90\n20% $19.14 $114.82"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        177,
+                        536,
+                        231,
+                        556
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                177,
+                                536,
+                                231,
+                                556
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        177,
+                                        536,
+                                        231,
+                                        556
+                                    ],
+                                    "type": "text",
+                                    "content": "YOU SAVED $20.89"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        165,
+                        554,
+                        245,
+                        572
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                165,
+                                554,
+                                245,
+                                572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        165,
+                                        554,
+                                        245,
+                                        572
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You and Come Again"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

@@ -1,0 +1,631 @@
+[
+    [
+        {
+            "type": "image_footnote",
+            "bbox": [
+                0.371,
+                0.803,
+                0.609,
+                0.821
+            ],
+            "angle": 0,
+            "content": "0012626032638230000000010056"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.305,
+                0.094,
+                0.607,
+                0.154
+            ],
+            "angle": 0,
+            "content": "CANADIAN TIRE #128\n6310 Yonge St. @ Steeles Ave.\nWillowdale, Ontario\n416-222-2511",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.55,
+                0.087,
+                0.614,
+                0.111
+            ],
+            "angle": 0,
+            "content": "#126",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.303,
+                0.152,
+                0.61,
+                0.214
+            ],
+            "angle": 0,
+            "content": "Thank You For Shopping With Us!\nNO REFUNDS OR EXCHANGES WITHOUT RECEIPT\nREG #:4 03/26/2026 19:40:14 TRANS #:56\nOPERATOR #: 823 Float: 001",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.304,
+                0.218,
+                0.62,
+                0.242
+            ],
+            "angle": 0,
+            "content": "017-5509-4 PH4967 OIL FILT $ 9.99",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.412,
+                0.246,
+                0.621,
+                0.307
+            ],
+            "angle": 0,
+            "content": "<table><tr><td>SUBTOTAL</td><td>$ 9.99</td></tr><tr><td>13% HST</td><td>$ 1.30</td></tr><tr><td>TOTAL</td><td>$ 11.29</td></tr><tr><td>VISA TEND</td><td>$ 11.29</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.337,
+                0.436,
+                0.594,
+                0.482
+            ],
+            "angle": 0,
+            "content": "01 APPROVED - THANK YOU 027\nIMPORTANT\nRetain this copy for your records",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.313,
+                0.489,
+                0.624,
+                0.577
+            ],
+            "angle": 0,
+            "content": "Collect 4% in CT Money at Canadian Tire and get back 5¢ per litre in CT Money on regular gas at participating Gas+ locations with a Triangle Mastercard. *Calculated pre-tax. Terms & conditions apply. Visit Triangle.com for details.",
+            "merge_prev": false
+        },
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.412,
+                0.597,
+                0.518,
+                0.615
+            ],
+            "angle": 0,
+            "content": "CUSTOMER COPY"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.312,
+                0.624,
+                0.603,
+                0.657
+            ],
+            "angle": 0,
+            "content": "Visit canadianire.ca or download the Canadian Tire Mobile App today!",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.315,
+                0.665,
+                0.621,
+                0.725
+            ],
+            "angle": 0,
+            "content": "Take our survey each month for a chance to win a $1000 Canadian Tire gift card. No purchase necessary. Conditions apply. Visit telldontire.com and enter code:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.39,
+                0.732,
+                0.551,
+                0.751
+            ],
+            "angle": 0,
+            "content": "8326-6010-52600-1239",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.357,
+                0.77,
+                0.623,
+                0.806
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.316,
+                0.824,
+                0.626,
+                0.905
+            ],
+            "angle": 0,
+            "content": "EXCHANGE ONLY ON OPENED/USED PRODUCTS\nNO RETURNS/EXCHANGE ON BIKE, TINTED PAINT\nCUT GOODS/AUTO ELECTRICAL/GENERATORS\nEXCHANGE ONLY ON ALL CAMPING PRODUCTS\nNO RETURNS/EXCHANGE ON CHRISTMAS ITEMS\nAFTER DECEMBER 19TH",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.316,
+                0.906,
+                0.622,
+                0.964
+            ],
+            "angle": 0,
+            "content": "CAR BATTERIES/ CHARGERS NONREFUNDABLE\nALL CLEARANCE/LIVE GOODS ARE FINAL SALE\nSOME RETURNS HAVE 7 DAYS/SPECIAL POLICY\nHST # 86621 8696 RT0001",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.674,
+                0.003,
+                1.0,
+                1.0
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.334,
+                0.115,
+                0.559,
+                0.127
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.375,
+                0.129,
+                0.523,
+                0.142
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.39,
+                0.141,
+                0.485,
+                0.154
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.304,
+                0.098,
+                0.525,
+                0.117
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.548,
+                0.095,
+                0.605,
+                0.107
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.545,
+                0.09,
+                0.615,
+                0.108
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.32,
+                0.153,
+                0.534,
+                0.169
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.305,
+                0.166,
+                0.53,
+                0.181
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.304,
+                0.197,
+                0.509,
+                0.212
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.302,
+                0.177,
+                0.598,
+                0.198
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.302,
+                0.219,
+                0.62,
+                0.239
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.357,
+                0.437,
+                0.594,
+                0.452
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.431,
+                0.453,
+                0.495,
+                0.465
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.335,
+                0.465,
+                0.591,
+                0.481
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.312,
+                0.491,
+                0.623,
+                0.505
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.312,
+                0.506,
+                0.623,
+                0.518
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.315,
+                0.546,
+                0.616,
+                0.557
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.313,
+                0.559,
+                0.608,
+                0.572
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.312,
+                0.519,
+                0.57,
+                0.533
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.314,
+                0.531,
+                0.597,
+                0.545
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.409,
+                0.597,
+                0.519,
+                0.615
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.311,
+                0.625,
+                0.602,
+                0.641
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.33,
+                0.64,
+                0.601,
+                0.655
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.665,
+                0.619,
+                0.681
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.372,
+                0.68,
+                0.616,
+                0.695
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.341,
+                0.693,
+                0.618,
+                0.708
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.318,
+                0.704,
+                0.602,
+                0.724
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.388,
+                0.731,
+                0.551,
+                0.751
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.317,
+                0.864,
+                0.448,
+                0.882
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.879,
+                0.437,
+                0.894
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.462,
+                0.885,
+                0.487,
+                0.895
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.515,
+                0.882,
+                0.61,
+                0.895
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.373,
+                0.895,
+                0.412,
+                0.903
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.824,
+                0.473,
+                0.841
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.838,
+                0.452,
+                0.854
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.34,
+                0.852,
+                0.453,
+                0.867
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.314,
+                0.905,
+                0.609,
+                0.923
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.944,
+                0.495,
+                0.964
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.919,
+                0.619,
+                0.936
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.933,
+                0.618,
+                0.95
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

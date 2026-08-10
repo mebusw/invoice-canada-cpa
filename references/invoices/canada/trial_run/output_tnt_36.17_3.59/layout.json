@@ -1,0 +1,1086 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        140,
+                        138,
+                        294,
+                        497
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                140,
+                                138,
+                                294,
+                                497
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        138,
+                                        294,
+                                        497
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                140,
+                                                138,
+                                                294,
+                                                497
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>***040889288</td><td>$0.00</td></tr><tr><td>FOOD</td><td></td></tr><tr><td>HOT FOOD</td><td></td></tr><tr><td>0.490 kg @ $24.91/kg</td><td></td></tr><tr><td>&quot;fara removed; &quot;0.035 kg</td><td>V $12.21 GF</td></tr><tr><td>特色美食</td><td></td></tr><tr><td>STEAMED RICE (S)</td><td>V $1.99 GF</td></tr><tr><td>白飯(小)</td><td></td></tr><tr><td>PRODUCE</td><td></td></tr><tr><td>(SALE) STRAUBERRY</td><td></td></tr><tr><td>532391 2.92/$5.00</td><td>V $5.00</td></tr><tr><td>(特價) 草每</td><td></td></tr><tr><td>DELT</td><td></td></tr><tr><td>ON FRESH COLD NOODLE</td><td></td></tr><tr><td>2. @ $6.69ea.</td><td>V $13.38 GP</td></tr><tr><td>小安新鮮凍皮</td><td></td></tr><tr><td>Points 20</td><td>$0.00</td></tr><tr><td>SUB TOTAL</td><td>$32.58</td></tr><tr><td>HST (TOTAL GST+PST)</td><td>$3.59</td></tr><tr><td>TOTAL</td><td>$36.17</td></tr><tr><td>Master</td><td>$36.17</td></tr><tr><td>Points in this transaction: 20</td><td></td></tr><tr><td>Points balance : 4940</td><td></td></tr><tr><td>Item Count: 6</td><td></td></tr><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>Trans:645362</td><td>Terminal:050108015-021003</td></tr></table>",
+                                            "image_path": "c10efdf46c30902ee8b9b33dedec2abe8fb4c51dff28bb95009bb47b1874b34c.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        158,
+                        57,
+                        265,
+                        77
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                57,
+                                265,
+                                77
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        57,
+                                        265,
+                                        77
+                                    ],
+                                    "type": "text",
+                                    "content": "NOT A MEMBER YET? DOWNLOAD & JOIN NOW!\n立即下载APP，加入大統雜積分獎勵計劃"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        77,
+                        214,
+                        92
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                77,
+                                214,
+                                92
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        77,
+                                        214,
+                                        92
+                                    ],
+                                    "type": "text",
+                                    "content": "• GET EXCLUSIVE OFFERS AND EARN REWARDS"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        90,
+                        218,
+                        104
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                90,
+                                218,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        90,
+                                        218,
+                                        104
+                                    ],
+                                    "type": "text",
+                                    "content": "• ENJOY ONLINE GROCERY DELIVERY."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        104,
+                        211,
+                        113
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                104,
+                                211,
+                                113
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        104,
+                                        211,
+                                        113
+                                    ],
+                                    "type": "text",
+                                    "content": "* 獭旅優應和積分碼點"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        224,
+                        76,
+                        261,
+                        118
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                76,
+                                261,
+                                118
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        76,
+                                        261,
+                                        118
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                76,
+                                                261,
+                                                118
+                                            ],
+                                            "type": "image",
+                                            "image_path": "fc13e73ce258bae309753924b65c02a7fac7098c8c89da3873ee9d94a486cd14.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        160,
+                        112,
+                        206,
+                        120
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                112,
+                                206,
+                                120
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        112,
+                                        206,
+                                        120
+                                    ],
+                                    "type": "text",
+                                    "content": "* 注：请阅读配送表单。"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        175,
+                        127,
+                        253,
+                        143
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                127,
+                                253,
+                                143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        127,
+                                        253,
+                                        143
+                                    ],
+                                    "type": "text",
+                                    "content": "T&T Supermarket"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        142,
+                        500,
+                        280,
+                        517
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                142,
+                                500,
+                                280,
+                                517
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        142,
+                                        500,
+                                        280,
+                                        517
+                                    ],
+                                    "type": "text",
+                                    "content": "FULL DETAILS OF T&T SUPERMARKET'S REFUND POLICY ARE AVAILABLE AT IN-STORE."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        164,
+                        517,
+                        272,
+                        533
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                164,
+                                517,
+                                272,
+                                533
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        517,
+                                        272,
+                                        533
+                                    ],
+                                    "type": "text",
+                                    "content": "T&T Customer Service Line:1-833-868-1616\nwww.tntsupermarket.com"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        534,
+                        214,
+                        543
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                534,
+                                214,
+                                543
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        534,
+                                        214,
+                                        543
+                                    ],
+                                    "type": "text",
+                                    "content": "TELL US HOW WE DID TODAY!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        539,
+                        291,
+                        551
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                539,
+                                291,
+                                551
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        539,
+                                        291,
+                                        551
+                                    ],
+                                    "type": "text",
+                                    "content": "Monthly chances to win $1,000 PC Gift Card or 1 Million PC Optimum points!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        551,
+                        283,
+                        560
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                551,
+                                283,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        551,
+                                        283,
+                                        560
+                                    ],
+                                    "type": "text",
+                                    "content": "How likely are you to recommend T&T to your friends?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        559,
+                        282,
+                        572
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                559,
+                                282,
+                                572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        559,
+                                        282,
+                                        572
+                                    ],
+                                    "type": "text",
+                                    "content": "Visit www.storeopinion.ca or Call 1-800-531-2928 for full contest rules."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        574,
+                        265,
+                        585
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                574,
+                                265,
+                                585
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        574,
+                                        265,
+                                        585
+                                    ],
+                                    "type": "text",
+                                    "content": "Eligible amount for point calculation: $32.58"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "type": "table",
+                    "bbox": [
+                        140,
+                        138,
+                        294,
+                        497
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                140,
+                                138,
+                                294,
+                                497
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        138,
+                                        294,
+                                        497
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                140,
+                                                138,
+                                                294,
+                                                497
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>***040889288</td><td>$0.00</td></tr><tr><td>FOOD</td><td></td></tr><tr><td>HOT FOOD</td><td></td></tr><tr><td>0.490 kg @ $24.91/kg</td><td></td></tr><tr><td>&quot;fara removed; &quot;0.035 kg</td><td>V $12.21 GF</td></tr><tr><td>特色美食</td><td></td></tr><tr><td>STEAMED RICE (S)</td><td>V $1.99 GF</td></tr><tr><td>白飯(小)</td><td></td></tr><tr><td>PRODUCE</td><td></td></tr><tr><td>(SALE) STRAUBERRY</td><td></td></tr><tr><td>532391 2.92/$5.00</td><td>V $5.00</td></tr><tr><td>(特價) 草每</td><td></td></tr><tr><td>DELT</td><td></td></tr><tr><td>ON FRESH COLD NOODLE</td><td></td></tr><tr><td>2. @ $6.69ea.</td><td>V $13.38 GP</td></tr><tr><td>小安新鮮凍皮</td><td></td></tr><tr><td>Points 20</td><td>$0.00</td></tr><tr><td>SUB TOTAL</td><td>$32.58</td></tr><tr><td>HST (TOTAL GST+PST)</td><td>$3.59</td></tr><tr><td>TOTAL</td><td>$36.17</td></tr><tr><td>Master</td><td>$36.17</td></tr><tr><td>Points in this transaction: 20</td><td></td></tr><tr><td>Points balance : 4940</td><td></td></tr><tr><td>Item Count: 6</td><td></td></tr><tr><td>03/14/26 6:28:38 PM</td><td>Lucy Liu</td></tr><tr><td>Trans:645362</td><td>Terminal:050108015-021003</td></tr></table>",
+                                            "image_path": "c10efdf46c30902ee8b9b33dedec2abe8fb4c51dff28bb95009bb47b1874b34c.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        158,
+                        57,
+                        265,
+                        77
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                57,
+                                265,
+                                77
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        57,
+                                        265,
+                                        77
+                                    ],
+                                    "type": "text",
+                                    "content": "NOT A MEMBER YET? DOWNLOAD & JOIN NOW!\n立即下载APP，加入大統雜積分獎勵計劃"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        77,
+                        214,
+                        92
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                77,
+                                214,
+                                92
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        77,
+                                        214,
+                                        92
+                                    ],
+                                    "type": "text",
+                                    "content": "• GET EXCLUSIVE OFFERS AND EARN REWARDS"
+                                }
+                            ]
+                        },
+                        {
+                            "bbox": [
+                                160,
+                                90,
+                                218,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        90,
+                                        218,
+                                        104
+                                    ],
+                                    "type": "text",
+                                    "content": "• ENJOY ONLINE GROCERY DELIVERY."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        160,
+                        90,
+                        218,
+                        104
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [],
+                    "index": 3,
+                    "merge_prev": false,
+                    "lines_deleted": true
+                },
+                {
+                    "bbox": [
+                        160,
+                        104,
+                        211,
+                        113
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                104,
+                                211,
+                                113
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        104,
+                                        211,
+                                        113
+                                    ],
+                                    "type": "text",
+                                    "content": "* 獭旅優應和積分碼點"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "image",
+                    "bbox": [
+                        224,
+                        76,
+                        261,
+                        118
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                224,
+                                76,
+                                261,
+                                118
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        224,
+                                        76,
+                                        261,
+                                        118
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                224,
+                                                76,
+                                                261,
+                                                118
+                                            ],
+                                            "type": "image",
+                                            "image_path": "fc13e73ce258bae309753924b65c02a7fac7098c8c89da3873ee9d94a486cd14.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        160,
+                        112,
+                        206,
+                        120
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                160,
+                                112,
+                                206,
+                                120
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        160,
+                                        112,
+                                        206,
+                                        120
+                                    ],
+                                    "type": "text",
+                                    "content": "* 注：请阅读配送表单。"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        175,
+                        127,
+                        253,
+                        143
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                127,
+                                253,
+                                143
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        127,
+                                        253,
+                                        143
+                                    ],
+                                    "type": "text",
+                                    "content": "T&T Supermarket"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        142,
+                        500,
+                        280,
+                        517
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                142,
+                                500,
+                                280,
+                                517
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        142,
+                                        500,
+                                        280,
+                                        517
+                                    ],
+                                    "type": "text",
+                                    "content": "FULL DETAILS OF T&T SUPERMARKET'S REFUND POLICY ARE AVAILABLE AT IN-STORE."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        164,
+                        517,
+                        272,
+                        533
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                164,
+                                517,
+                                272,
+                                533
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        517,
+                                        272,
+                                        533
+                                    ],
+                                    "type": "text",
+                                    "content": "T&T Customer Service Line:1-833-868-1616\nwww.tntsupermarket.com"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        534,
+                        214,
+                        543
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                534,
+                                214,
+                                543
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        534,
+                                        214,
+                                        543
+                                    ],
+                                    "type": "text",
+                                    "content": "TELL US HOW WE DID TODAY!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        539,
+                        291,
+                        551
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                539,
+                                291,
+                                551
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        539,
+                                        291,
+                                        551
+                                    ],
+                                    "type": "text",
+                                    "content": "Monthly chances to win $1,000 PC Gift Card or 1 Million PC Optimum points!"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        551,
+                        283,
+                        560
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                551,
+                                283,
+                                560
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        551,
+                                        283,
+                                        560
+                                    ],
+                                    "type": "text",
+                                    "content": "How likely are you to recommend T&T to your friends?"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        559,
+                        282,
+                        572
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                559,
+                                282,
+                                572
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        559,
+                                        282,
+                                        572
+                                    ],
+                                    "type": "text",
+                                    "content": "Visit www.storeopinion.ca or Call 1-800-531-2928 for full contest rules."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        574,
+                        265,
+                        585
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                574,
+                                265,
+                                585
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        574,
+                                        265,
+                                        585
+                                    ],
+                                    "type": "text",
+                                    "content": "Eligible amount for point calculation: $32.58"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}
