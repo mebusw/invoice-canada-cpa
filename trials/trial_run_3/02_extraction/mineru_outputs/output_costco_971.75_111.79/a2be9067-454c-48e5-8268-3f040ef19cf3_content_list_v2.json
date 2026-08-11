@@ -1,0 +1,515 @@
+[
+    [
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Markham 14751 Yorktech\nMarkham, ON LEG 185"
+                    }
+                ]
+            },
+            "bbox": [
+                226,
+                133,
+                415,
+                188
+            ]
+        },
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "TIRES"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                289,
+                192,
+                373,
+                221
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TIRE SHOP ORDER # 1510202522"
+                    }
+                ]
+            },
+            "bbox": [
+                160,
+                224,
+                432,
+                252
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4 209.99"
+                    }
+                ]
+            },
+            "bbox": [
+                165,
+                242,
+                267,
+                258
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "590469 215/60316"
+                    }
+                ]
+            },
+            "bbox": [
+                210,
+                257,
+                365,
+                278
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "4 8 5.00"
+                    }
+                ]
+            },
+            "bbox": [
+                167,
+                270,
+                252,
+                289
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "H"
+                    }
+                ]
+            },
+            "bbox": [
+                382,
+                258,
+                500,
+                283
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TIME LEVY"
+                    }
+                ]
+            },
+            "bbox": [
+                278,
+                286,
+                367,
+                304
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SUBTOTAL."
+                    }
+                ]
+            },
+            "bbox": [
+                232,
+                302,
+                315,
+                320
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "20.00 H"
+                    }
+                ]
+            },
+            "bbox": [
+                426,
+                289,
+                502,
+                309
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "859.96"
+                    }
+                ]
+            },
+            "bbox": [
+                421,
+                306,
+                478,
+                322
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "(×H9) TOTAL."
+                    }
+                ]
+            },
+            "bbox": [
+                193,
+                332,
+                289,
+                350
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "111.79"
+                    }
+                ]
+            },
+            "bbox": [
+                421,
+                320,
+                480,
+                335
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "100000000000000"
+                    }
+                ]
+            },
+            "bbox": [
+                371,
+                333,
+                486,
+                351
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "XXX (XX)XXXXX4739"
+                    }
+                ]
+            },
+            "bbox": [
+                165,
+                359,
+                319,
+                377
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "ACCT: MASTERCARD"
+                    }
+                ]
+            },
+            "bbox": [
+                165,
+                377,
+                319,
+                394
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "REFERENCE #: 0010010510 H"
+                    }
+                ]
+            },
+            "bbox": [
+                165,
+                390,
+                400,
+                408
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "BUT-#20752"
+                    }
+                ]
+            },
+            "bbox": [
+                167,
+                408,
+                295,
+                423
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Invoice Number: 096251"
+                    }
+                ]
+            },
+            "bbox": [
+                169,
+                421,
+                373,
+                438
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Purchase - MASTERCARD"
+                    }
+                ]
+            },
+            "bbox": [
+                169,
+                436,
+                369,
+                452
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A001000041010"
+                    }
+                ]
+            },
+            "bbox": [
+                169,
+                452,
+                308,
+                467
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "0002008001 1800"
+                    }
+                ]
+            },
+            "bbox": [
+                171,
+                465,
+                315,
+                483
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "01 APPROVED - THANK YOU 027"
+                    }
+                ]
+            },
+            "bbox": [
+                173,
+                488,
+                421,
+                511
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "IMPORTANT - retain this COPY\nfor your records\nCUSTOMER COPY\nMasterCard 971.75\nCHANGE 0.00"
+                    }
+                ]
+            },
+            "bbox": [
+                223,
+                558,
+                497,
+                644
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "P HOPST 132"
+                    }
+                ]
+            },
+            "bbox": [
+                173,
+                654,
+                302,
+                677
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "OP#: 82 Naim: MUSKAN M"
+                    }
+                ]
+            },
+            "bbox": [
+                169,
+                750,
+                384,
+                781
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Thank You!\nPlease Come Again"
+                    }
+                ]
+            },
+            "bbox": [
+                210,
+                780,
+                489,
+                825
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "H = HST G=GST\nHST/GST B1 21475329HT\nTRn:96 Trn:16 DP:83"
+                    }
+                ]
+            },
+            "bbox": [
+                258,
+                822,
+                445,
+                885
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Items Sold: 4\nYN 2026/03/28 15:17"
+                    }
+                ]
+            },
+            "bbox": [
+                197,
+                899,
+                508,
+                970
+            ]
+        },
+        {
+            "type": "page_header",
+            "content": {
+                "page_header_content": [
+                    {
+                        "type": "text",
+                        "content": "COVEYCO\nWHICLESALE"
+                    }
+                ]
+            },
+            "bbox": [
+                186,
+                60,
+                460,
+                136
+            ]
+        }
+    ]
+]

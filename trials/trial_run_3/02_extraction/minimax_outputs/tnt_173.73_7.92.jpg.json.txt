@@ -1,0 +1,68 @@
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "大統華",
+  "address": "7070 Warden Ave., Markham, ON L3R 5Y2",
+  "date": "2026-03-26",
+  "time": "18:14",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "(MEMBERS) ROYAL FAMILY ROYAL PINE CAKE (特價) 皇族金鑽土鳳梨酥",
+      "price": 14.97
+    },
+    {
+      "name": "HOT FOOD 特色美食 (0.655 kg @ $24.91/kg)",
+      "price": 16.32
+    },
+    {
+      "name": "(SALE) CAJUN STYLE CHICKEN WINGS (特價) 奧爾良烤雞翼 (0.438 kg @ $19.82/kg)",
+      "price": 8.68
+    },
+    {
+      "name": "LAMB SHOULDER BONELESS - ROLL (特價) 嫩羊肉卷 (0.540 kg @ $28.64/kg)",
+      "price": 15.47
+    },
+    {
+      "name": "LAMB SHOULDER BONELESS - ROLL (特價) 嫩羊肉卷 (0.550 kg @ $28.64/kg)",
+      "price": 15.75
+    },
+    {
+      "name": "WHITE RADISH 蘿蔔 (2.405 kg @ $2.18/kg)",
+      "price": 5.24
+    },
+    {
+      "name": "(SALE) GREEN ONION (特價) 青蔥 (2 @ $0.98 ea)",
+      "price": 1.96
+    },
+    {
+      "name": "BAGGED ORANGE 袋裝甜橙 (2 @ $19.99 ea)",
+      "price": 39.98
+    },
+    {
+      "name": "(SALE) ORGANIC ENOKI MUSHROOM (特價) 有機金針菇 (2 @ 2/$5.50)",
+      "price": 5.50
+    },
+    {
+      "name": "(SALE) STRAWBERRY (特價) 草莓 (4 @ 2/$3.00)",
+      "price": 6.00
+    },
+    {
+      "name": "(SALE) AN FRESH COLD NOODLE (特價) 小安新鮮涼皮 (6 @ $5.99 ea)",
+      "price": 35.94
+    },
+    {
+      "name": "Points 160",
+      "price": 0.0
+    }
+  ],
+  "subtotal": 165.81,
+  "discount": 0.0,
+  "tax": 7.92,
+  "tax_label": "HST",
+  "total": 173.73,
+  "tip": null,
+  "confidence": 0.98,
+  "notes": "The date printed is 03/26/26, interpreted here as March 26, 2026. Sale prices are applied directly to item totals."
+}

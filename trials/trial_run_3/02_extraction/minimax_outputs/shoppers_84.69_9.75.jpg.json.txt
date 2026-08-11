@@ -1,0 +1,24 @@
+{
+  "doc_type": "receipt",
+  "vendor": "SHOPPERS DRUG MART",
+  "vendor_cn": null,
+  "address": "7060 WARDEN AVE, MARKHAM, ON, L3R 5Y2",
+  "date": "2026-03-05",
+  "time": "12:40",
+  "currency": "CAD",
+  "payment_method": "Visa",
+  "line_items": [
+    {
+      "name": "6 X BLINK DROPS",
+      "price": 74.94
+    }
+  ],
+  "subtotal": 74.94,
+  "discount": 0.00,
+  "tax": 9.75,
+  "tax_label": "HST",
+  "total": 84.69,
+  "tip": 0.00,
+  "confidence": 0.98,
+  "notes": "Jordan Wong Pharmacy Inc."
+}

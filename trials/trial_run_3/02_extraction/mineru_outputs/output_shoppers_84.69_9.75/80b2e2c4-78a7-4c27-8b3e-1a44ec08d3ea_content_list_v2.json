@@ -1,0 +1,430 @@
+[
+    [
+        {
+            "type": "title",
+            "content": {
+                "title_content": [
+                    {
+                        "type": "text",
+                        "content": "SHOPPERS DRUG MART"
+                    }
+                ],
+                "level": 2
+            },
+            "bbox": [
+                302,
+                83,
+                597,
+                128
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "JORDAN WONG PHARMACY INC."
+                    }
+                ]
+            },
+            "bbox": [
+                330,
+                128,
+                558,
+                146
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "7060 WARDEN AVE, MARKHAM, ON, L3R 5Y2"
+                    }
+                ]
+            },
+            "bbox": [
+                291,
+                141,
+                608,
+                164
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "905-474-1414"
+                    }
+                ]
+            },
+            "bbox": [
+                389,
+                159,
+                508,
+                175
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Mar 05,202612:40PM"
+                    }
+                ]
+            },
+            "bbox": [
+                343,
+                172,
+                545,
+                190
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "0847 1032 370117 400032 3\nSelf CheckOut"
+                    }
+                ]
+            },
+            "bbox": [
+                245,
+                188,
+                589,
+                211
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6 X BLINK DROPS"
+                    }
+                ]
+            },
+            "bbox": [
+                245,
+                211,
+                389,
+                229
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "12.49 GP 74.94"
+                    }
+                ]
+            },
+            "bbox": [
+                423,
+                216,
+                597,
+                232
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "SUBTOTAL: 74.94"
+                    }
+                ]
+            },
+            "bbox": [
+                397,
+                229,
+                597,
+                247
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "HST: 9.75"
+                    }
+                ]
+            },
+            "bbox": [
+                430,
+                245,
+                593,
+                260
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "6 Items VISA"
+                    }
+                ]
+            },
+            "bbox": [
+                241,
+                262,
+                319,
+                291
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TOTAL: $84.69"
+                    }
+                ]
+            },
+            "bbox": [
+                421,
+                258,
+                593,
+                286
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "On your next visit you could Save up to $20.00 If you REDEEM 20000 points"
+                    }
+                ]
+            },
+            "bbox": [
+                315,
+                291,
+                573,
+                337
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "You earned the most Bonus Points possible! We've checked all valid in-store, flyer & digital bonus offers to make sure you get the best rewards available to you. Get the most out of your PC Optimum Membership."
+                    }
+                ]
+            },
+            "bbox": [
+                232,
+                405,
+                630,
+                483
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "83807 4995 RT0002"
+                    }
+                ]
+            },
+            "bbox": [
+                347,
+                480,
+                517,
+                496
+            ]
+        },
+        {
+            "type": "image",
+            "content": {
+                "image_source": {
+                    "path": "images/d24bbc9b010f4af67173649364913fac6be88407d64d6f2bc518ce42b48facfc.jpg"
+                },
+                "content": "",
+                "image_caption": [],
+                "image_footnote": []
+            },
+            "bbox": [
+                265,
+                491,
+                608,
+                522
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "9990208471032003701172"
+                    }
+                ]
+            },
+            "bbox": [
+                330,
+                516,
+                543,
+                535
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "How was your experience today?"
+                    }
+                ]
+            },
+            "bbox": [
+                286,
+                545,
+                565,
+                573
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Complete the customer survey at:"
+                    }
+                ]
+            },
+            "bbox": [
+                280,
+                570,
+                571,
+                589
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "www.surveysdm.com Or call 1-800-701-9163"
+                    }
+                ]
+            },
+            "bbox": [
+                278,
+                587,
+                586,
+                630
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "WIN!"
+                    }
+                ]
+            },
+            "bbox": [
+                254,
+                627,
+                580,
+                679
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "A chance of 1 of 2 Monthly prizes of 1 Million PC Optimum™ points OR $1,000 in @irt Cardel"
+                    }
+                ]
+            },
+            "bbox": [
+                252,
+                677,
+                630,
+                732
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "Contest rules apply. See survey website for full details.\nCertificate Number:00485536-4617524"
+                    }
+                ]
+            },
+            "bbox": [
+                236,
+                731,
+                628,
+                807
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "TYPE: PURCHASE\nACCT: VISA"
+                    }
+                ]
+            },
+            "bbox": [
+                226,
+                809,
+                373,
+                838
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": {
+                "paragraph_content": [
+                    {
+                        "type": "text",
+                        "content": "CAD$ 84.69"
+                    }
+                ]
+            },
+            "bbox": [
+                515,
+                828,
+                621,
+                843
+            ]
+        }
+    ]
+]

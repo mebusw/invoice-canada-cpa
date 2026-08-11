@@ -1,0 +1,74 @@
+![](images/8ba260f5f46a45c38c8596f86ceb9a7a4428a1c6f4aa6621b9d6e0da1a4be282.jpg)
+
+Walmart
+
+How did we do today?
+Complete our short customer survey at
+SURVEY.WALMART.CA
+
+WIN!
+1 of 3 \$1000
+gift cards
+
+Rules and regulations apply.
+See contest rules for details.
+
+STORE 3053
+
+5000 HWY 7
+
+MARKHAM, ON
+
+L3R 4M9
+
+905-477-6060
+
+ST# 03053 OP# 009080 TE# 80 TR# 01433
+
+YFM CROISSAN 62'735274270 \$5.94 D
+
+CH STRIPS VF 627735019090 \$10.98 D
+
+3.410 kg @ \$4.34 /kg \$14.80 D
+
+ORANGE 686201111240 \$11.88 D
+
+ORANGE 686201111240 \$11.88 D
+
+SUBTOTAL \$55.48
+
+TOTAL \$55.48
+
+MCARD TEND \$55.48
+
+CHANGE DUE \$0.00
+
+MASTERCARD \*\*\*\* 1\*\*\*\* \*\*\*\* 4739 RF
+
+\$55.48 TOTAL PURCHASE
+
+APPROVAL # 042392
+
+REN # 605100731786
+
+AID A0000000C410'0
+
+TC BE2EB3389E460EE8
+
+TERMINAL ID LMTUP018955
+
+\*No Signature Required
+
+02/19/26 20:58:06
+
+GST/HST 137466199 RT 0001
+
+QST 1016551356 T0 0001
+
+\# ITEMS SOLD 5
+
+TC# 2810 42'0 8692 3910 8218
+
+1
+
+02/19/26 20:58:11

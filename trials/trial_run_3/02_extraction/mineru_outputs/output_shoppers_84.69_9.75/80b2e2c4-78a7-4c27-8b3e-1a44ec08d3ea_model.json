@@ -1,0 +1,665 @@
+[
+    [
+        {
+            "type": "paragraph_title",
+            "bbox": [
+                0.303,
+                0.084,
+                0.598,
+                0.13
+            ],
+            "angle": 0,
+            "content": "SHOPPERS DRUG MART"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.331,
+                0.129,
+                0.56,
+                0.148
+            ],
+            "angle": 0,
+            "content": "JORDAN WONG PHARMACY INC.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.293,
+                0.143,
+                0.61,
+                0.166
+            ],
+            "angle": 0,
+            "content": "7060 WARDEN AVE, MARKHAM, ON, L3R 5Y2",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.391,
+                0.16,
+                0.51,
+                0.176
+            ],
+            "angle": 0,
+            "content": "905-474-1414",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.345,
+                0.173,
+                0.547,
+                0.191
+            ],
+            "angle": 0,
+            "content": "Mar 05,202612:40PM",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.246,
+                0.189,
+                0.591,
+                0.213
+            ],
+            "angle": 0,
+            "content": "0847 1032 370117 400032 3\nSelf CheckOut",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.246,
+                0.212,
+                0.391,
+                0.231
+            ],
+            "angle": 0,
+            "content": "6 X BLINK DROPS",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.425,
+                0.217,
+                0.599,
+                0.234
+            ],
+            "angle": 0,
+            "content": "12.49 GP 74.94",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.398,
+                0.231,
+                0.599,
+                0.248
+            ],
+            "angle": 0,
+            "content": "SUBTOTAL: 74.94",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.431,
+                0.246,
+                0.595,
+                0.261
+            ],
+            "angle": 0,
+            "content": "HST: 9.75",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.242,
+                0.263,
+                0.32,
+                0.293
+            ],
+            "angle": 0,
+            "content": "6 Items VISA",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.423,
+                0.259,
+                0.595,
+                0.287
+            ],
+            "angle": 0,
+            "content": "TOTAL: $84.69",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.316,
+                0.293,
+                0.576,
+                0.338
+            ],
+            "angle": 0,
+            "content": "On your next visit you could Save up to $20.00 If you REDEEM 20000 points",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.233,
+                0.407,
+                0.632,
+                0.485
+            ],
+            "angle": 0,
+            "content": "You earned the most Bonus Points possible! We've checked all valid in-store, flyer & digital bonus offers to make sure you get the best rewards available to you. Get the most out of your PC Optimum Membership.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.348,
+                0.481,
+                0.518,
+                0.497
+            ],
+            "angle": 0,
+            "content": "83807 4995 RT0002",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.267,
+                0.493,
+                0.609,
+                0.524
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.332,
+                0.517,
+                0.545,
+                0.536
+            ],
+            "angle": 0,
+            "content": "9990208471032003701172",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.289,
+                0.547,
+                0.566,
+                0.574
+            ],
+            "angle": 0,
+            "content": "How was your experience today?",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.282,
+                0.571,
+                0.572,
+                0.59
+            ],
+            "angle": 0,
+            "content": "Complete the customer survey at:",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.279,
+                0.589,
+                0.587,
+                0.631
+            ],
+            "angle": 0,
+            "content": "www.surveysdm.com Or call 1-800-701-9163",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.255,
+                0.628,
+                0.581,
+                0.68
+            ],
+            "angle": 0,
+            "content": "WIN!",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.254,
+                0.678,
+                0.632,
+                0.733
+            ],
+            "angle": 0,
+            "content": "A chance of 1 of 2 Monthly prizes of 1 Million PC Optimum™ points OR $1,000 in @irt Cardel",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.239,
+                0.732,
+                0.63,
+                0.809
+            ],
+            "angle": 0,
+            "content": "Contest rules apply. See survey website for full details.\nCertificate Number:00485536-4617524",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.228,
+                0.81,
+                0.375,
+                0.84
+            ],
+            "angle": 0,
+            "content": "TYPE: PURCHASE\nACCT: VISA",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.517,
+                0.83,
+                0.623,
+                0.845
+            ],
+            "angle": 0,
+            "content": "CAD$ 84.69",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.297,
+                0.08,
+                0.598,
+                0.124
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.329,
+                0.128,
+                0.559,
+                0.148
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.291,
+                0.144,
+                0.608,
+                0.162
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.389,
+                0.16,
+                0.51,
+                0.176
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.344,
+                0.172,
+                0.546,
+                0.191
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.246,
+                0.198,
+                0.339,
+                0.211
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.345,
+                0.189,
+                0.589,
+                0.206
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.243,
+                0.212,
+                0.391,
+                0.229
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.424,
+                0.215,
+                0.598,
+                0.234
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.396,
+                0.23,
+                0.598,
+                0.248
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.429,
+                0.245,
+                0.595,
+                0.261
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.241,
+                0.264,
+                0.317,
+                0.281
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.419,
+                0.256,
+                0.597,
+                0.29
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.316,
+                0.296,
+                0.572,
+                0.313
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.237,
+                0.405,
+                0.629,
+                0.423
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.244,
+                0.417,
+                0.624,
+                0.437
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.244,
+                0.431,
+                0.623,
+                0.449
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.259,
+                0.443,
+                0.614,
+                0.463
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.23,
+                0.455,
+                0.629,
+                0.48
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.347,
+                0.478,
+                0.518,
+                0.498
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.329,
+                0.515,
+                0.546,
+                0.538
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.286,
+                0.545,
+                0.565,
+                0.574
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.278,
+                0.569,
+                0.573,
+                0.591
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.277,
+                0.588,
+                0.587,
+                0.615
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.362,
+                0.614,
+                0.491,
+                0.629
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.244,
+                0.619,
+                0.589,
+                0.687
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.427,
+                0.715,
+                0.473,
+                0.724
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.577,
+                0.694,
+                0.625,
+                0.705
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.368,
+                0.713,
+                0.43,
+                0.727
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.25,
+                0.755,
+                0.604,
+                0.8
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.42,
+                0.736,
+                0.627,
+                0.752
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.227,
+                0.813,
+                0.373,
+                0.834
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.514,
+                0.83,
+                0.623,
+                0.844
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

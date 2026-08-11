@@ -1,0 +1,28 @@
+{
+  "doc_type": "receipt",
+  "vendor": "COSTCO WHOLESALE",
+  "vendor_cn": null,
+  "address": "Markham #151 1 Yorktech Dr Markham, ON L3G 1A6",
+  "date": "2026-03-28",
+  "time": "15:17",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "215/60R16",
+      "price": 839.96
+    },
+    {
+      "name": "TIRE LEVY",
+      "price": 20.00
+    }
+  ],
+  "subtotal": 859.96,
+  "discount": 0.00,
+  "tax": 111.79,
+  "tax_label": "HST",
+  "total": 971.75,
+  "tip": 0.00,
+  "confidence": 0.95,
+  "notes": "The receipt date is printed as 2026/03/28 which is in the future. The address postal code is transcribed as L3G 1A6 as printed, although the official location postal code may differ."
+}

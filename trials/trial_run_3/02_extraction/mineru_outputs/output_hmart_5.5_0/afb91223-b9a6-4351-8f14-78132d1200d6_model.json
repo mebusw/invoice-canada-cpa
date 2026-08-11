@@ -1,0 +1,631 @@
+[
+    [
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.396,
+                0.081,
+                0.723,
+                0.152
+            ],
+            "angle": 0,
+            "content": "G MART"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.439,
+                0.146,
+                0.703,
+                0.185
+            ],
+            "angle": 0,
+            "content": "5323 Yonge St. North York ON. M2N5R4\n416-792-1131",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.676,
+                0.194,
+                0.732,
+                0.21
+            ],
+            "angle": 0,
+            "content": "Yun(03)",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.388,
+                0.205,
+                0.542,
+                0.227
+            ],
+            "angle": 0,
+            "content": "Feb 26, 2026 16 13:40",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.388,
+                0.232,
+                0.735,
+                0.28
+            ],
+            "angle": 0,
+            "content": "Qty Description\n1 TRADITIONAL KOREAN RICE @$5.50 5.50",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.435,
+                0.287,
+                0.737,
+                0.377
+            ],
+            "angle": 0,
+            "content": "<table><tr><td colspan=\"2\">Total 1 Items</td></tr><tr><td>Sub Total</td><td>5.50</td></tr><tr><td>Total Due</td><td>5.50</td></tr><tr><td>Master</td><td>5.50</td></tr><tr><td>Change Due</td><td>0.00</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.452,
+                0.387,
+                0.699,
+                0.618
+            ],
+            "angle": 0,
+            "content": "Tran # 23364\nTrace # 235283\nPurchase\nMasterCard\nxxxxxxxxxx4739\nAID: A0000000041010\nApp Name: MASTERCARD\nAPPROVED\nAmount CAD$5.50\nNo signature required\nRRN: 000000761555 P\nAuth. # 00173Z\nTVR: 0000008001\nTSI: A800\nHMART55CS03/HMART55CC03\n.00 (001)\n02/26/2026 4:13:38 PM",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.475,
+                0.63,
+                0.68,
+                0.654
+            ],
+            "angle": 0,
+            "content": "Don't forget your H point value it",
+            "merge_prev": false
+        },
+        {
+            "type": "doc_title",
+            "bbox": [
+                0.459,
+                0.655,
+                0.701,
+                0.683
+            ],
+            "angle": 0,
+            "content": "Today's H Point Value is 10 P"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.434,
+                0.68,
+                0.725,
+                0.716
+            ],
+            "angle": 0,
+            "content": "If you want to sign up for H Marl Membership, please contact customer center for more details",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.417,
+                0.713,
+                0.752,
+                0.792
+            ],
+            "angle": 0,
+            "content": "General merchandise must be returned within 7 days. Meat, Fish, Produce, Bakery and frozen/daily products must be returned or exchanged within 24 hours. Opened or used cosmetics cannot be exchanged or returned. All merchandise must be in original condition with the original receipt for return or exchange",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.419,
+                0.789,
+                0.724,
+                0.848
+            ],
+            "angle": 0,
+            "content": "1. 2017年，公司与上海浦东发展银行股份有限公司上海市分行签订了《最高额保证合同》，约定在2017年1月1日、2017年1月2日、2017年1月3日、2017年1月4日、2017年1月5日、2017年1月6日、2017年1月7日、2017年1月8日、2017年1月9日、2017年1月10日、2017年1月11日、2017年1月12日、2017年1月13日、2017年1月14日、2017年1月15日、2017年1月16日、2017年1月17日、2017年1月18日、2017年1月19日、2017年1月20日、2017年1月21日、2017年1月22日、2017年1月23日、2017年1月24日、2017年1月25日、2017年1月26日、2017年1月27日、2017年1月28日、2017年1月29日、2017年1月30日、2017年1月31日、2017年1月32日、2017年1月33日、2017年1月34日、2017年1月35日、2017年1月36日、2017年1月37日、2017年1月38日、2017年1月39日、2017年1月40日、2017年1月41日、2017年1月42日、2017年1月43日、2017年1月44日、2017年1月45日、2017年1月46日、2017年1月47日、2017年1月48日、2017年1月49日、2017年1月50日、2017年1月51日、2017年1月52日、2017年1月53日、2017年1月54日、2017年1月55日、2017年1月56日、2017年1月57日、2017年1月58日、2017年1月59日、2017年1月60日、2017年1月61日、2017年1月62日、2017年1月63日、2017年1月64日、2017年1月65日、2017年1月66日、2017年1月67日、2017年1月68日、2017年1月69日、2017年1月70日、2017年1月71日、2017年1月72日、2017年1月73日、2017年1月74日、2017年1月75日、2017年1月76日、2017年1月77日、2017年1月78日、2017年1月79日、2017年1月80日、2017年1月81日、2017年1月82日、2017年1月83日、2017年1月84日、2017年1月85日、2017年1月86日、2017年1月87日、2017年1月88日、2017年1月89日、2017年1月90日、20",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.418,
+                0.852,
+                0.558,
+                0.868
+            ],
+            "angle": 0,
+            "content": "TAX Reg # 850075786",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.631,
+                0.845,
+                0.732,
+                0.863
+            ],
+            "angle": 0,
+            "content": "4403260005024",
+            "merge_prev": false
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.459,
+                0.866,
+                0.7,
+                0.913
+            ],
+            "angle": 0,
+            "content": "1640320050526"
+        },
+        {
+            "type": "footer",
+            "bbox": [
+                0.47,
+                0.914,
+                0.697,
+                0.931
+            ],
+            "angle": 0,
+            "content": "Thank You for shopping"
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.387,
+                0.083,
+                0.724,
+                0.148
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.434,
+                0.148,
+                0.704,
+                0.173
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.674,
+                0.194,
+                0.733,
+                0.209
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.384,
+                0.208,
+                0.542,
+                0.223
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.385,
+                0.234,
+                0.496,
+                0.253
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.419,
+                0.24,
+                0.736,
+                0.266
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.457,
+                0.43,
+                0.519,
+                0.441
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.453,
+                0.486,
+                0.535,
+                0.497
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.486,
+                0.497,
+                0.612,
+                0.507
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.456,
+                0.509,
+                0.599,
+                0.521
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.52,
+                0.604,
+                0.532
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.456,
+                0.532,
+                0.559,
+                0.546
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.545,
+                0.571,
+                0.556
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.555,
+                0.522,
+                0.568
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.456,
+                0.579,
+                0.516,
+                0.593
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.388,
+                0.695,
+                0.404
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.404,
+                0.548,
+                0.419
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.454,
+                0.416,
+                0.561,
+                0.43
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.439,
+                0.534,
+                0.453
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.456,
+                0.45,
+                0.565,
+                0.462
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.453,
+                0.459,
+                0.6,
+                0.473
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.453,
+                0.471,
+                0.63,
+                0.485
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.453,
+                0.565,
+                0.66,
+                0.581
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.59,
+                0.62,
+                0.604
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.599,
+                0.694,
+                0.616
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.471,
+                0.633,
+                0.68,
+                0.652
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.455,
+                0.658,
+                0.701,
+                0.68
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.44,
+                0.684,
+                0.722,
+                0.702
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.42,
+                0.733,
+                0.491,
+                0.745
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.524,
+                0.747,
+                0.538,
+                0.754
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.564,
+                0.715,
+                0.735,
+                0.73
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.592,
+                0.726,
+                0.745,
+                0.74
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.553,
+                0.738,
+                0.75,
+                0.752
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.414,
+                0.771,
+                0.669,
+                0.791
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.64,
+                0.812,
+                0.682,
+                0.82
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.444,
+                0.82,
+                0.486,
+                0.825
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.515,
+                0.826,
+                0.599,
+                0.834
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.548,
+                0.832,
+                0.634,
+                0.843
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.414,
+                0.85,
+                0.559,
+                0.87
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.629,
+                0.845,
+                0.733,
+                0.862
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

@@ -1,0 +1,1063 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        136,
+                        37,
+                        249,
+                        69
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                136,
+                                37,
+                                249,
+                                69
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        37,
+                                        249,
+                                        69
+                                    ],
+                                    "type": "text",
+                                    "content": "G MART"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        151,
+                        67,
+                        242,
+                        85
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                151,
+                                67,
+                                242,
+                                85
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        151,
+                                        67,
+                                        242,
+                                        85
+                                    ],
+                                    "type": "text",
+                                    "content": "5323 Yonge St. North York ON. M2N5R4\n416-792-1131"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        233,
+                        89,
+                        252,
+                        96
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                233,
+                                89,
+                                252,
+                                96
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        233,
+                                        89,
+                                        252,
+                                        96
+                                    ],
+                                    "type": "text",
+                                    "content": "Yun(03)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        133,
+                        94,
+                        186,
+                        104
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                133,
+                                94,
+                                186,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        94,
+                                        186,
+                                        104
+                                    ],
+                                    "type": "text",
+                                    "content": "Feb 26, 2026 16 13:40"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        133,
+                        106,
+                        253,
+                        128
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                133,
+                                106,
+                                253,
+                                128
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        106,
+                                        253,
+                                        128
+                                    ],
+                                    "type": "text",
+                                    "content": "Qty Description\n1 TRADITIONAL KOREAN RICE @$5.50 5.50"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        150,
+                        132,
+                        254,
+                        173
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                150,
+                                132,
+                                254,
+                                173
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        132,
+                                        254,
+                                        173
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                150,
+                                                132,
+                                                254,
+                                                173
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td colspan=\"2\">Total 1 Items</td></tr><tr><td>Sub Total</td><td>5.50</td></tr><tr><td>Total Due</td><td>5.50</td></tr><tr><td>Master</td><td>5.50</td></tr><tr><td>Change Due</td><td>0.00</td></tr></table>",
+                                            "image_path": "a51ad7b2e8eb5daeee72bacb7c7858a193bee6972ea6ad3df9e0c1f69406d1dd.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        155,
+                        178,
+                        241,
+                        284
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                178,
+                                241,
+                                284
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        178,
+                                        241,
+                                        284
+                                    ],
+                                    "type": "text",
+                                    "content": "Tran # 23364\nTrace # 235283\nPurchase\nMasterCard\nxxxxxxxxxx4739\nAID: A0000000041010\nApp Name: MASTERCARD\nAPPROVED\nAmount CAD$5.50\nNo signature required\nRRN: 000000761555 P\nAuth. # 00173Z\nTVR: 0000008001\nTSI: A800\nHMART55CS03/HMART55CC03\n.00 (001)\n02/26/2026 4:13:38 PM"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        163,
+                        289,
+                        234,
+                        300
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                163,
+                                289,
+                                234,
+                                300
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        163,
+                                        289,
+                                        234,
+                                        300
+                                    ],
+                                    "type": "text",
+                                    "content": "Don't forget your H point value it"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        158,
+                        301,
+                        241,
+                        314
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                301,
+                                241,
+                                314
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        301,
+                                        241,
+                                        314
+                                    ],
+                                    "type": "text",
+                                    "content": "Today's H Point Value is 10 P"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        149,
+                        312,
+                        250,
+                        329
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                149,
+                                312,
+                                250,
+                                329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        149,
+                                        312,
+                                        250,
+                                        329
+                                    ],
+                                    "type": "text",
+                                    "content": "If you want to sign up for H Marl Membership, please contact customer center for more details"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        327,
+                        259,
+                        364
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                327,
+                                259,
+                                364
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        327,
+                                        259,
+                                        364
+                                    ],
+                                    "type": "text",
+                                    "content": "General merchandise must be returned within 7 days. Meat, Fish, Produce, Bakery and frozen/daily products must be returned or exchanged within 24 hours. Opened or used cosmetics cannot be exchanged or returned. All merchandise must be in original condition with the original receipt for return or exchange"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        362,
+                        249,
+                        390
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                362,
+                                249,
+                                390
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        362,
+                                        249,
+                                        390
+                                    ],
+                                    "type": "text",
+                                    "content": "1. 2017年，公司与上海浦东发展银行股份有限公司上海市分行签订了《最高额保证合同》，约定在2017年1月1日、2017年1月2日、2017年1月3日、2017年1月4日、2017年1月5日、2017年1月6日、2017年1月7日、2017年1月8日、2017年1月9日、2017年1月10日、2017年1月11日、2017年1月12日、2017年1月13日、2017年1月14日、2017年1月15日、2017年1月16日、2017年1月17日、2017年1月18日、2017年1月19日、2017年1月20日、2017年1月21日、2017年1月22日、2017年1月23日、2017年1月24日、2017年1月25日、2017年1月26日、2017年1月27日、2017年1月28日、2017年1月29日、2017年1月30日、2017年1月31日、2017年1月32日、2017年1月33日、2017年1月34日、2017年1月35日、2017年1月36日、2017年1月37日、2017年1月38日、2017年1月39日、2017年1月40日、2017年1月41日、2017年1月42日、2017年1月43日、2017年1月44日、2017年1月45日、2017年1月46日、2017年1月47日、2017年1月48日、2017年1月49日、2017年1月50日、2017年1月51日、2017年1月52日、2017年1月53日、2017年1月54日、2017年1月55日、2017年1月56日、2017年1月57日、2017年1月58日、2017年1月59日、2017年1月60日、2017年1月61日、2017年1月62日、2017年1月63日、2017年1月64日、2017年1月65日、2017年1月66日、2017年1月67日、2017年1月68日、2017年1月69日、2017年1月70日、2017年1月71日、2017年1月72日、2017年1月73日、2017年1月74日、2017年1月75日、2017年1月76日、2017年1月77日、2017年1月78日、2017年1月79日、2017年1月80日、2017年1月81日、2017年1月82日、2017年1月83日、2017年1月84日、2017年1月85日、2017年1月86日、2017年1月87日、2017年1月88日、2017年1月89日、2017年1月90日、20"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        391,
+                        192,
+                        399
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                391,
+                                192,
+                                399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        391,
+                                        192,
+                                        399
+                                    ],
+                                    "type": "text",
+                                    "content": "TAX Reg # 850075786"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        217,
+                        388,
+                        252,
+                        396
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                217,
+                                388,
+                                252,
+                                396
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        217,
+                                        388,
+                                        252,
+                                        396
+                                    ],
+                                    "type": "text",
+                                    "content": "4403260005024"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [
+                {
+                    "bbox": [
+                        158,
+                        398,
+                        241,
+                        419
+                    ],
+                    "type": "footer",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                398,
+                                241,
+                                419
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        398,
+                                        241,
+                                        419
+                                    ],
+                                    "type": "text",
+                                    "content": "1640320050526"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14
+                },
+                {
+                    "bbox": [
+                        162,
+                        420,
+                        240,
+                        428
+                    ],
+                    "type": "footer",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                162,
+                                420,
+                                240,
+                                428
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        162,
+                                        420,
+                                        240,
+                                        428
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You for shopping"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15
+                }
+            ],
+            "page_size": [
+                345,
+                460
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        136,
+                        37,
+                        249,
+                        69
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                136,
+                                37,
+                                249,
+                                69
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        136,
+                                        37,
+                                        249,
+                                        69
+                                    ],
+                                    "type": "text",
+                                    "content": "G MART"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        151,
+                        67,
+                        242,
+                        85
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                151,
+                                67,
+                                242,
+                                85
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        151,
+                                        67,
+                                        242,
+                                        85
+                                    ],
+                                    "type": "text",
+                                    "content": "5323 Yonge St. North York ON. M2N5R4\n416-792-1131"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        233,
+                        89,
+                        252,
+                        96
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                233,
+                                89,
+                                252,
+                                96
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        233,
+                                        89,
+                                        252,
+                                        96
+                                    ],
+                                    "type": "text",
+                                    "content": "Yun(03)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        133,
+                        94,
+                        186,
+                        104
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                133,
+                                94,
+                                186,
+                                104
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        94,
+                                        186,
+                                        104
+                                    ],
+                                    "type": "text",
+                                    "content": "Feb 26, 2026 16 13:40"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        133,
+                        106,
+                        253,
+                        128
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                133,
+                                106,
+                                253,
+                                128
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        133,
+                                        106,
+                                        253,
+                                        128
+                                    ],
+                                    "type": "text",
+                                    "content": "Qty Description\n1 TRADITIONAL KOREAN RICE @$5.50 5.50"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        150,
+                        132,
+                        254,
+                        173
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                150,
+                                132,
+                                254,
+                                173
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        132,
+                                        254,
+                                        173
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                150,
+                                                132,
+                                                254,
+                                                173
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td colspan=\"2\">Total 1 Items</td></tr><tr><td>Sub Total</td><td>5.50</td></tr><tr><td>Total Due</td><td>5.50</td></tr><tr><td>Master</td><td>5.50</td></tr><tr><td>Change Due</td><td>0.00</td></tr></table>",
+                                            "image_path": "a51ad7b2e8eb5daeee72bacb7c7858a193bee6972ea6ad3df9e0c1f69406d1dd.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 5
+                        }
+                    ],
+                    "index": 5
+                },
+                {
+                    "bbox": [
+                        155,
+                        178,
+                        241,
+                        284
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                178,
+                                241,
+                                284
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        178,
+                                        241,
+                                        284
+                                    ],
+                                    "type": "text",
+                                    "content": "Tran # 23364\nTrace # 235283\nPurchase\nMasterCard\nxxxxxxxxxx4739\nAID: A0000000041010\nApp Name: MASTERCARD\nAPPROVED\nAmount CAD$5.50\nNo signature required\nRRN: 000000761555 P\nAuth. # 00173Z\nTVR: 0000008001\nTSI: A800\nHMART55CS03/HMART55CC03\n.00 (001)\n02/26/2026 4:13:38 PM"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        163,
+                        289,
+                        234,
+                        300
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                163,
+                                289,
+                                234,
+                                300
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        163,
+                                        289,
+                                        234,
+                                        300
+                                    ],
+                                    "type": "text",
+                                    "content": "Don't forget your H point value it"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        158,
+                        301,
+                        241,
+                        314
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                158,
+                                301,
+                                241,
+                                314
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        158,
+                                        301,
+                                        241,
+                                        314
+                                    ],
+                                    "type": "text",
+                                    "content": "Today's H Point Value is 10 P"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "level": 1
+                },
+                {
+                    "bbox": [
+                        149,
+                        312,
+                        250,
+                        329
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                149,
+                                312,
+                                250,
+                                329
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        149,
+                                        312,
+                                        250,
+                                        329
+                                    ],
+                                    "type": "text",
+                                    "content": "If you want to sign up for H Marl Membership, please contact customer center for more details"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        327,
+                        259,
+                        364
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                327,
+                                259,
+                                364
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        327,
+                                        259,
+                                        364
+                                    ],
+                                    "type": "text",
+                                    "content": "General merchandise must be returned within 7 days. Meat, Fish, Produce, Bakery and frozen/daily products must be returned or exchanged within 24 hours. Opened or used cosmetics cannot be exchanged or returned. All merchandise must be in original condition with the original receipt for return or exchange"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        362,
+                        249,
+                        390
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                362,
+                                249,
+                                390
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        362,
+                                        249,
+                                        390
+                                    ],
+                                    "type": "text",
+                                    "content": "1. 2017年，公司与上海浦东发展银行股份有限公司上海市分行签订了《最高额保证合同》，约定在2017年1月1日、2017年1月2日、2017年1月3日、2017年1月4日、2017年1月5日、2017年1月6日、2017年1月7日、2017年1月8日、2017年1月9日、2017年1月10日、2017年1月11日、2017年1月12日、2017年1月13日、2017年1月14日、2017年1月15日、2017年1月16日、2017年1月17日、2017年1月18日、2017年1月19日、2017年1月20日、2017年1月21日、2017年1月22日、2017年1月23日、2017年1月24日、2017年1月25日、2017年1月26日、2017年1月27日、2017年1月28日、2017年1月29日、2017年1月30日、2017年1月31日、2017年1月32日、2017年1月33日、2017年1月34日、2017年1月35日、2017年1月36日、2017年1月37日、2017年1月38日、2017年1月39日、2017年1月40日、2017年1月41日、2017年1月42日、2017年1月43日、2017年1月44日、2017年1月45日、2017年1月46日、2017年1月47日、2017年1月48日、2017年1月49日、2017年1月50日、2017年1月51日、2017年1月52日、2017年1月53日、2017年1月54日、2017年1月55日、2017年1月56日、2017年1月57日、2017年1月58日、2017年1月59日、2017年1月60日、2017年1月61日、2017年1月62日、2017年1月63日、2017年1月64日、2017年1月65日、2017年1月66日、2017年1月67日、2017年1月68日、2017年1月69日、2017年1月70日、2017年1月71日、2017年1月72日、2017年1月73日、2017年1月74日、2017年1月75日、2017年1月76日、2017年1月77日、2017年1月78日、2017年1月79日、2017年1月80日、2017年1月81日、2017年1月82日、2017年1月83日、2017年1月84日、2017年1月85日、2017年1月86日、2017年1月87日、2017年1月88日、2017年1月89日、2017年1月90日、20"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        391,
+                        192,
+                        399
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                391,
+                                192,
+                                399
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        391,
+                                        192,
+                                        399
+                                    ],
+                                    "type": "text",
+                                    "content": "TAX Reg # 850075786"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        217,
+                        388,
+                        252,
+                        396
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                217,
+                                388,
+                                252,
+                                396
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        217,
+                                        388,
+                                        252,
+                                        396
+                                    ],
+                                    "type": "text",
+                                    "content": "4403260005024"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

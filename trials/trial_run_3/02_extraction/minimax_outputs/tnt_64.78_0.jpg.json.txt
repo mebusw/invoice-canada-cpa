@@ -1,0 +1,72 @@
+{
+  "doc_type": "receipt",
+  "vendor": "T&T Supermarket",
+  "vendor_cn": "大統華",
+  "address": "9255 Woodbine Avenue, Markham, ON L6C 1Y9",
+  "date": "2021-03-26",
+  "time": "17:58",
+  "currency": "CAD",
+  "payment_method": "MasterCard",
+  "line_items": [
+    {
+      "name": "SH CBL SWEET BEAN PASTE 400G",
+      "price": 5.37
+    },
+    {
+      "name": "PORK NECKBONE",
+      "price": 6.12
+    },
+    {
+      "name": "(SALE) RWA GROUND PORK- LEAN",
+      "price": 3.77
+    },
+    {
+      "name": "(SALE) RWA GROUND PORK- LEAN",
+      "price": 4.12
+    },
+    {
+      "name": "(SALE) FRESH ATLANTIC SALMON STEAK",
+      "price": 11.57
+    },
+    {
+      "name": "(SALE) GREEN ONION",
+      "price": 1.96
+    },
+    {
+      "name": "CHINESE FUJI APPLE",
+      "price": 4.40
+    },
+    {
+      "name": "CHINESE FUJI APPLE",
+      "price": 6.62
+    },
+    {
+      "name": "(SALE) SUNKIST ORANGES",
+      "price": 2.89
+    },
+    {
+      "name": "(SALE) TAIWAN BOK CHOY",
+      "price": 3.83
+    },
+    {
+      "name": "(SALE) YU CHOY SPROUTS",
+      "price": 2.79
+    },
+    {
+      "name": "(SALE) LONGAN (CASE)",
+      "price": 5.36
+    },
+    {
+      "name": "(SALE) AM CHING BLACK SESAME RICEBALL",
+      "price": 5.98
+    }
+  ],
+  "subtotal": 64.78,
+  "discount": 0.00,
+  "tax": 0.00,
+  "tax_label": "N/A",
+  "total": 64.78,
+  "tip": 0.00,
+  "confidence": 0.95,
+  "notes": "Date interpreted as YY/MM/DD based on common Canadian retailer formats; 2021-03-26 is more plausible than a future date in 2026."
+}

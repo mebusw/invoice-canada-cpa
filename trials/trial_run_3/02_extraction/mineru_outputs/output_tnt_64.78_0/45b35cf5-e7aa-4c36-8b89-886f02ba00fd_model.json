@@ -1,0 +1,346 @@
+[
+    [
+        {
+            "type": "text",
+            "bbox": [
+                0.366,
+                0.051,
+                0.541,
+                0.078
+            ],
+            "angle": 0,
+            "content": "NOT A MEMBER YET? DOWNLOAD & JOIN NOW!\n立即下载APP，加入大統單情分獎勵計劃！",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.367,
+                0.076,
+                0.462,
+                0.09
+            ],
+            "angle": 0,
+            "content": "• GET EXCLUSIVE DEFENDS AND LARN REWARDS",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.366,
+                0.084,
+                0.462,
+                0.095
+            ],
+            "angle": 0,
+            "content": "AND LARN REWARD",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.366,
+                0.091,
+                0.428,
+                0.101
+            ],
+            "angle": 0,
+            "content": "• ENJOYON IN",
+            "merge_prev": false
+        },
+        {
+            "type": "image",
+            "bbox": [
+                0.474,
+                0.076,
+                0.535,
+                0.121
+            ],
+            "angle": 0,
+            "content": null
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.362,
+                0.104,
+                0.446,
+                0.126
+            ],
+            "angle": 0,
+            "content": "* 离家優惠和精分\n* 注解题意配法",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.391,
+                0.129,
+                0.523,
+                0.15
+            ],
+            "angle": 0,
+            "content": "T&T Supermarket",
+            "merge_prev": false
+        },
+        {
+            "type": "table",
+            "bbox": [
+                0.312,
+                0.152,
+                0.577,
+                0.892
+            ],
+            "angle": 0,
+            "content": "<table><tr><td colspan=\"2\">9255 Woodbine Avenue 736# 135747137R</td></tr><tr><td>03/21/26 5:58:17 PM</td><td>Service Counter Y2</td></tr><tr><td>***04088928B</td><td>$0.00</td></tr><tr><td>SHI: EBL SWEET BEAN FASTE 400G3 @ $1,796m.</td><td>W $5.37</td></tr><tr><td>月次洋口国半居以甜咸通圈小</td><td></td></tr><tr><td>MEATPOCK NECKBONE1.394 kg @ $4.39/kg</td><td>U $6.12</td></tr><tr><td>¥拾捌佰</td><td></td></tr><tr><td>(SALE) RWA GROUND PORK - LEAN0.426 kg @ $0.80/kg(特價) 全自然猪紋肉-瘦</td><td>U $3.77</td></tr><tr><td>(SALE) RWA GROUND PORK - LEAN0.460 kg @ $8.80/kg(特價) 全自然猪紋肉-瘦</td><td>U $4.12</td></tr><tr><td>SEAFOOD(SALE) FRESH ATLANTIC SALMON STERK0.752 kg @ $15.39/kg(特價) 新鮮大西洋三文魚扒</td><td>U $11.57</td></tr><tr><td>PRODUCE(SALE) GREEN ONION2 @ $0.98ea.(特價) 青灣</td><td>V $1.96</td></tr><tr><td>CHINESE FUJI APPLE1.115 kg @ $3.95/kg中國高原蘋果</td><td>U $4.40</td></tr><tr><td>CHINESE FUJI APPLE1.675 kg @ $3.95/kg中國高原蘋果</td><td>V $6.62</td></tr><tr><td>(SALE) SUNKIST ORANGES1.325 kg @ $2.18/kg(特價) 新奇士校(香吉士)</td><td>U $2.89</td></tr><tr><td>(SALE) TAIYAN BOK CHOY1.260 kg @ $3.04/kg(特價) 台灣白菜</td><td>V $3.03</td></tr><tr><td>(SALE) YU CHOY SPROUTS0.555 kg @ $5.03/kg(特價) 油菜苗</td><td>U $2.79</td></tr><tr><td>(SALE) LONGAN (CASE)2 @ $2.68ea.(特價) 龍眼 -箱</td><td>U $5.36</td></tr><tr><td>DELI(SALE) RN CHUNG BLACK SESAME RICEBALL2 @ $2.99ea.(特價) 安井寧波黑芝麻湯圓</td><td>U $5.98</td></tr><tr><td>Points 60</td><td>$0.00</td></tr><tr><td>TOTAL</td><td>$64.78</td></tr><tr><td>Mester</td><td>$64.78</td></tr><tr><td>Points in this transaction: 60Points Balance : 5080Item count: 1803/21/26 5:58:17 PMTrans: 664779</td><td>Service Counter 12Terminal:050108015-021017</td></tr><tr><td colspan=\"2\">T&amp;T SUPERMARKET #0219255 WOODBINE AVENUEMARKHAM, ON LGC1Y9(905) 927-9113PURCHASE</td></tr><tr><td rowspan=\"2\">MID: 5532211TID: 05532211Batch #: 20903/21/26AUTH #: 08535ZHasterCard**********4739 PTotal</td><td>Ref #: 225Seq. #: 20900100125017:59:51</td></tr><tr><td>**1%$64.78</td></tr><tr><td colspan=\"2\">00 APPROVED 00535Z 001</td></tr><tr><td colspan=\"2\">MASTERCARDGID: 00000000041010TVR: 00 00 00 00 01CARHOLDER ACKNOWLEDGES RECEIPTOF GOODS AND/OR SERVICES IN THEAMOUNT OF THE TOTAL SHOWN ABOVEThank You/Merc!Please Come Again!CUSTOMER COPY</td></tr><tr><td colspan=\"2\">STORE: 10021CODE: 032126 175001 4770 16000</td></tr></table>"
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.311,
+                0.875,
+                0.452,
+                0.9
+            ],
+            "angle": 0,
+            "content": "STORE: 10021\nCODE: 032126 175901 4779 10021",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.314,
+                0.897,
+                0.552,
+                0.923
+            ],
+            "angle": 0,
+            "content": "FULL DETAILS OF T&T SUPERMARKET'S REFUND POLICY ARE AVAILABLE AT IN-STORE.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.322,
+                0.921,
+                0.538,
+                0.944
+            ],
+            "angle": 0,
+            "content": "Customer Service Line:1-833-868-1616\nwww.tntsupermarket.com\nTELL US HOW WE DID TONE\nMonthly Change",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.325,
+                0.937,
+                0.452,
+                0.954
+            ],
+            "angle": 0,
+            "content": "Monthly chances to win $1,000 PC Optimum points!",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.327,
+                0.95,
+                0.577,
+                0.98
+            ],
+            "angle": 0,
+            "content": "How likely are you to recommend T&T to your friends?\nVisit www.storeopinion.ca or Call 1-600-531-2928 for\nfull contest rules.",
+            "merge_prev": false
+        },
+        {
+            "type": "text",
+            "bbox": [
+                0.331,
+                0.971,
+                0.53,
+                0.992
+            ],
+            "angle": 0,
+            "content": "eligible amount for point calculation: $64.78",
+            "merge_prev": false
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.364,
+                0.077,
+                0.448,
+                0.087
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.412,
+                0.08,
+                0.452,
+                0.088
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.364,
+                0.083,
+                0.462,
+                0.096
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.363,
+                0.091,
+                0.427,
+                0.101
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.37,
+                0.106,
+                0.445,
+                0.115
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.387,
+                0.126,
+                0.525,
+                0.15
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.311,
+                0.875,
+                0.37,
+                0.889
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.312,
+                0.883,
+                0.452,
+                0.898
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.373,
+                0.922,
+                0.536,
+                0.936
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.324,
+                0.929,
+                0.376,
+                0.937
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.338,
+                0.941,
+                0.372,
+                0.948
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.37,
+                0.946,
+                0.402,
+                0.953
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.405,
+                0.946,
+                0.449,
+                0.953
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.35,
+                0.962,
+                0.371,
+                0.965
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.441,
+                0.953,
+                0.573,
+                0.962
+            ],
+            "text": "",
+            "score": 1.0
+        },
+        {
+            "type": "ocr_text",
+            "bbox": [
+                0.39,
+                0.962,
+                0.452,
+                0.968
+            ],
+            "text": "",
+            "score": 1.0
+        }
+    ]
+]

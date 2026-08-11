@@ -1,0 +1,140 @@
+[
+    {
+        "type": "text",
+        "text": "How did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA",
+        "bbox": [
+            376,
+            37,
+            602,
+            89
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "images/da91286b6c795ecd326e4b9e16b41b6b778564487641b716cba0dde980b4b64c.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            386,
+            89,
+            458,
+            151
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "WIN!\n1 of 3 \\$1000\ngift cards",
+        "bbox": [
+            478,
+            87,
+            589,
+            154
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5000 HWY 7",
+        "bbox": [
+            430,
+            193,
+            500,
+            206
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MARKHAM, ON",
+        "bbox": [
+            421,
+            205,
+            500,
+            221
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/02655b1d3412ebc9d26783cd544dc437bf83bd07cc4144f3f75a47e084a957ee.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>KETCHUP 1.5L</td><td>057000063080</td><td>$6.97 D</td></tr><tr><td>SEAL 2 MILK</td><td>064420000770</td><td>$6.44 D</td></tr><tr><td>RICE</td><td>061414010800</td><td>$12.98 D</td></tr><tr><td>EGGS 30</td><td>627735279720</td><td>$9.18 D</td></tr><tr><td>POT WHT/ RST</td><td>033383454850</td><td>$3.94 D</td></tr><tr><td>BANANAS</td><td>000000040110</td><td></td></tr><tr><td colspan=\"2\">1.250 kg @ $1.50 /kg</td><td>$1.88 D</td></tr><tr><td>DENT PEPPMNT</td><td>073390017140</td><td>$4.48 J</td></tr><tr><td>DENT WHITE</td><td>073390017180</td><td>$4.48 J</td></tr><tr><td>DENT PEPPMNT</td><td>073390017140</td><td>$4.48 J</td></tr><tr><td>DNR ROLLS</td><td>627735021570</td><td>$2.88 H</td></tr><tr><td colspan=\"2\">WAS $4.97 YOU SAVED $2.49</td><td></td></tr><tr><td>CROISSANT</td><td>627735274270</td><td>$5.94 D</td></tr><tr><td>CC MUFFIN</td><td>627735258870</td><td>$3.22 H</td></tr><tr><td colspan=\"2\">WAS $6.44 YOU SAVED $3.22</td><td></td></tr><tr><td>FUJI</td><td>000000041310</td><td></td></tr><tr><td colspan=\"2\">1.275 kg @ $4.34 /kg</td><td>$5.53 D</td></tr><tr><td>NAPPA</td><td>000000045520</td><td></td></tr><tr><td colspan=\"2\">1.240 kg @ $3.24 /kg</td><td>$4.02 D</td></tr><tr><td>GINGER</td><td>000000046120</td><td></td></tr><tr><td colspan=\"2\">0.220 kg @ $4.34 /kg</td><td>$0.95 D</td></tr><tr><td>NAPPA</td><td>000000045520</td><td></td></tr><tr><td colspan=\"2\">0.970 kg @ $3.24 /kg</td><td>$3.14 D</td></tr><tr><td>PKLOINHALF</td><td>221423000000</td><td>$8.32 H</td></tr><tr><td colspan=\"2\">WAS $13.86 YOU SAVED $5.54</td><td></td></tr><tr><td>ML CHKN DRUM</td><td>222554000000</td><td></td></tr><tr><td colspan=\"2\">1.804 kg @ $6.54 /kg</td><td>$11.80 D</td></tr><tr><td></td><td>SUBTOTAL</td><td>$100.23</td></tr><tr><td></td><td>HST 13.0000 %</td><td>$1.75</td></tr><tr><td></td><td>TOTAL</td><td>$101.98</td></tr><tr><td></td><td>MCARD TEND</td><td>$101.98</td></tr><tr><td></td><td>CHANGE DUE</td><td>$0.00</td></tr></table>",
+        "bbox": [
+            339,
+            247,
+            602,
+            718
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MASTERCARD \\*\\*\\*\\* \\*\\*\\*\\* \\*\\*\\*\\* 4739 RF\n\\$101.98 TOTAL PURCHASE\nAPPROVAL # 017012\nRRN # 607200050367",
+        "bbox": [
+            336,
+            726,
+            567,
+            788
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AID A0000000041010\nTC E9B98847B6721B6D\nTERMINAL ID WMTUP014808\n\\*No Signature Required",
+        "bbox": [
+            330,
+            799,
+            500,
+            856
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "03/13/26 12:07:22",
+        "bbox": [
+            339,
+            861,
+            493,
+            881
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "GST/HST 137466199 RT 0001\nQST 1016651356 TQ 0001",
+        "bbox": [
+            347,
+            887,
+            523,
+            918
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Walmart",
+        "bbox": [
+            419,
+            14,
+            560,
+            40
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "footer",
+        "text": "03/13/26 12:07:24",
+        "bbox": [
+            428,
+            983,
+            569,
+            1000
+        ],
+        "page_idx": 0
+    }
+]

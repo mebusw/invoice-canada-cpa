@@ -5,3 +5,8 @@ node_module/
 venv/
 output/
 __pycache__
+# MinerU redundant artifacts: result.zip is the already-extracted archive,
+# *_origin.pdf is a re-encoding of the source image kept in 01_source/.
+# The audit trail SKILL.md requires is full.md + content_list json + manifest.
+result.zip
+*_origin.pdf

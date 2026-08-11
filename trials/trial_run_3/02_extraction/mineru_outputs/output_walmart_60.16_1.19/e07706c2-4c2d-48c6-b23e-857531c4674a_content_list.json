@@ -1,0 +1,338 @@
+[
+    {
+        "type": "image",
+        "img_path": "images/ad7234704172431de6c3c350af5545f875a552aacbaa4f841c7babf4ff1ba9be.jpg",
+        "image_caption": [],
+        "image_footnote": [],
+        "content": "",
+        "bbox": [
+            282,
+            131,
+            380,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "WIN!\n1 of 3 \\$1000\ngift cards",
+        "bbox": [
+            406,
+            123,
+            547,
+            201
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Rules and regulations apply. See contest rules for details.",
+        "bbox": [
+            308,
+            206,
+            521,
+            237
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "STORE 3053",
+        "bbox": [
+            360,
+            245,
+            454,
+            262
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "5000 HWY 7",
+        "bbox": [
+            360,
+            262,
+            454,
+            278
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "MARKHAM, ON",
+        "bbox": [
+            356,
+            278,
+            454,
+            296
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "L3R 4M9",
+        "bbox": [
+            373,
+            296,
+            439,
+            312
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "905-477-6000",
+        "bbox": [
+            358,
+            312,
+            463,
+            328
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "table",
+        "img_path": "images/ca0e8fed9c06cb34f96086d38cdabcf4ea210b97a0a3f5a739f5473ac86431b3.jpg",
+        "table_caption": [],
+        "table_footnote": [],
+        "table_body": "<table><tr><td>ST# 03053 OP#</td><td>009034 TE# 34 TR#</td><td>00559</td></tr><tr><td>CASA HAWAIIA</td><td>058336173040</td><td>$3.47 D</td></tr><tr><td>POT WHT/ RST</td><td>033383454850</td><td>$3.94 D</td></tr><tr><td>POT WHT/ RST</td><td>033383454850</td><td>$3.94 D</td></tr><tr><td>CDM CON CLAS</td><td>058336745700</td><td>$3.47 D</td></tr><tr><td>CASA ULTIMAT</td><td>058336173060</td><td>$3.47 D</td></tr><tr><td>YFM CROISSAN</td><td>627, 5274270</td><td>$5.94 D</td></tr><tr><td>YFM CROISSAN</td><td>627735274270</td><td>$5.94 D</td></tr><tr><td>NAT FLTR 2</td><td>064420010140</td><td>$7.18 D</td></tr><tr><td>EGGS 30</td><td>627735279720</td><td>$9.18 D</td></tr><tr><td>INC 40W 4PK</td><td>046677569890</td><td>$8.98 J</td></tr><tr><td>PHL ECOFEE</td><td>400505872130</td><td>$0.20 A</td></tr><tr><td>TABLE SALT</td><td>066010001050</td><td>$1.63 D</td></tr><tr><td>TABLE SALT</td><td>066010001050</td><td>$1.63 D</td></tr></table>",
+        "bbox": [
+            256,
+            327,
+            582,
+            553
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "SUBTOTAL \\$58.97",
+        "bbox": [
+            406,
+            563,
+            560,
+            581
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "HST 13.0000 % \\$1.19",
+        "bbox": [
+            358,
+            579,
+            563,
+            600
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "VISA TEND \\$60.16",
+        "bbox": [
+            400,
+            610,
+            567,
+            631
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TOTAL \\$60.16",
+        "bbox": [
+            434,
+            596,
+            565,
+            612
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "CHANGE DUE \\$0.00",
+        "bbox": [
+            393,
+            628,
+            567,
+            648
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "VISA CREDIT \\*\\*\\*\\* \\*\\*\\*\\* \\*\\*\\*\\* 4562 RF",
+        "bbox": [
+            269,
+            659,
+            552,
+            682
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\$60.16 TOTAL PURCHASE",
+        "bbox": [
+            284,
+            680,
+            471,
+            698
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AF OVAL # 202993",
+        "bbox": [
+            271,
+            697,
+            415,
+            714
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "RRN # 001001840",
+        "bbox": [
+            271,
+            714,
+            400,
+            729
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TRANS ID - 306055075326778",
+        "bbox": [
+            271,
+            729,
+            491,
+            745
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "AID A0000000031010",
+        "bbox": [
+            276,
+            760,
+            428,
+            776
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TC C6482E59D1795D29",
+        "bbox": [
+            278,
+            776,
+            436,
+            791
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TERMINAL ID WMTJP001443",
+        "bbox": [
+            280,
+            791,
+            471,
+            809
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "02/23/26 21:05:31",
+        "bbox": [
+            280,
+            822,
+            454,
+            842
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "GST/HST 137466199 RT 0001",
+        "bbox": [
+            284,
+            853,
+            491,
+            872
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "QST 1016551356 TQ 0001",
+        "bbox": [
+            286,
+            869,
+            467,
+            887
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "\\# ITEMS SOLD 12",
+        "bbox": [
+            373,
+            885,
+            502,
+            902
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "TC# 7030 4111 8822 3316 0288",
+        "bbox": [
+            328,
+            897,
+            560,
+            913
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "1",
+        "bbox": [
+            291,
+            910,
+            621,
+            929
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "02/23/26 21:05:36",
+        "bbox": [
+            354,
+            929,
+            532,
+            946
+        ],
+        "page_idx": 0
+    },
+    {
+        "type": "header",
+        "text": "Walmart >\\*\nHow did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA",
+        "bbox": [
+            273,
+            40,
+            560,
+            128
+        ],
+        "page_idx": 0
+    }
+]

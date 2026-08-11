@@ -1,0 +1,1107 @@
+{
+  "generated_at": "2026-08-10T16:55:40.987923+00:00",
+  "gates": [
+    [
+      "1  Document classification",
+      "PASS",
+      "12/12 classified as doc_type=receipt; 0 statements, 0 signature slips"
+    ],
+    [
+      "2  De-duplication",
+      "PASS",
+      "SHA-256 dupes: 0; (vendor+date+total) dupes: 0"
+    ],
+    [
+      "3  Tie-out balance",
+      "PASS",
+      "12/12 balance within $0.05"
+    ],
+    [
+      "4  Tax-rate reasonableness",
+      "PASS",
+      "7 at statutory/zero, 5 mixed-basket NOTE, 0 above 13% ON ceiling"
+    ],
+    [
+      "5  Period attribution",
+      "PASS",
+      "All dates within 2026-01-01..2026-12-31"
+    ],
+    [
+      "6  Currency",
+      "PASS",
+      "12/12 CAD; no FX conversion needed"
+    ],
+    [
+      "7  GIFI assigned",
+      "PASS",
+      "12/12 rows have a GIFI code + expense category"
+    ],
+    [
+      "8  GIFI legality",
+      "PASS",
+      "0 generic block heads used; codes in force: [8523, 8810, 9270, 9281]"
+    ],
+    [
+      "9  Source attribution",
+      "PASS",
+      "Every field source-tagged; 10 rows contain a DERIVED field"
+    ],
+    [
+      "10 Line-item coverage",
+      "PASS",
+      "96 line items across 12 receipts; 11/12 sum to printed subtotal"
+    ],
+    [
+      "GT Ground truth (filename)",
+      "PASS",
+      "12/12 match filename-encoded total & tax"
+    ]
+  ],
+  "exceptions": [],
+  "decisions": [
+    {
+      "doc_id": "2026-0001",
+      "source_file": "bbq_95.68_11.02.jpg",
+      "doc_type": "receipt",
+      "vendor": "Haven Party BBQ",
+      "vendor_cn": "有局儿烧烤",
+      "address": "Unit 6B, 505 Hwy 7, Thornhill, ON L3T 7T1",
+      "province": "ON",
+      "date": "2026-03-16",
+      "time": "17:13",
+      "currency": "CAD",
+      "payment_method": null,
+      "subtotal": 94.07,
+      "discount": 9.41,
+      "tax": 11.02,
+      "tax_label": "HST",
+      "total": 95.68,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "Lamb Skewers 6pcs 羊肉小串",
+          7.95
+        ],
+        [
+          "Signature Clay Pot Beef Tripe 百香瓦罐涮牛肚",
+          22.95
+        ],
+        [
+          "*DISCOUNT on Clay Pot Beef Tripe",
+          -11.48
+        ],
+        [
+          "Lean Beef 8pcs 鲜嫩牛里脊",
+          7.95
+        ],
+        [
+          "Korea style Pork Belly 4pcs 韩式烤五花肉",
+          6.95
+        ],
+        [
+          "Chicken Joints 4pcs 酒局儿鸡脆骨",
+          7.95
+        ],
+        [
+          "Grilled Cabbage 烤高丽菜",
+          5.95
+        ],
+        [
+          "Grilled Oyster Mushroom 2pcs 清甜烤蚝菇",
+          6.95
+        ],
+        [
+          "Baby Cabbage w/ Garlic Sauce 锡纸娃娃菜",
+          8.95
+        ],
+        [
+          "Corn & Pork Bone Stew 荠菜玉米猪骨煲",
+          29.95
+        ]
+      ],
+      "expense_category": "Restaurant / business meal",
+      "gifi_code": 8523,
+      "gifi_name": "Meals and entertainment",
+      "gifi_parent": 8520,
+      "tax_treatment": "ITA 67.1 — 50% limit",
+      "deductible_pct": 50,
+      "schedule_1_flag": true,
+      "confidence": 0.9,
+      "review_required": false,
+      "src": {
+        "vendor": "MiniMax",
+        "address": "MiniMax",
+        "date": "MiniMax",
+        "subtotal": "MiniMax",
+        "discount": "VISUAL (corrected from MiniMax)",
+        "tax": "VISUAL (corrected from MiniMax)",
+        "total": "MiniMax + MinerU (agree)",
+        "line_items": "MiniMax",
+        "payment_method": "NOT PRINTED"
+      },
+      "notes": "JUDGE CORRECTION: MiniMax mis-assigned the totals block — it reported tax=9.41 and discount=11.48. Visual re-read of the receipt shows SubTotal 94.07 / 10% DISCOUNT 9.41 / H.S.T. 11.02 / TOTAL 95.68. The 11.48 is the item-level tripe discount already netted into the 94.07. Cross-check: MinerU's 'YOU SAVED $20.89' = 11.48 + 9.41, and 10% of 94.07 = 9.41, and 84.66 x 13% = 11.01. All consistent. MinerU's markdown omitted the totals block entirely (only TOTAL $95.68 captured). Suggested tips 15/18/20% printed but none taken — tip=0.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.13017,
+      "rate_status": "PASS (13.02%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 10,
+      "line_item_sum": 94.07,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 95.68,
+      "gt_tax": 11.02,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0002",
+      "source_file": "canadiantire_11.29_1.30.jpg",
+      "doc_type": "receipt",
+      "vendor": "Canadian Tire #126",
+      "vendor_cn": null,
+      "address": "6310 Yonge St. @ Steeles Ave., Willowdale, ON",
+      "province": "ON",
+      "date": "2026-03-26",
+      "time": "19:40",
+      "currency": "CAD",
+      "payment_method": "Visa",
+      "subtotal": 9.99,
+      "discount": 0.0,
+      "tax": 1.3,
+      "tax_label": "HST",
+      "total": 11.29,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "017-5509-4 PH4967 OIL FILT",
+          9.99
+        ]
+      ],
+      "expense_category": "Vehicle parts / oil filter",
+      "gifi_code": 9281,
+      "gifi_name": "Vehicle expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Current expense — routine vehicle maintenance",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.95,
+      "review_required": false,
+      "src": {
+        "vendor": "MinerU",
+        "address": "MinerU",
+        "date": "MinerU",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MinerU",
+        "payment_method": "MiniMax + MinerU (VISA TEND)"
+      },
+      "notes": "Clean receipt, both tools agree on every figure. MinerU header shows '#128' in the store banner but '#126' on the transaction line; used #126. Oil filter is a routine maintenance part — CRA lists vehicle parts under 9281 as a current expense, not CCA. MiniMax flagged the date as 'future-dated'; that is a MiniMax knowledge-cutoff artifact — 2026-03-26 is in the past relative to the 2026 filing year.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.13013,
+      "rate_status": "PASS (13.01%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 1,
+      "line_item_sum": 9.99,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 11.29,
+      "gt_tax": 1.3,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0003",
+      "source_file": "costco_1315.46_144.62.jpg",
+      "doc_type": "receipt",
+      "vendor": "Costco Wholesale #151",
+      "vendor_cn": null,
+      "address": "1 Yorktech Dr, Markham, ON L6G 1A6",
+      "province": "ON",
+      "date": "2026-03-24",
+      "time": "19:45",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 1170.84,
+      "discount": 0.0,
+      "tax": 144.62,
+      "tax_label": "HST",
+      "total": 1315.46,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "CKN STRIPS",
+          17.99
+        ],
+        [
+          "EGGS 2.5 DZ x2",
+          18.38
+        ],
+        [
+          "CLR CAREPLUS x6",
+          137.94
+        ],
+        [
+          "SALTED DUCK",
+          6.99
+        ],
+        [
+          "CRAISINS 1.8 x3",
+          43.47
+        ],
+        [
+          "BROOKSIDE VP x3 (net of TPD -3.50 ea)",
+          40.47
+        ],
+        [
+          "LAMB ROLLS",
+          13.99
+        ],
+        [
+          "KS MULTIVITAMINS / KS VIT WOMEN / KS WOMEN 50+ / KS MENS 50+ x6",
+          131.94
+        ],
+        [
+          "WN BEE PROPOLIS x6",
+          95.94
+        ],
+        [
+          "NB HAIR SKIN x6",
+          107.94
+        ],
+        [
+          "GODIVA DC x4 (net of TPD -6.00 ea)",
+          51.96
+        ],
+        [
+          "JAMIESON VIT (net of TPD -3.00)",
+          11.99
+        ],
+        [
+          "JAM VITD2500 x2",
+          27.98
+        ],
+        [
+          "KS COQ10 200 x6",
+          209.94
+        ],
+        [
+          "JOINT EASE x2 (net of TPD -6.00 ea)",
+          47.98
+        ],
+        [
+          "SWISS DARK",
+          34.99
+        ],
+        [
+          "WN OMEGA 3 x5",
+          169.95
+        ]
+      ],
+      "expense_category": "Warehouse club — vitamins/supplements + groceries (mixed basket)",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.85,
+      "review_required": true,
+      "src": {
+        "vendor": "MiniMax",
+        "address": "MiniMax",
+        "date": "MinerU (AUTH timestamp 2026/03/24 19:45:12)",
+        "subtotal": "MinerU",
+        "discount": "MinerU",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MiniMax",
+        "payment_method": "MinerU (ACCT: MASTERCARD)"
+      },
+      "notes": "Tie-out uses undiscounted form: MinerU's 'TOTAL DISCOUNT(S) $49.50' is the SUM of item-level TPD instant rebates already netted into the $1,170.84 subtotal, NOT a separate receipt-level discount. Applying it again would break the tie-out (1170.84 + 144.62 = 1315.46 exactly). discount recorded as 0 for the tie-out and disclosed here. Effective rate 12.35% < 13% = mixed basket (chicken/eggs/lamb zero-rated as basic groceries; supplements marked H = HST-taxable) — consistent, no error. REVIEW: $1,315 of predominantly vitamins/supplements has no obvious business purpose; likely a shareholder personal benefit rather than a deductible operating expense. MiniMax's first call timed out at 120s (largest image, 66 line items) and was retried successfully — a real throughput risk. MinerU garbled many item codes/prices on this receipt (e.g. BROOKSIDE price/rebate columns swapped), so line_items are taken from MiniMax, whose values reconcile to the subtotal.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.12352,
+      "rate_status": "NOTE mixed basket (12.35% vs 13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 17,
+      "line_item_sum": 1169.84,
+      "line_item_sum_check": "NOTE (sum 1169.84 vs subtotal 1170.84)",
+      "source_status": "PASS",
+      "gt_total": 1315.46,
+      "gt_tax": 144.62,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0004",
+      "source_file": "costco_971.75_111.79.jpg",
+      "doc_type": "receipt",
+      "vendor": "Costco Wholesale #151 — Tire Shop",
+      "vendor_cn": null,
+      "address": "1 Yorktech Dr, Markham, ON L6G 1B5",
+      "province": "ON",
+      "date": "2026-03-28",
+      "time": "15:17",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 859.96,
+      "discount": 0.0,
+      "tax": 111.79,
+      "tax_label": "HST",
+      "total": 971.75,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "590469 215/60R16 tires — 4 @ 209.99",
+          839.96
+        ],
+        [
+          "TIRE LEVY — 4 @ 5.00",
+          20.0
+        ]
+      ],
+      "expense_category": "Vehicle — replacement tires",
+      "gifi_code": 9281,
+      "gifi_name": "Vehicle expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Current expense — standalone tire replacement is not capitalized",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.92,
+      "review_required": true,
+      "src": {
+        "vendor": "MiniMax + MinerU",
+        "address": "MiniMax",
+        "date": "MinerU (2026/03/28 15:17)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MiniMax (MinerU garbled the qty/price columns)",
+        "payment_method": "MinerU (ACCT: MASTERCARD)"
+      },
+      "notes": "Tie-out exact: 859.96 + 111.79 = 971.75. Rate 13.00% = ON statutory exactly — full HST, correct for tires (no zero-rated component). Internal cross-check: 4 x 209.99 = 839.96, plus 4 x 5.00 eco/tire levy = 20.00, sums to the 859.96 subtotal; the tire levy is itself HST-taxable, as expected. MinerU mislabelled the tax line as 'TOTAL 111.79' and the address postal as L6G 185; MiniMax read L3G 1A6. Neither is certain — postal code flagged as low-confidence, immaterial to the tax result. REVIEW: $972 is a material amount. Standalone tire replacement is a current expense per CRA (tires are explicitly listed under 9281), but if these were acquired as part of a vehicle purchase they belong in CCA Class 10 — CPA to confirm. Also confirm the vehicle is a business vehicle and the business-use %.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.12999,
+      "rate_status": "PASS (13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 2,
+      "line_item_sum": 859.96,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 971.75,
+      "gt_tax": 111.79,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0005",
+      "source_file": "hmart_5.5_0.jpg",
+      "doc_type": "receipt",
+      "vendor": "H Mart",
+      "vendor_cn": null,
+      "address": "5323 Yonge St, North York, ON M2N 5R4",
+      "province": "ON",
+      "date": "2026-02-26",
+      "time": "16:13",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 5.5,
+      "discount": 0.0,
+      "tax": 0.0,
+      "tax_label": "N/A",
+      "total": 5.5,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "TRADITIONAL KOREAN RICE @ $5.50",
+          5.5
+        ]
+      ],
+      "expense_category": "Grocery — basic food",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.88,
+      "review_required": false,
+      "src": {
+        "vendor": "MiniMax (MinerU misread as 'G MART')",
+        "address": "MiniMax + MinerU",
+        "date": "MinerU + VISUAL (corrected from MiniMax)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU (no tax line printed)",
+        "total": "MinerU",
+        "line_items": "MinerU",
+        "payment_method": "MinerU"
+      },
+      "notes": "JUDGE CORRECTION: MiniMax gave date 2026-02-28; MinerU shows 'Feb 26, 2026' in the header AND '02/26/2026 4:13:38 PM' in the payment block. Visual re-read confirms 2026-02-26. MinerU wins on date here, contrary to SKILL.md §2.1's 'date → MiniMax primary' priority. Zero tax is correct: uncooked rice is a zero-rated basic grocery, so rate=0 passes the gate. Tie-out uses the tax==0 branch: subtotal == total. MinerU HALLUCINATION: its markdown appended ~600 characters of unrelated Chinese text about a 2017 Shanghai Pudong Development Bank guarantee contract that appears nowhere on this receipt. Ignored. This is a live risk of feeding MinerU markdown to a judge that trusts it.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.0,
+      "rate_status": "PASS (0.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 1,
+      "line_item_sum": 5.5,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 5.5,
+      "gt_tax": 0.0,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0006",
+      "source_file": "shoppers_84.69_9.75.jpg",
+      "doc_type": "receipt",
+      "vendor": "Shoppers Drug Mart — Jordan Wong Pharmacy Inc.",
+      "vendor_cn": null,
+      "address": "7060 Warden Ave, Markham, ON L3R 5Y2",
+      "province": "ON",
+      "date": "2026-03-05",
+      "time": "12:40",
+      "currency": "CAD",
+      "payment_method": "Visa",
+      "subtotal": 74.94,
+      "discount": 0.0,
+      "tax": 9.75,
+      "tax_label": "HST",
+      "total": 84.69,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "6 X BLINK DROPS @ 12.49",
+          74.94
+        ]
+      ],
+      "expense_category": "Pharmacy — OTC eye drops",
+      "gifi_code": 9270,
+      "gifi_name": "Other expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Likely personal / shareholder benefit — not an operating expense",
+      "deductible_pct": 0,
+      "schedule_1_flag": true,
+      "confidence": 0.95,
+      "review_required": true,
+      "src": {
+        "vendor": "MinerU",
+        "address": "MinerU",
+        "date": "MinerU",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MinerU",
+        "payment_method": "MinerU (ACCT: VISA)"
+      },
+      "notes": "Cleanest receipt in the batch — both tools agree on all figures. Tie-out exact (74.94 + 9.75 = 84.69), rate 13.01% = ON statutory. The 13% rate is itself corroborating: prescription drugs are zero-rated, so full HST confirms this is an OTC purchase, as printed. REVIEW: 6 units of OTC eye drops is medical/personal in nature. Absent a private health services plan or a documented business purpose, this is a shareholder benefit — not deductible, and a taxable benefit to the individual. Mapped to 9270 with deductible_pct=0 pending CPA determination; if a PHSP exists it would instead move to 8620 Employee benefits.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.1301,
+      "rate_status": "PASS (13.01%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 1,
+      "line_item_sum": 74.94,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 84.69,
+      "gt_tax": 9.75,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0007",
+      "source_file": "tnt_173.73_7.92.jpg",
+      "doc_type": "receipt",
+      "vendor": "T&T Supermarket — Warden & Steeles",
+      "vendor_cn": "大統華",
+      "address": "7070 Warden Ave, Markham, ON L3R 5Y2",
+      "province": "ON",
+      "date": "2026-03-26",
+      "time": "18:14",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 165.81,
+      "discount": 0.0,
+      "tax": 7.92,
+      "tax_label": "HST",
+      "total": 173.73,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "(MEMBERS) ROYAL FAMILY PINE CAKE 皇族鳳梨酥",
+          14.97
+        ],
+        [
+          "HOT FOOD 特色美食 0.655kg @ 24.91/kg",
+          16.32
+        ],
+        [
+          "(SALE) CAJUN CHICKEN WINGS 奧爾良烤雞翼 0.438kg @ 19.82/kg",
+          8.68
+        ],
+        [
+          "(SALE) LAMB SHOULDER BONELESS ROLL 嫩羊肉卷 0.540kg",
+          15.47
+        ],
+        [
+          "(SALE) LAMB SHOULDER BONELESS ROLL 嫩羊肉卷 0.550kg",
+          15.75
+        ],
+        [
+          "WHITE RADISH 蘿蔔 2.405kg @ 2.18/kg",
+          5.24
+        ],
+        [
+          "(SALE) GREEN ONION 青蔥 2 @ 0.98",
+          1.96
+        ],
+        [
+          "BAGGED ORANGE 袋裝甜橙 2 @ 19.99",
+          39.98
+        ],
+        [
+          "(SALE) ORGANIC ENOKI 有機金針菇 2/5.50",
+          5.5
+        ],
+        [
+          "(SALE) STRAWBERRY 草莓 4 @ 2/3.00",
+          6.0
+        ],
+        [
+          "(SALE) AN FRESH COLD NOODLE 小安涼皮 6 @ 5.99",
+          35.94
+        ]
+      ],
+      "expense_category": "Grocery — mixed basket incl. hot/deli food",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.92,
+      "review_required": true,
+      "src": {
+        "vendor": "MiniMax",
+        "address": "MiniMax + MinerU",
+        "date": "MiniMax + MinerU (03/26/26)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MiniMax (corrected from MinerU)",
+        "payment_method": "MinerU (MasterCard ...4739)"
+      },
+      "notes": "CONFLICT RESOLVED BY LINE-ITEM SUM: MinerU read BAGGED ORANGE as $9.98 and WHITE RADISH as 1.405kg; MiniMax read $39.98 (2 @ 19.99) and 2.405kg. MiniMax's line items sum to exactly $165.81, matching the printed subtotal; MinerU's would sum to $135.81. MiniMax adopted. Rate 4.78% << 13% = mixed basket, expected at a supermarket (produce/meat zero-rated; the hot food, deli and snack items carry HST). Not an error — NOTE only. REVIEW: ~$61 of the basket is prepared hot/deli food which would belong in 8523 at 50% if it was a staff or client meal; the raw groceries would not. CPA to split or confirm a single treatment.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.04777,
+      "rate_status": "NOTE mixed basket (4.78% vs 13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 11,
+      "line_item_sum": 165.81,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 173.73,
+      "gt_tax": 7.92,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0008",
+      "source_file": "tnt_36.17_3.59.jpg",
+      "doc_type": "receipt",
+      "vendor": "T&T Supermarket — Woodbine",
+      "vendor_cn": "大統華",
+      "address": "9255 Woodbine Ave, Markham, ON L6C 1Y9",
+      "province": "ON",
+      "date": "2026-03-14",
+      "time": "18:28",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 32.58,
+      "discount": 0.0,
+      "tax": 3.59,
+      "tax_label": "HST",
+      "total": 36.17,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "HOT FOOD 特色美食 0.490kg @ 24.91/kg (tare 0.035kg)",
+          12.21
+        ],
+        [
+          "STEAMED RICE (S) 白飯(小)",
+          1.99
+        ],
+        [
+          "(SALE) STRAWBERRY 草莓 2 @ 2/5.00",
+          5.0
+        ],
+        [
+          "AN FRESH COLD NOODLE 小安新鮮涼皮 2 @ 6.69",
+          13.38
+        ]
+      ],
+      "expense_category": "Prepared food — hot food counter / deli",
+      "gifi_code": 8523,
+      "gifi_name": "Meals and entertainment",
+      "gifi_parent": 8520,
+      "tax_treatment": "ITA 67.1 — 50% limit",
+      "deductible_pct": 50,
+      "schedule_1_flag": true,
+      "confidence": 0.88,
+      "review_required": true,
+      "src": {
+        "vendor": "MiniMax",
+        "address": "MiniMax",
+        "date": "MiniMax + MinerU (03/14/26)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU",
+        "total": "MinerU",
+        "line_items": "MiniMax + MinerU",
+        "payment_method": "MinerU (Master)"
+      },
+      "notes": "Both tools agree on all four figures; line items sum to 32.58 = printed subtotal. Rate 11.02% < 13% = mixed basket: the strawberries ($5.00) are zero-rated produce and the rest is HST-taxable prepared food. Cross-check: (32.58 - 5.00) x 13% = 3.59 exactly — confirms the split. GIFI 8523 rather than 8810 because 85% of the basket ($27.58 of $32.58) is prepared hot/deli food, i.e. a meal rather than grocery supplies. REVIEW: CPA to confirm the meal characterization and whether the $5.00 of produce should be split out to 8810 at 100%.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.11019,
+      "rate_status": "NOTE mixed basket (11.02% vs 13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 4,
+      "line_item_sum": 32.58,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 36.17,
+      "gt_tax": 3.59,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0009",
+      "source_file": "tnt_64.78_0.jpg",
+      "doc_type": "receipt",
+      "vendor": "T&T Supermarket — Woodbine #021",
+      "vendor_cn": "大統華",
+      "address": "9255 Woodbine Ave, Markham, ON L6C 1Y9",
+      "province": "ON",
+      "date": "2026-03-21",
+      "time": "17:58",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 64.78,
+      "discount": 0.0,
+      "tax": 0.0,
+      "tax_label": "N/A",
+      "total": 64.78,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "SH CBL SWEET BEAN PASTE 400G 3 @ 1.79",
+          5.37
+        ],
+        [
+          "PORK NECKBONE 1.394kg @ 4.39/kg",
+          6.12
+        ],
+        [
+          "(SALE) RWA GROUND PORK LEAN 0.428kg @ 8.80/kg",
+          3.77
+        ],
+        [
+          "(SALE) RWA GROUND PORK LEAN 0.468kg @ 8.80/kg",
+          4.12
+        ],
+        [
+          "(SALE) FRESH ATLANTIC SALMON STEAK 0.752kg @ 15.39/kg",
+          11.57
+        ],
+        [
+          "(SALE) GREEN ONION 2 @ 0.98",
+          1.96
+        ],
+        [
+          "CHINESE FUJI APPLE 1.115kg @ 3.95/kg",
+          4.4
+        ],
+        [
+          "CHINESE FUJI APPLE 1.675kg @ 3.95/kg",
+          6.62
+        ],
+        [
+          "(SALE) SUNKIST ORANGES 1.325kg @ 2.18/kg",
+          2.89
+        ],
+        [
+          "(SALE) TAIWAN BOK CHOY 1.260kg @ 3.04/kg",
+          3.83
+        ],
+        [
+          "(SALE) YU CHOY SPROUTS 0.555kg @ 5.03/kg",
+          2.79
+        ],
+        [
+          "(SALE) LONGAN (CASE) 2 @ 2.68",
+          5.36
+        ],
+        [
+          "(SALE) AN CHING BLACK SESAME RICEBALL 2 @ 2.99",
+          5.98
+        ]
+      ],
+      "expense_category": "Grocery — all basic/zero-rated food",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.9,
+      "review_required": false,
+      "src": {
+        "vendor": "MiniMax + MinerU",
+        "address": "MiniMax + MinerU",
+        "date": "MinerU + VISUAL (corrected from MiniMax)",
+        "subtotal": "DERIVED (no subtotal line; tax=0 so = total)",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU (no tax line printed)",
+        "total": "MiniMax + MinerU",
+        "line_items": "MiniMax (corrected from MinerU)",
+        "payment_method": "MinerU (Master)"
+      },
+      "notes": "JUDGE CORRECTION — MOST SERIOUS FIELD ERROR IN THE BATCH: MiniMax returned date 2021-03-26 and explicitly reasoned in its notes that '2021 is more plausible than a future date in 2026'. That is a knowledge-cutoff hallucination — it got both the year and the day wrong. MinerU shows '03/21/26 5:58:17 PM' three times plus store CODE 032126; visual re-read of the header confirms 03/21/26. Correct date is 2026-03-21. Had this been accepted the row would have failed the period-attribution gate and been excluded from the 2026 filing year. MinerU also misread TAIWAN BOK CHOY as $3.03; MiniMax's $3.83 makes the line items sum to exactly $64.78 = printed total, so MiniMax adopted. Receipt prints no SUBTOTAL and no tax line — consistent with an all-zero-rated grocery basket, so tax=0 and the tie-out uses the tax==0 branch.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.0,
+      "rate_status": "PASS (0.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 13,
+      "line_item_sum": 64.78,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 64.78,
+      "gt_tax": 0.0,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0010",
+      "source_file": "walmart_101.98_1.75.jpg",
+      "doc_type": "receipt",
+      "vendor": "Walmart #3053",
+      "vendor_cn": null,
+      "address": "5000 Hwy 7, Markham, ON L3R 4M9",
+      "province": "ON",
+      "date": "2026-03-13",
+      "time": "12:07",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 100.23,
+      "discount": 0.0,
+      "tax": 1.75,
+      "tax_label": "HST",
+      "total": 101.98,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "KETCHUP 1.5L",
+          6.97
+        ],
+        [
+          "SEAL 2 MILK",
+          6.44
+        ],
+        [
+          "RICE",
+          12.98
+        ],
+        [
+          "EGGS 30",
+          9.18
+        ],
+        [
+          "POT WHT/RST",
+          3.94
+        ],
+        [
+          "BANANAS 1.250kg @ 1.50/kg",
+          1.88
+        ],
+        [
+          "DENT PEPPMNT",
+          4.48
+        ],
+        [
+          "DENT WHITE",
+          4.48
+        ],
+        [
+          "DENT PEPPMNT",
+          4.48
+        ],
+        [
+          "DNR ROLLS (was 4.97, saved 2.49)",
+          2.48
+        ],
+        [
+          "CROISSANT",
+          5.94
+        ],
+        [
+          "CC MUFFIN (was 6.44, saved 3.22)",
+          3.22
+        ],
+        [
+          "FUJI 1.275kg @ 4.34/kg",
+          5.53
+        ],
+        [
+          "NAPPA 1.240kg @ 3.24/kg",
+          4.02
+        ],
+        [
+          "GINGER 0.220kg @ 4.34/kg",
+          0.95
+        ],
+        [
+          "NAPPA 0.970kg @ 3.24/kg",
+          3.14
+        ],
+        [
+          "PKLOINHALF (was 13.86, saved 5.54)",
+          8.32
+        ],
+        [
+          "ML CHKN DRUM 1.804kg @ 6.54/kg",
+          11.8
+        ]
+      ],
+      "expense_category": "Grocery — mixed basket",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.92,
+      "review_required": false,
+      "src": {
+        "vendor": "MiniMax + MinerU",
+        "address": "MinerU",
+        "date": "MinerU (03/13/26 12:07:22)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (item-level rollbacks already netted)",
+        "tax": "MinerU (HST 13.0000%)",
+        "total": "MinerU",
+        "line_items": "MiniMax (corrected from MinerU)",
+        "payment_method": "MinerU (MCARD TEND)"
+      },
+      "notes": "CONFLICT RESOLVED BY LINE-ITEM SUM: MinerU read DNR ROLLS as $2.88, MiniMax as $2.48. MiniMax's items sum to exactly $100.23 = printed subtotal; MinerU's would give $100.63. MiniMax adopted. Rate 1.75% << 13% = mixed basket. Independent corroboration: the three items flagged 'J' (DENT dental products, 3 x 4.48 = 13.44) are the only HST-taxable lines, and 13.44 x 13% = 1.75 exactly. The 'WAS/YOU SAVED' lines are item-level rollbacks already reflected in the printed prices, so discount=0 for tie-out purposes — adding them again would double-count.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.01746,
+      "rate_status": "NOTE mixed basket (1.75% vs 13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 18,
+      "line_item_sum": 100.23,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 101.98,
+      "gt_tax": 1.75,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0011",
+      "source_file": "walmart_55.48_0.jpg",
+      "doc_type": "receipt",
+      "vendor": "Walmart #3053",
+      "vendor_cn": null,
+      "address": "5000 Hwy 7, Markham, ON L3R 4M9",
+      "province": "ON",
+      "date": "2026-02-19",
+      "time": "20:58",
+      "currency": "CAD",
+      "payment_method": "MasterCard",
+      "subtotal": 55.48,
+      "discount": 0.0,
+      "tax": 0.0,
+      "tax_label": "N/A",
+      "total": 55.48,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "YFM CROISSAN",
+          5.94
+        ],
+        [
+          "CH STRIPS VF",
+          10.98
+        ],
+        [
+          "FUJI 3.410kg @ 4.34/kg",
+          14.8
+        ],
+        [
+          "ORANGE",
+          11.88
+        ],
+        [
+          "ORANGE",
+          11.88
+        ]
+      ],
+      "expense_category": "Grocery — all basic/zero-rated food",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.9,
+      "review_required": false,
+      "src": {
+        "vendor": "MiniMax + MinerU",
+        "address": "MinerU",
+        "date": "MinerU (02/19/26 20:58:06)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU (no HST line printed)",
+        "total": "MinerU",
+        "line_items": "MiniMax + MinerU",
+        "payment_method": "MinerU (MCARD TEND)"
+      },
+      "notes": "Receipt prints SUBTOTAL $55.48 then TOTAL $55.48 with NO HST line — tax=0 is read, not assumed. Consistent with an all-zero-rated basket (bakery, chicken, apples, oranges). Tie-out uses the tax==0 branch. Line items sum to 55.48 and MinerU's '# ITEMS SOLD 5' matches the 5 extracted lines. NOTE on the zero-value trap: SKILL.md §2.2 warns that `value or -1` turns a legitimate 0.00 tax into a missing value — this row and 2026-0005/0009 are exactly the rows that would have been corrupted. MiniMax mis-attributed the '3.410 kg @ $4.34/kg' weight line to FUJI; the weight line actually follows CH STRIPS in MinerU's layout. Immaterial — the price and the total are unaffected.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.0,
+      "rate_status": "PASS (0.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 5,
+      "line_item_sum": 55.48,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 55.48,
+      "gt_tax": 0.0,
+      "filename_check": "PASS"
+    },
+    {
+      "doc_id": "2026-0012",
+      "source_file": "walmart_60.16_1.19.jpg",
+      "doc_type": "receipt",
+      "vendor": "Walmart #3053",
+      "vendor_cn": null,
+      "address": "5000 Hwy 7, Markham, ON L3R 4M9",
+      "province": "ON",
+      "date": "2026-02-23",
+      "time": "21:05",
+      "currency": "CAD",
+      "payment_method": "Visa",
+      "subtotal": 58.97,
+      "discount": 0.0,
+      "tax": 1.19,
+      "tax_label": "HST",
+      "total": 60.16,
+      "tip": 0.0,
+      "line_items": [
+        [
+          "CASA HAWAIIA",
+          3.47
+        ],
+        [
+          "POT WHT/RST",
+          3.94
+        ],
+        [
+          "POT WHT/RST",
+          3.94
+        ],
+        [
+          "CDM CDN CLAS",
+          3.47
+        ],
+        [
+          "CASA ULTIMAT",
+          3.47
+        ],
+        [
+          "YFM CROISSAN",
+          5.94
+        ],
+        [
+          "YFM CROISSAN",
+          5.94
+        ],
+        [
+          "NAT FLTR 2",
+          7.18
+        ],
+        [
+          "EGGS 30",
+          9.18
+        ],
+        [
+          "INC 40W 4PK (light bulbs)",
+          8.98
+        ],
+        [
+          "PHL ECOFEE",
+          0.2
+        ],
+        [
+          "TABLE SALT",
+          1.63
+        ],
+        [
+          "TABLE SALT",
+          1.63
+        ]
+      ],
+      "expense_category": "Grocery + household supplies (light bulbs)",
+      "gifi_code": 8810,
+      "gifi_name": "Office expenses",
+      "gifi_parent": null,
+      "tax_treatment": "Business purpose must be substantiated",
+      "deductible_pct": 100,
+      "schedule_1_flag": false,
+      "confidence": 0.93,
+      "review_required": false,
+      "src": {
+        "vendor": "MinerU",
+        "address": "MinerU",
+        "date": "MinerU (02/23/26 21:05:31)",
+        "subtotal": "MinerU",
+        "discount": "DERIVED (none printed)",
+        "tax": "MinerU (HST 13.0000%)",
+        "total": "MinerU",
+        "line_items": "MiniMax + MinerU (agree on all 13)",
+        "payment_method": "MinerU (VISA CREDIT ...4562)"
+      },
+      "notes": "Both tools agree on every figure; line items sum to exactly 58.97 = printed subtotal, and MinerU's '# ITEMS SOLD 12' is consistent (13 scan lines, 12 units after the eco-fee line). Rate 2.02% << 13% = mixed basket. Independent corroboration: the only taxable lines are INC 40W 4PK light bulbs ($8.98, flagged J) and PHL ECOFEE ($0.20, flagged A); (8.98 + 0.20) x 13% = 1.19 exactly. This confirms SKILL.md's production rule that environmental/eco fees ARE taxable, unlike deposits.",
+      "tieout_status": "PASS",
+      "effective_rate": 0.02018,
+      "rate_status": "NOTE mixed basket (2.02% vs 13.00%)",
+      "period_status": "PASS",
+      "is_generic": false,
+      "gifi_status": "PASS",
+      "line_item_count": 13,
+      "line_item_sum": 58.97,
+      "line_item_sum_check": "PASS",
+      "source_status": "PASS",
+      "gt_total": 60.16,
+      "gt_tax": 1.19,
+      "filename_check": "PASS"
+    }
+  ]
+}

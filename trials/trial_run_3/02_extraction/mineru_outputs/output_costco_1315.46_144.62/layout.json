@@ -1,0 +1,792 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "bbox": [
+                        178,
+                        33,
+                        231,
+                        58
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                178,
+                                33,
+                                231,
+                                58
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        178,
+                                        33,
+                                        231,
+                                        58
+                                    ],
+                                    "type": "text",
+                                    "content": "COSTCO WHOLESALE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        188,
+                        58,
+                        228,
+                        76
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                188,
+                                58,
+                                228,
+                                76
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        188,
+                                        58,
+                                        228,
+                                        76
+                                    ],
+                                    "type": "text",
+                                    "content": "Markham #161 Yorktech Dr Markhan, ON L6G 196"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        180,
+                        74,
+                        267,
+                        388
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                180,
+                                74,
+                                267,
+                                388
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        180,
+                                        74,
+                                        267,
+                                        388
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                180,
+                                                74,
+                                                267,
+                                                388
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td colspan=\"4\">Member 111954371224</td></tr><tr><td colspan=\"4\">Botion of Basket</td></tr><tr><td colspan=\"4\">18060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</td></tr><tr><td>371863 CKN STRIPS</td><td>17.99</td><td></td><td></td></tr><tr><td>129672 EGGS 2.5 DZ</td><td>9.19</td><td></td><td></td></tr><tr><td>129672 EGGS 2.5 DZ</td><td>9.19</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>1840693 SALTED DUCK</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1118131 CRATSINS 1.8</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1188131 CRATSINS 1.8</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td>16.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td>16.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td></td><td></td><td></td></tr><tr><td>329383 LAMO MELLS</td><td>13.99 H</td><td></td><td></td></tr><tr><td>7012740 KS MULI</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7012750 KS VIT WOMEN</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7013050 KS WOMEN 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7013050 KS WOMEN 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7012750 KS VIT WOMEN</td><td>21.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>1013010 KS MENS 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2941400 JAKIESON VIT</td><td>14.99 H</td><td></td><td></td></tr><tr><td>2030464 TPD/2941400</td><td>3.00 H</td><td></td><td></td></tr><tr><td>1941402 JRM VITD2900</td><td>13.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COOQ 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>655360 JOINT ERSE</td><td>29.99 H</td><td></td><td></td></tr><tr><td>2051380 765560</td><td>6.00-H</td><td></td><td></td></tr><tr><td>655360 JOINT ERSE</td><td>29.99 H</td><td></td><td></td></tr><tr><td>2051380 TPD/65560</td><td>6.00-H</td><td></td><td></td></tr><tr><td>3941402 JRM VITD2500</td><td>13.99 H</td><td></td><td></td></tr><tr><td>1795041 SWISS PARK</td><td>34.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99H</td><td></td><td></td></tr><tr><td>SUBTOTAL</td><td></td><td>1,170.84</td><td></td></tr><tr><td>TRX</td><td></td><td>144.62</td><td></td></tr></table>",
+                                            "image_path": "8aa09cd28e92fd61c0bc7564f0b458f2c703c4631e3bfa0cadbc0f6bd8ad82c8.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        193,
+                        394,
+                        266,
+                        426
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                193,
+                                394,
+                                266,
+                                426
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        193,
+                                        394,
+                                        266,
+                                        426
+                                    ],
+                                    "type": "text",
+                                    "content": "ACCT: MASTERCARD\nREFERENCE #: 0010013710 C\nAUTH #: 53922 2026/03/24 19:45:12\nInvoice Number: 009371\nPurchase - Mastercard\nA0000000041010\n0000008000 E800"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        192,
+                        427,
+                        247,
+                        439
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                192,
+                                427,
+                                247,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        192,
+                                        427,
+                                        247,
+                                        439
+                                    ],
+                                    "type": "text",
+                                    "content": "01 APPROVED - THANK YOU 027 AMOUNT: $1,315.46"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        203,
+                        449,
+                        263,
+                        476
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                203,
+                                449,
+                                263,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        203,
+                                        449,
+                                        263,
+                                        476
+                                    ],
+                                    "type": "text",
+                                    "content": "IMPORTANT - retain this copy for your records\nCUSTOMER COPY\nMasterCard 1,315.46\nCHANGE 0.00"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        186,
+                        476,
+                        263,
+                        497
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                186,
+                                476,
+                                263,
+                                497
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        186,
+                                        476,
+                                        263,
+                                        497
+                                    ],
+                                    "type": "text",
+                                    "content": "P (H)HST 132 144.62\nTOTAL NUMBER OF ITEMS SOLD = 56\nTOTAL DISCOUNT(S) $ 49.50\n202708125 19:45:13 151 9 504 102"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        183,
+                        509,
+                        252,
+                        522
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                183,
+                                509,
+                                252,
+                                522
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        183,
+                                        509,
+                                        252,
+                                        522
+                                    ],
+                                    "type": "text",
+                                    "content": "OP#: 102 Name: Sheldon (Merch)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        191,
+                        523,
+                        259,
+                        539
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                191,
+                                523,
+                                259,
+                                539
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        523,
+                                        259,
+                                        539
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You!\nPlease Come Again"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        178,
+                        539,
+                        248,
+                        559
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                178,
+                                539,
+                                248,
+                                559
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        178,
+                                        539,
+                                        248,
+                                        559
+                                    ],
+                                    "type": "text",
+                                    "content": "H = HST G=GST\nHST/GST #121476325RT\nWhse:151 Trm:9 Trn:504 OP:102"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        181,
+                        564,
+                        260,
+                        591
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                181,
+                                564,
+                                260,
+                                591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        181,
+                                        564,
+                                        260,
+                                        591
+                                    ],
+                                    "type": "text",
+                                    "content": "Items Sold: 56\nD9 2026/03/24 19:45"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "bbox": [
+                        178,
+                        33,
+                        231,
+                        58
+                    ],
+                    "type": "title",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                178,
+                                33,
+                                231,
+                                58
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        178,
+                                        33,
+                                        231,
+                                        58
+                                    ],
+                                    "type": "text",
+                                    "content": "COSTCO WHOLESALE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 0,
+                    "level": 2
+                },
+                {
+                    "bbox": [
+                        188,
+                        58,
+                        228,
+                        76
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                188,
+                                58,
+                                228,
+                                76
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        188,
+                                        58,
+                                        228,
+                                        76
+                                    ],
+                                    "type": "text",
+                                    "content": "Markham #161 Yorktech Dr Markhan, ON L6G 196"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "type": "table",
+                    "bbox": [
+                        180,
+                        74,
+                        267,
+                        388
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                180,
+                                74,
+                                267,
+                                388
+                            ],
+                            "type": "table_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        180,
+                                        74,
+                                        267,
+                                        388
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                180,
+                                                74,
+                                                267,
+                                                388
+                                            ],
+                                            "type": "table",
+                                            "html": "<table><tr><td colspan=\"4\">Member 111954371224</td></tr><tr><td colspan=\"4\">Botion of Basket</td></tr><tr><td colspan=\"4\">18060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</td></tr><tr><td>371863 CKN STRIPS</td><td>17.99</td><td></td><td></td></tr><tr><td>129672 EGGS 2.5 DZ</td><td>9.19</td><td></td><td></td></tr><tr><td>129672 EGGS 2.5 DZ</td><td>9.19</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>2664922 CLR CAREPLUS</td><td>22.99 H</td><td></td><td></td></tr><tr><td>1840693 SALTED DUCK</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1118131 CRATSINS 1.8</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1188131 CRATSINS 1.8</td><td>14.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td>16.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td>16.99 H</td><td></td><td></td></tr><tr><td>1270656 BROOKSIDE VP</td><td>3.50 H</td><td></td><td></td></tr><tr><td>2054213 TPD/1270656</td><td></td><td></td><td></td></tr><tr><td>329383 LAMO MELLS</td><td>13.99 H</td><td></td><td></td></tr><tr><td>7012740 KS MULI</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7012750 KS VIT WOMEN</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7013050 KS WOMEN 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7013050 KS WOMEN 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>7012750 KS VIT WOMEN</td><td>21.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99H</td><td></td><td></td></tr><tr><td>5212651 WN BEE PROPO</td><td>15.99 H</td><td></td><td></td></tr><tr><td>1013010 KS MENS 50+</td><td>21.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>435710 NB H&amp;R SKIN</td><td>17.99 H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>1911606 GODIA DC</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2031206 TPD/191606</td><td>6.00-H</td><td></td><td></td></tr><tr><td>2941400 JAKIESON VIT</td><td>14.99 H</td><td></td><td></td></tr><tr><td>2030464 TPD/2941400</td><td>3.00 H</td><td></td><td></td></tr><tr><td>1941402 JRM VITD2900</td><td>13.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COOQ 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>1761155 KS COQIO 200</td><td>34.99 H</td><td></td><td></td></tr><tr><td>655360 JOINT ERSE</td><td>29.99 H</td><td></td><td></td></tr><tr><td>2051380 765560</td><td>6.00-H</td><td></td><td></td></tr><tr><td>655360 JOINT ERSE</td><td>29.99 H</td><td></td><td></td></tr><tr><td>2051380 TPD/65560</td><td>6.00-H</td><td></td><td></td></tr><tr><td>3941402 JRM VITD2500</td><td>13.99 H</td><td></td><td></td></tr><tr><td>1795041 SWISS PARK</td><td>34.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99 H</td><td></td><td></td></tr><tr><td>5961920 WN ONEGA 3</td><td>33.99H</td><td></td><td></td></tr><tr><td>SUBTOTAL</td><td></td><td>1,170.84</td><td></td></tr><tr><td>TRX</td><td></td><td>144.62</td><td></td></tr></table>",
+                                            "image_path": "8aa09cd28e92fd61c0bc7564f0b458f2c703c4631e3bfa0cadbc0f6bd8ad82c8.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 2
+                        }
+                    ],
+                    "index": 2
+                },
+                {
+                    "bbox": [
+                        193,
+                        394,
+                        266,
+                        426
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                193,
+                                394,
+                                266,
+                                426
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        193,
+                                        394,
+                                        266,
+                                        426
+                                    ],
+                                    "type": "text",
+                                    "content": "ACCT: MASTERCARD\nREFERENCE #: 0010013710 C\nAUTH #: 53922 2026/03/24 19:45:12\nInvoice Number: 009371\nPurchase - Mastercard\nA0000000041010\n0000008000 E800"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        192,
+                        427,
+                        247,
+                        439
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                192,
+                                427,
+                                247,
+                                439
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        192,
+                                        427,
+                                        247,
+                                        439
+                                    ],
+                                    "type": "text",
+                                    "content": "01 APPROVED - THANK YOU 027 AMOUNT: $1,315.46"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        203,
+                        449,
+                        263,
+                        476
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                203,
+                                449,
+                                263,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        203,
+                                        449,
+                                        263,
+                                        476
+                                    ],
+                                    "type": "text",
+                                    "content": "IMPORTANT - retain this copy for your records\nCUSTOMER COPY\nMasterCard 1,315.46\nCHANGE 0.00"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        186,
+                        476,
+                        263,
+                        497
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                186,
+                                476,
+                                263,
+                                497
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        186,
+                                        476,
+                                        263,
+                                        497
+                                    ],
+                                    "type": "text",
+                                    "content": "P (H)HST 132 144.62\nTOTAL NUMBER OF ITEMS SOLD = 56\nTOTAL DISCOUNT(S) $ 49.50\n202708125 19:45:13 151 9 504 102"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        183,
+                        509,
+                        252,
+                        522
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                183,
+                                509,
+                                252,
+                                522
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        183,
+                                        509,
+                                        252,
+                                        522
+                                    ],
+                                    "type": "text",
+                                    "content": "OP#: 102 Name: Sheldon (Merch)"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        191,
+                        523,
+                        259,
+                        539
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                191,
+                                523,
+                                259,
+                                539
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        523,
+                                        259,
+                                        539
+                                    ],
+                                    "type": "text",
+                                    "content": "Thank You!\nPlease Come Again"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        178,
+                        539,
+                        248,
+                        559
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                178,
+                                539,
+                                248,
+                                559
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        178,
+                                        539,
+                                        248,
+                                        559
+                                    ],
+                                    "type": "text",
+                                    "content": "H = HST G=GST\nHST/GST #121476325RT\nWhse:151 Trm:9 Trn:504 OP:102"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        181,
+                        564,
+                        260,
+                        591
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                181,
+                                564,
+                                260,
+                                591
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        181,
+                                        564,
+                                        260,
+                                        591
+                                    ],
+                                    "type": "text",
+                                    "content": "Items Sold: 56\nD9 2026/03/24 19:45"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

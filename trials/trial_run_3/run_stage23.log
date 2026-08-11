@@ -1,0 +1,30 @@
+Excel   : /Users/jacky/.claude/skills/invoice-canada-cpa/trials/trial_run_3/03_workpaper/trial_run_3_cross_validated.xlsx
+JSON    : /Users/jacky/.claude/skills/invoice-canada-cpa/trials/trial_run_3/03_workpaper/decisions.json
+
+  [PASS  ] 1  Document classification       12/12 classified as doc_type=receipt; 0 statements, 0 signature slips
+  [PASS  ] 2  De-duplication                SHA-256 dupes: 0; (vendor+date+total) dupes: 0
+  [PASS  ] 3  Tie-out balance               12/12 balance within $0.05
+  [PASS  ] 4  Tax-rate reasonableness       7 at statutory/zero, 5 mixed-basket NOTE, 0 above 13% ON ceiling
+  [PASS  ] 5  Period attribution            All dates within 2026-01-01..2026-12-31
+  [PASS  ] 6  Currency                      12/12 CAD; no FX conversion needed
+  [PASS  ] 7  GIFI assigned                 12/12 rows have a GIFI code + expense category
+  [PASS  ] 8  GIFI legality                 0 generic block heads used; codes in force: [8523, 8810, 9270, 9281]
+  [PASS  ] 9  Source attribution            Every field source-tagged; 10 rows contain a DERIVED field
+  [PASS  ] 10 Line-item coverage            96 line items across 12 receipts; 11/12 sum to printed subtotal
+  [PASS  ] GT Ground truth (filename)       12/12 match filename-encoded total & tax
+
+Exceptions: 0   review_required: 5
+
+Ground truth vs extracted:
+  2026-0001 bbq_95.68_11.02.jpg              total    95.68/95.68    tax   11.02/11.02    PASS
+  2026-0002 canadiantire_11.29_1.30.jpg      total    11.29/11.29    tax    1.30/1.30     PASS
+  2026-0003 costco_1315.46_144.62.jpg        total  1315.46/1315.46  tax  144.62/144.62   PASS
+  2026-0004 costco_971.75_111.79.jpg         total   971.75/971.75   tax  111.79/111.79   PASS
+  2026-0005 hmart_5.5_0.jpg                  total     5.50/5.50     tax    0.00/0.00     PASS
+  2026-0006 shoppers_84.69_9.75.jpg          total    84.69/84.69    tax    9.75/9.75     PASS
+  2026-0007 tnt_173.73_7.92.jpg              total   173.73/173.73   tax    7.92/7.92     PASS
+  2026-0008 tnt_36.17_3.59.jpg               total    36.17/36.17    tax    3.59/3.59     PASS
+  2026-0009 tnt_64.78_0.jpg                  total    64.78/64.78    tax    0.00/0.00     PASS
+  2026-0010 walmart_101.98_1.75.jpg          total   101.98/101.98   tax    1.75/1.75     PASS
+  2026-0011 walmart_55.48_0.jpg              total    55.48/55.48    tax    0.00/0.00     PASS
+  2026-0012 walmart_60.16_1.19.jpg           total    60.16/60.16    tax    1.19/1.19     PASS

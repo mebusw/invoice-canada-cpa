@@ -86,17 +86,35 @@ EOF
 - `confidence` 让模型自己评估自己输出的可靠性
 - `notes` 留给模型标注异常（折扣说明、汇率、混合篮子）
 
-**不要二次正则抽取**。MiniMax 返回的 stdout 直接是 JSON 或带 ```json``` 围栏的 JSON，用一个宽松的 `re.search(r"\{[\s\S]*\}")` 找到第一个完整 JSON 块即可。**不要试图用正则拆字段**。
+**不要二次正则抽取**。MiniMax 返回的 stdout 直接是 JSON 或带 ```json``` 围栏的 JSON，找到第一个完整 JSON 块后**用 `json.loads` 验证**。**不要试图用正则拆字段**。
+
+> ⚠️ **不要用 `re.search(r"\{[\s\S]*\}")` 判断调用是否成功。** subprocess 超时抛出的异常字符串里**包含被回显的 prompt**，而 prompt 本身就是一段 JSON schema —— 正则会匹配成功，于是一次彻底失败的调用被静默记成成功。实测中最大的一张 Costco 小票（66 行明细）就是这样蒙混过关的。判定成功必须用 `json.loads` 是否抛异常。
+
+**超时**：默认 `timeout=300`。明细行多的小票（50+ 行）在 120s 会超时；`timeout=60` 必然失败。超时后重试一次，仍失败则显式记为提取失败，不要写入空结果。
+
 
 ### 1.2 MinerU Precision Parse — 表格保真
 
-```bash
-python3 /Users/jacky/.agents/skills/mineru/run_mineru.py <image> --timeout 300
+**必须直接调用 `precision_parse`，不要用 `run_mineru.py` 的命令行入口**：
+
+```python
+import sys
+sys.path.insert(0, "/Users/jacky/.agents/skills/mineru")
+from run_mineru import precision_parse
+
+precision_parse(image_path, timeout=300)
 ```
 
-输出 `output_<image>/full.md`，保留表格结构。**MinerU markdown 是给 LLM-judge 看的输入，不是给 regex 用的结构化数据**。
+> ⚠️ `run_mineru.py` 的 CLI (`main()`) 调用的是 `parse_with_fallback()`，其 docstring 明写「**优先使用 Agent API**，失败时降级到 Precision API」—— Agent 是主路径。这与本 skill「生产环境只用 Precision Parse」直接冲突。Agent 失败只打印一行日志，随后被成功的降级吞掉，产物看起来完全正常，**违规不可见**。不要用 CLI。
 
-**已知限制**：Agent 轻量模式在 CDN 下载时经常报 SSL 错误。生产环境只用 Precision Parse；如果 Precision Parse 不可用，**显式报错**，不要静默退到 Agent。
+`precision_parse` 按**当前工作目录**写出 `./output_<stem>/full.md`，**不接受输出目录参数**。并行处理多图时必须给每个调用独立 cwd（`subprocess` + `cwd=`），否则互相覆盖。
+
+输出保留表格结构。**MinerU markdown 是给 LLM-judge 看的输入，不是给 regex 用的结构化数据**。
+
+**已知限制**：Agent 轻量模式在 CDN 下载时常报 SSL 错误。生产环境只用 Precision Parse；Precision Parse 不可用时**显式报错**，不要静默退到 Agent。
+
+**⚠️ MinerU 会整段编造内容。** 实测一张 $5.50 超市小票，其 `full.md` 尾部被追加约 600 字关于「2017 年上海浦东发展银行最高额保证合同」的中文段落 —— 票面上没有任何这类文字。**MinerU 输出中未被图像或 MiniMax 佐证的内容一律丢弃**，不得并入 `notes` / `vendor` / 明细。
+
 
 ### 1.3 输入清点
 
@@ -123,15 +141,22 @@ python3 /Users/jacky/.agents/skills/mineru/run_mineru.py <image> --timeout 300
 
 | 字段 | 主来源 | 回退 | 理由 |
 |---|---|---|---|
-| `vendor` / `vendor_cn` / `address` / `date` | MiniMax | MinerU 文本检索 | 视觉模型语义理解更强 |
+| `vendor` / `vendor_cn` / `address` | MiniMax | MinerU 文本检索 | 视觉模型语义理解更强 |
+| **`date` / `time`** | **MinerU** | MiniMax | 见下方警告 —— 实测 MiniMax 12 张错 2 张，MinerU 两次都对 |
 | `subtotal` / `tax` / `discount` / `total` | MinerU | MiniMax | MinerU 表格保真，数值可靠 |
 | `line_items` | MiniMax（数组结构） | MinerU markdown 表格解析 | JSON 数组比 markdown 表格好处理 |
 | `payment_method` | MiniMax | MinerU 关键词 | 模型判断"VISA" / "MASTERCARD" |
 
-### 2.2 勾稽 —— 唯一硬性算式
+> ⚠️ **绝不因为日期"看起来在未来"就修改票面日期。** 申报年度由调用方给定，**不由模型推断**。
+>
+> 实测：MiniMax 对一张 T&T 小票返回 `2021-03-26`，并在自己的 `notes` 里写「2021 比 2026 这个未来日期更合理」—— 这是知识截止日导致的幻觉，模型**用先验覆盖了印在票面上的事实**，年份和日期同时错（正确值 `2026-03-21`）。该行会因此掉出申报年度、被期间闸门剔除。同批 12 张里 MiniMax 有 6 张误标 "future-dated"。
+>
+> 日期优先取 MinerU：收银/授权时间戳在小票上通常重复出现 2–3 次（交易行、AUTH 行、店铺 CODE），OCR 保真度高、可交叉验证。
+
+### 2.2 勾稽 —— 硬性算式
 
 ```python
-if discount > 0:
+if discount is not None and discount > 0:
     tieout_ok = abs((subtotal - discount) + tax - total) <= 0.05
 elif tax == 0:
     tieout_ok = abs(subtotal - total) <= 0.05
@@ -141,7 +166,36 @@ else:
 
 **判断缺失值必须用 `value is None`**，绝不能用 `value or -1`。表达式 `0.0 or -1` 返回 `-1`，会把合法的零值误判为缺失，导致零税率收据的勾稽检查全部失败。
 
+**`discount` 字段的唯一正确含义：印在 SUBTOTAL 与 TAX 之间、尚未计入 subtotal 的整单折扣。**
+
+| 票面写法 | 是否填 `discount` |
+|---|---|
+| `SubTotal 94.07 / 10% DISCOUNT 9.41 / H.S.T. 11.02` | ✅ 填 9.41 —— 折扣发生在税前，改变计税基数 |
+| Costco `TOTAL DISCOUNT(S) $49.50` | ❌ 填 0 —— 这是各行 TPD 即时折让的**合计**，已净额计入 subtotal |
+| Walmart `WAS $4.97 YOU SAVED $2.49` | ❌ 填 0 —— item-level 回滚价，印出的行价已是折后价 |
+
+**重复扣减会直接打破勾稽**：Costco 那张 `1170.84 − 49.50 + 144.62 ≠ 1315.46`。已净额化的折扣写进 `notes`，不写进 `discount`。实测 12 张里有 3 张踩这个坑。
+
 若勾稽不平，**重新读 MinerU markdown**（你手里有全文），看是哪个数字错，纠正后重算。**不要写 fallback chain** —— LLM 直接判断。
+
+### 2.2b 明细加总勾稽 —— 最强的单行纠错手段
+
+```python
+line_sum_ok = abs(sum(item.price for item in line_items) - subtotal) <= 0.02
+```
+
+**这是本流水线中最有效的确定性校验。** 实测 4 处数值冲突里有 3 处由它直接判定，无需重读图像、无需主观取舍：
+
+| 冲突 | MiniMax | MinerU | 加总裁定 |
+|---|---|---|---|
+| 袋装甜橙 | 39.98 | 9.98 | MiniMax（唯有它加总 = 印出的 165.81） |
+| 台湾白菜 | 3.83 | 3.03 | MiniMax（加总 = 64.78） |
+| DNR ROLLS | 2.48 | 2.88 | MiniMax（加总 = 100.23） |
+
+**它比勾稽更强**：勾稽只看 subtotal / tax / total 三个汇总数，看不见单行 OCR 滑移；明细加总能定位到**具体是哪一行错了**。
+
+**用法**：两个工具的 `line_items` 不一致时，**哪一版能加总到票面印出的 subtotal，就采信哪一版** —— 这比 §2.1 的先验优先级表更可靠，应优先于它。加总对不上且无法定位到具体行时，标 `review_required`。
+
 
 ### 2.3 税率合理性 —— 生产环境唯一的外部锚点
 
@@ -303,6 +357,38 @@ LLM-judge 在做 GIFI 映射时直接读这个表决定。**这是一个启发�
 
 **本 skill 输出 GIFI code + 税务处理提示（`tax_treatment`、`deductible_pct`），不做最终 Schedule 1 调整**。
 
+### 3.5b 可扣除性是独立于 GIFI 的第三根轴
+
+**本 skill 的定位是「记录客户交来的全部凭证」，不是「只出可申报的费用」。** 因此：
+
+> **每一张凭证、每一条明细都要进底稿，一条都不排除。** 不该扣的不靠「不记录」来表达，而是靠 `is_deductible` 明确标出来。
+
+这一点必须做对，否则会产生真实的执业风险。实测中 12 张里有 8 张是超市杂货，**被迫**落到 8810 Office expenses —— 因为 9130 在 generic 黑名单上，排除法只剩 8810。结果是：**非经营性支出被"洗"成了一个看起来合理的营运费用**，唯一信号只剩 `review_required`。$1,315 的维生素尤其典型。
+
+正确做法是把三根轴分开：
+
+```
+一张明细
+ ├── GIFI code        ← 报表怎么归类（CRA 口径，与是否可扣无关）
+ ├── tax_treatment    ← 能扣多少（ITA 67.1 的 50%、CCA、资本化…）
+ └── is_deductible    ← 这笔到底算不算经营支出（业务目的是否成立）
+```
+
+`is_deductible` 三态，**不允许留空**：
+
+| 值 | 含义 | 处理 |
+|---|---|---|
+| `Y` | 业务目的明确成立 | 正常入费用 |
+| `REVIEW` | 票面未说明业务目的，需客户提供背景 | **默认值** —— 入底稿，等 CPA 判定 |
+| `N` | 明显个人消费 / 股东福利 | `deductible_pct = 0`、`schedule_1_flag = true`、GIFI 记 9270 |
+
+判定要点：
+
+- **票面本身几乎从不证明业务目的**。一张超市小票不会写"这是给员工的"。因此 `REVIEW` 是默认值，不是例外 —— 判成 `Y` 需要有依据（业态本身即经营性，如轮胎、办公用品）。
+- **`N` 要敢下**。保健品、处方药、个人护理、明显的家庭采购 → 股东福利（ITA 15(1)），既不可扣、又是个人的应税福利。把它记成 8810 而不标 `N`，等于替客户把个人消费包装成费用。
+- **不要用"记进 9270 就算处理了"来回避判断**。9270 是 GIFI 归类，不代表不可扣；可扣与否由 `is_deductible` 表达。
+- **`business_purpose` 字段记录依据来源**（票面写明 / 客户说明 / 未说明），供审计回溯。
+
 ### 3.6 GIFI 决策指南（LLM-judge 必读）
 
 LLM-judge 在给一行做 GIFI 映射时，**按下面顺序思考**：
@@ -314,47 +400,88 @@ LLM-judge 在给一行做 GIFI 映射时，**按下面顺序思考**：
 5. **不要硬编码商户映射**。商户名经常变（"Costco Wholesale" vs "Costco Wholesale #151" vs "COSTCO TIRE SHOP"），LLM 看语义比看字符串好。
 6. **GIFI 是 advisory，不是 final**。最终由 CPA 结合完整财务图景确认。
 
+**GIFI 判在明细行，不判在单据。** 底稿是明细级的（见「Excel 输出」），一张单据的不同明细可以落到不同 GIFI —— 这是明细级底稿最主要的价值：
+
+- T&T 一张 $36.17 的小票：热食柜 + 白饭 + 凉皮（$27.58）→ **8523** 50%；草莓（$5.00）→ **8810** 100%
+- Walmart 一张小票：食品杂货 → **8810**；灯泡 → **8810**（家用/办公耗材）
+- Costco 一张 $1,315 的小票：鸡肉鸡蛋羊肉 → **8810**；保健品（$1,000+）→ **9270** 且 `is_deductible = N`
+
+不要因为"整单大部分是 X"就把整单判成 X —— 那正是明细级底稿要消除的粗糙近似。
+
 **轮胎的特例**：CRA 把 tires 明确列在 9281 营运费用下，**单独更换轮胎一般当期费用化**，不资本化。只有随车辆购置一并取得时才计 CCA Class 10。金额大时标记 `review_required` 交 CPA，不要自行认定为资本支出。
 
 ## Excel 输出
 
-3 个 sheet 的工作簿，结构稳定：
+4 个 sheet 的工作簿。**底稿主体是明细级：一条消费明细一行**，同一张单据的多条明细占据连续多行，然后才是下一张单据。
 
-| Sheet | 内容 |
-|---|---|
-| **Decisions** | N 行最终交叉验证后的数据，每行带 GIFI code + 税务处理 + 来源标签 |
-| **Raw_Outputs** | MiniMax JSON + MinerU markdown 并排，审计轨迹 |
-| **Validation_Report** | 9 道质量闸门 + 例外清单 + 省份检测 |
+| Sheet | 粒度 | 内容 |
+|---|---|---|
+| **Line_Items** | **一条明细一行** | 底稿主体。单据表头字段在每行重复（便于筛选/透视），每行独立带 GIFI + 可扣除性 + 来源标签 |
+| **Documents** | 一张单据一行 | 单据级表头、汇总金额、勾稽/税率/期间闸门结果 |
+| **Raw_Outputs** | 一张单据一行 | MiniMax JSON + MinerU markdown 并排，审计轨迹 |
+| **Validation_Report** | — | 质量闸门 + 例外清单 + 判官纠正记录 + GIFI 分布 |
 
-Decisions sheet 必备列：
+**为什么表头字段要在每行重复而不是只写首行**：合并单元格和留白会破坏筛选、排序和数据透视 —— 而按 GIFI 汇总、按可扣除性汇总正是 CPA 拿到这份底稿的主要用途。视觉分组靠**按单据交替底色**实现，不靠留空。
+
+Line_Items sheet 必备列：
 
 ```
-doc_id, source_file, doc_type, vendor, vendor_cn, address, date,
-subtotal, discount, tax, tax_label, total, currency, payment_method,
-line_items (JSON), expense_category,
-gifi_code, gifi_name, gifi_parent, is_generic,
-tax_treatment, deductible_pct, schedule_1_flag,
-supporting_doc, confidence, review_required,
-tieout_status, rate_status, filename_check,
-<各字段 _source 列>, notes
+doc_id, line_no, source_file,                          ← 定位
+vendor, date, province, currency, payment_method,      ← 单据表头（逐行重复）
+item_name, item_name_cn, qty, line_amount,             ← 明细本身
+line_tax_flag, line_taxable, line_tax_alloc,           ← 税（见下）
+expense_category, gifi_code, gifi_name, gifi_parent, is_generic,
+business_purpose, is_deductible, deductible_pct,       ← 可扣除性轴（§3.5b）
+tax_treatment, schedule_1_flag,
+confidence, review_required, line_source, notes
 ```
+
+**`line_tax_alloc`（明细级税额分摊）**：先按票面税标（Costco 的 `H`、Walmart 的 `J`/`A`、T&T 的 `F`/`P`）判定每行是否计税，再把**单据实际税额**按应税行金额比例分摊：
+
+```python
+line_tax_alloc = doc_tax * (line_amount / Σ(应税行 line_amount))
+```
+
+这样 `Σ line_tax_alloc == doc_tax` **恒等成立**，不会因建模误差破坏勾稽。分摊值的来源标签必须是 `DERIVED (pro-rata over taxable lines)`，不能冒充票面读数。
+
+税标判定同时是一道**独立校验**：把判为应税的行加总 × 法定税率，应当逼近票面税额。实测 12 张里有 5 张借此精确验证（如 Walmart `(8.98 + 0.20) × 13% = 1.19` 分毫不差），是继明细加总之后第二强的确定性检查。
+
 
 ## 质量闸门
 
-10 道闸门，所有判定都应该由 LLM-judge 给出，而不是 regex：
+13 道闸门，所有判定都应该由 LLM-judge 给出，而不是 regex：
 
-1. **文档分类**：每份输入的 `doc_type` 已判定；`statement` 未被当作收据提取
-2. **去重**：无重复行（按 `file_hash` 查重；按（商户+日期+金额）查配对）
-3. **勾稽平衡**：每张收据满足 (subtotal − discount) + tax = total
-4. **税率合理性**：实际税率未超过所属省法定税率；跳过行已记录原因
-5. **期间归属**：日期落在申报年度内
-6. **币种**：`currency` 非空；非 CAD 已附汇率
-7. **GIFI 已赋值**：每行都有 GIFI code 与费用分类
-8. **GIFI 合法性**：code 在 CRA 清单中，非非 total项
-10. **来源标注**：每个字段都有非空来源标签；`DERIVED` 已单独标记
-10. **明细覆盖率**：line_items 非空（空时 GIFI 仅依赖商户+金额，confidence 应降低）
+| # | 闸门 | 判据 |
+|---|---|---|
+| 1 | **文档分类** | 每份输入的 `doc_type` 已判定；`statement` 未被当作收据提取 |
+| 2 | **去重** | 无重复行（按 `file_hash` 查重；按（商户+日期+金额）查配对） |
+| 3 | **勾稽平衡** | 每张收据满足 (subtotal − discount) + tax = total，容差 $0.05 |
+| 4 | **明细加总** | Σ line_items == subtotal，容差 $0.02（见 §2.2b —— **最强的单行纠错手段**） |
+| 5 | **税额分摊** | Σ line_tax_alloc == 单据 tax（按构造恒等；不等说明应税行判定有误） |
+| 6 | **税率合理性** | 实际税率未超过所属省法定税率；跳过行已记录原因 |
+| 7 | **期间归属** | 日期落在申报年度内；**未因"看起来是未来"而被模型改写**（§2.1） |
+| 8 | **币种** | `currency` 非空；非 CAD 已附汇率 |
+| 9 | **GIFI 已赋值** | **每条明细行**都有 GIFI code 与费用分类 |
+| 10 | **GIFI 合法性** | code 在 CRA 清单中，且**不是 generic 块头**（§3.3） |
+| 11 | **可扣除性已判定** | 每条明细行 `is_deductible` ∈ {Y, REVIEW, N}，无空值（§3.5b） |
+| 12 | **来源标注** | 每个字段都有非空来源标签；`DERIVED` 已单独标记 |
+| 13 | **明细覆盖率** | line_items 非空（空时 GIFI 仅依赖商户+金额，confidence 应降低） |
 
 **所有闸门状态在 Validation_Report 里列出**。`confidence < 0.7` 的行在 Validation_Report 置顶供 CPA 优先看。
+
+**闸门 4 与闸门 3 的分工**：勾稽（3）只看 subtotal / tax / total 三个汇总数，两个工具同时读错某一行明细时它照样通过；明细加总（4）能定位到**具体是哪一行错**。两者都过才算数值可信。
+
+### 评估模式（`--eval`）
+
+当输入文件名带有 ground truth（形如 `{vendor}_{total}_{tax}.jpg`，仅测试语料）时，应额外跑一道对照并输出逐张得分：
+
+```python
+gt_total, gt_tax = float(parts[-2]), float(parts[-1])
+filename_check = abs(total - gt_total) <= 0.01 and abs(tax - gt_tax) <= 0.01
+```
+
+**这是唯一能量化判官质量的手段。** §2.1 的字段优先级表应当由 eval 数据反推得出，而不是凭直觉写死 —— 「date 该信谁」这类问题正是靠 eval 才发现写反了。生产语料没有 ground truth，但**每次改动 skill 后都应在测试语料上重跑 eval**，防止回归。
+
 
 ## 生产环境必须防御
 
@@ -402,7 +529,7 @@ tieout_status, rate_status, filename_check,
 
 | 限制 | 应对 |
 |---|---|
-| MinerU Agent API CDN 下载报 SSL 错误 | 只用 Precision Parse；显式失败不静默退到 Agent |
+| MinerU Agent API CDN 下载报 SSL 错误 | 降级到 `curl -k` 方案 |
 | MinerU 在旋转图片上版面混乱 | 让 LLM-judge 自己从 MiniMax + MinerU 文本里校正 |
 | MiniMax 在低对比度图片上漏字段 | LLM-judge 看 MinerU markdown 补齐；无法补齐则 `confidence < 0.7` |
 | 长收据（杂货 50+ 行）MiniMax 漏 line_items | 依赖 MinerU markdown 表格回填 |

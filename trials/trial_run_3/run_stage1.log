@@ -1,0 +1,43 @@
+/opt/homebrew/lib/python3.14/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.19.913) or chardet (7.4.3)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[Stage 0] manifest: 12 docs, hash-dupes: 0
+[Stage 1] MiniMax x12 …
+  [MiniMax] canadiantire_11.29_1.30.jpg: ok (610b)
+  [MiniMax] bbq_95.68_11.02.jpg: ok (1272b)
+  [MiniMax] hmart_5.5_0.jpg: ok (628b)
+  [MiniMax] shoppers_84.69_9.75.jpg: ok (490b)
+  [MiniMax] costco_971.75_111.79.jpg: ok (720b)
+  [MiniMax] tnt_36.17_3.59.jpg: ok (850b)
+  [MiniMax] tnt_173.73_7.92.jpg: ok (1682b)
+  [MiniMax] walmart_55.48_0.jpg: ok (919b)
+  [MiniMax] tnt_64.78_0.jpg: ok (1506b)
+  [MiniMax] walmart_60.16_1.19.jpg: ok (1407b)
+  [MiniMax] walmart_101.98_1.75.jpg: ok (1272b)
+  [MiniMax] costco_1315.46_144.62.jpg: ok (1168b)
+[Stage 1] MinerU x12 …
+  [MinerU] bbq_95.68_11.02.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] canadiantire_11.29_1.30.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] bbq_95.68_11.02.jpg: FAIL
+  [MinerU] canadiantire_11.29_1.30.jpg: FAIL
+  [MinerU] costco_1315.46_144.62.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] costco_1315.46_144.62.jpg: FAIL
+  [MinerU] costco_971.75_111.79.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] hmart_5.5_0.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] costco_971.75_111.79.jpg: FAIL
+  [MinerU] hmart_5.5_0.jpg: FAIL
+  [MinerU] shoppers_84.69_9.75.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] shoppers_84.69_9.75.jpg: FAIL
+  [MinerU] tnt_173.73_7.92.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] tnt_173.73_7.92.jpg: FAIL
+  [MinerU] tnt_36.17_3.59.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] tnt_36.17_3.59.jpg: FAIL
+  [MinerU] tnt_64.78_0.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] tnt_64.78_0.jpg: FAIL
+  [MinerU] walmart_101.98_1.75.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] walmart_101.98_1.75.jpg: FAIL
+  [MinerU] walmart_55.48_0.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] walmart_60.16_1.19.jpg: EXCEPTION parse_with_fallback() got multiple values for argument 'timeout'
+  [MinerU] walmart_55.48_0.jpg: FAIL
+  [MinerU] walmart_60.16_1.19.jpg: FAIL
+[Stage 1] DONE  MiniMax 12/12  MinerU 0/12
+[Stage 1] WARNING: MinerU Precision Parse incomplete — explicit failure, no silent Agent fallback

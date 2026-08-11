@@ -1,0 +1,2422 @@
+{
+    "pdf_info": [
+        {
+            "preproc_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        154,
+                        95,
+                        204,
+                        138
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                154,
+                                95,
+                                204,
+                                138
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        154,
+                                        95,
+                                        204,
+                                        138
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                154,
+                                                95,
+                                                204,
+                                                138
+                                            ],
+                                            "type": "image",
+                                            "image_path": "8ba260f5f46a45c38c8596f86ceb9a7a4428a1c6f4aa6621b9d6e0da1a4be282.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        184,
+                        38,
+                        270,
+                        58
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                184,
+                                38,
+                                270,
+                                58
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        184,
+                                        38,
+                                        270,
+                                        58
+                                    ],
+                                    "type": "text",
+                                    "content": "Walmart"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        155,
+                        55,
+                        298,
+                        95
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                55,
+                                298,
+                                95
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        55,
+                                        298,
+                                        95
+                                    ],
+                                    "type": "text",
+                                    "content": "How did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        218,
+                        90,
+                        294,
+                        137
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                218,
+                                90,
+                                294,
+                                137
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        218,
+                                        90,
+                                        294,
+                                        137
+                                    ],
+                                    "type": "text",
+                                    "content": "WIN!\n1 of 3 $1000\ngift cards"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        168,
+                        141,
+                        279,
+                        164
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                168,
+                                141,
+                                279,
+                                164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        168,
+                                        141,
+                                        279,
+                                        164
+                                    ],
+                                    "type": "text",
+                                    "content": "Rules and regulations apply.\nSee contest rules for details."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        168,
+                        242,
+                        181
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                168,
+                                242,
+                                181
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        168,
+                                        242,
+                                        181
+                                    ],
+                                    "type": "text",
+                                    "content": "STORE 3053"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        181,
+                        242,
+                        193
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                181,
+                                242,
+                                193
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        181,
+                                        242,
+                                        193
+                                    ],
+                                    "type": "text",
+                                    "content": "5000 HWY 7"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        191,
+                        193,
+                        242,
+                        205
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                191,
+                                193,
+                                242,
+                                205
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        193,
+                                        242,
+                                        205
+                                    ],
+                                    "type": "text",
+                                    "content": "MARKHAM, ON"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        199,
+                        205,
+                        233,
+                        216
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                199,
+                                205,
+                                233,
+                                216
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        199,
+                                        205,
+                                        233,
+                                        216
+                                    ],
+                                    "type": "text",
+                                    "content": "L3R 4M9"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        192,
+                        216,
+                        246,
+                        228
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                192,
+                                216,
+                                246,
+                                228
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        192,
+                                        216,
+                                        246,
+                                        228
+                                    ],
+                                    "type": "text",
+                                    "content": "905-477-6060"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        140,
+                        227,
+                        298,
+                        240
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                140,
+                                227,
+                                298,
+                                240
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        227,
+                                        298,
+                                        240
+                                    ],
+                                    "type": "text",
+                                    "content": "ST# 03053 OP# 009080 TE# 80 TR# 01433"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        239,
+                        303,
+                        251
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                239,
+                                303,
+                                251
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        239,
+                                        303,
+                                        251
+                                    ],
+                                    "type": "text",
+                                    "content": "YFM CROISSAN 62'735274270 $5.94 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        250,
+                        303,
+                        262
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                250,
+                                303,
+                                262
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        250,
+                                        303,
+                                        262
+                                    ],
+                                    "type": "text",
+                                    "content": "CH STRIPS VF 627735019090 $10.98 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        148,
+                        272,
+                        303,
+                        284
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                148,
+                                272,
+                                303,
+                                284
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        148,
+                                        272,
+                                        303,
+                                        284
+                                    ],
+                                    "type": "text",
+                                    "content": "3.410 kg @ $4.34 /kg $14.80 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        283,
+                        304,
+                        295
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                283,
+                                304,
+                                295
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        283,
+                                        304,
+                                        295
+                                    ],
+                                    "type": "text",
+                                    "content": "ORANGE 686201111240 $11.88 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        293,
+                        304,
+                        306
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                293,
+                                304,
+                                306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        293,
+                                        304,
+                                        306
+                                    ],
+                                    "type": "text",
+                                    "content": "ORANGE 686201111240 $11.88 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        213,
+                        316,
+                        291,
+                        328
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                213,
+                                316,
+                                291,
+                                328
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        213,
+                                        316,
+                                        291,
+                                        328
+                                    ],
+                                    "type": "text",
+                                    "content": "SUBTOTAL $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        225,
+                        328,
+                        291,
+                        338
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                225,
+                                328,
+                                291,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        225,
+                                        328,
+                                        291,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        206,
+                        337,
+                        291,
+                        348
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                337,
+                                291,
+                                348
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        337,
+                                        291,
+                                        348
+                                    ],
+                                    "type": "text",
+                                    "content": "MCARD TEND $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        206,
+                        347,
+                        291,
+                        359
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                347,
+                                291,
+                                359
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        347,
+                                        291,
+                                        359
+                                    ],
+                                    "type": "text",
+                                    "content": "CHANGE DUE $0.00"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        364,
+                        278,
+                        378
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                364,
+                                278,
+                                378
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        364,
+                                        278,
+                                        378
+                                    ],
+                                    "type": "text",
+                                    "content": "MASTERCARD **** 1**** **** 4739 RF"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        150,
+                        375,
+                        241,
+                        386
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                150,
+                                375,
+                                241,
+                                386
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        375,
+                                        241,
+                                        386
+                                    ],
+                                    "type": "text",
+                                    "content": "$55.48 TOTAL PURCHASE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        384,
+                        214,
+                        395
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                384,
+                                214,
+                                395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        384,
+                                        214,
+                                        395
+                                    ],
+                                    "type": "text",
+                                    "content": "APPROVAL # 042392"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        394,
+                        217,
+                        405
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                394,
+                                217,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        394,
+                                        217,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "REN # 605100731786"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        414,
+                        218,
+                        425
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                414,
+                                218,
+                                425
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        414,
+                                        218,
+                                        425
+                                    ],
+                                    "type": "text",
+                                    "content": "AID A0000000C410'0"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        424,
+                        222,
+                        435
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                424,
+                                222,
+                                435
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        424,
+                                        222,
+                                        435
+                                    ],
+                                    "type": "text",
+                                    "content": "TC BE2EB3389E460EE8"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 25,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        434,
+                        237,
+                        444
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                434,
+                                237,
+                                444
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        434,
+                                        237,
+                                        444
+                                    ],
+                                    "type": "text",
+                                    "content": "TERMINAL ID LMTUP018955"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 26,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        444,
+                        234,
+                        454
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                444,
+                                234,
+                                454
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        444,
+                                        234,
+                                        454
+                                    ],
+                                    "type": "text",
+                                    "content": "*No Signature Required"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 27,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        463,
+                        230,
+                        476
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                463,
+                                230,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        463,
+                                        230,
+                                        476
+                                    ],
+                                    "type": "text",
+                                    "content": "02/19/26 20:58:06"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 28,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        486,
+                        246,
+                        498
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                486,
+                                246,
+                                498
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        486,
+                                        246,
+                                        498
+                                    ],
+                                    "type": "text",
+                                    "content": "GST/HST 137466199 RT 0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 29,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        497,
+                        233,
+                        509
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                497,
+                                233,
+                                509
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        497,
+                                        233,
+                                        509
+                                    ],
+                                    "type": "text",
+                                    "content": "QST 1016551356 T0 0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 30,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        189,
+                        509,
+                        250,
+                        520
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                189,
+                                509,
+                                250,
+                                520
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        509,
+                                        250,
+                                        520
+                                    ],
+                                    "type": "text",
+                                    "content": "# ITEMS SOLD 5"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 31,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        164,
+                        520,
+                        279,
+                        531
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                164,
+                                520,
+                                279,
+                                531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        520,
+                                        279,
+                                        531
+                                    ],
+                                    "type": "text",
+                                    "content": "TC# 2810 42'0 8692 3910 8218"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 32,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        529,
+                        311,
+                        544
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                529,
+                                311,
+                                544
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        529,
+                                        311,
+                                        544
+                                    ],
+                                    "type": "text",
+                                    "content": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 33,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        175,
+                        542,
+                        262,
+                        555
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                542,
+                                262,
+                                555
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        542,
+                                        262,
+                                        555
+                                    ],
+                                    "type": "text",
+                                    "content": "02/19/26 20:58:11"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 34,
+                    "merge_prev": false
+                }
+            ],
+            "discarded_blocks": [],
+            "page_size": [
+                460,
+                614
+            ],
+            "page_idx": 0,
+            "para_blocks": [
+                {
+                    "type": "image",
+                    "bbox": [
+                        154,
+                        95,
+                        204,
+                        138
+                    ],
+                    "blocks": [
+                        {
+                            "bbox": [
+                                154,
+                                95,
+                                204,
+                                138
+                            ],
+                            "type": "image_body",
+                            "angle": 0,
+                            "lines": [
+                                {
+                                    "bbox": [
+                                        154,
+                                        95,
+                                        204,
+                                        138
+                                    ],
+                                    "spans": [
+                                        {
+                                            "bbox": [
+                                                154,
+                                                95,
+                                                204,
+                                                138
+                                            ],
+                                            "type": "image",
+                                            "image_path": "8ba260f5f46a45c38c8596f86ceb9a7a4428a1c6f4aa6621b9d6e0da1a4be282.jpg"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "index": 0
+                        }
+                    ],
+                    "index": 0
+                },
+                {
+                    "bbox": [
+                        184,
+                        38,
+                        270,
+                        58
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                184,
+                                38,
+                                270,
+                                58
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        184,
+                                        38,
+                                        270,
+                                        58
+                                    ],
+                                    "type": "text",
+                                    "content": "Walmart"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 1,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        155,
+                        55,
+                        298,
+                        95
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                155,
+                                55,
+                                298,
+                                95
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        155,
+                                        55,
+                                        298,
+                                        95
+                                    ],
+                                    "type": "text",
+                                    "content": "How did we do today?\nComplete our short customer survey at\nSURVEY.WALMART.CA"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 2,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        218,
+                        90,
+                        294,
+                        137
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                218,
+                                90,
+                                294,
+                                137
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        218,
+                                        90,
+                                        294,
+                                        137
+                                    ],
+                                    "type": "text",
+                                    "content": "WIN!\n1 of 3 $1000\ngift cards"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 3,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        168,
+                        141,
+                        279,
+                        164
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                168,
+                                141,
+                                279,
+                                164
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        168,
+                                        141,
+                                        279,
+                                        164
+                                    ],
+                                    "type": "text",
+                                    "content": "Rules and regulations apply.\nSee contest rules for details."
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 4,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        168,
+                        242,
+                        181
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                168,
+                                242,
+                                181
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        168,
+                                        242,
+                                        181
+                                    ],
+                                    "type": "text",
+                                    "content": "STORE 3053"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 5,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        194,
+                        181,
+                        242,
+                        193
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                194,
+                                181,
+                                242,
+                                193
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        194,
+                                        181,
+                                        242,
+                                        193
+                                    ],
+                                    "type": "text",
+                                    "content": "5000 HWY 7"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 6,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        191,
+                        193,
+                        242,
+                        205
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                191,
+                                193,
+                                242,
+                                205
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        191,
+                                        193,
+                                        242,
+                                        205
+                                    ],
+                                    "type": "text",
+                                    "content": "MARKHAM, ON"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 7,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        199,
+                        205,
+                        233,
+                        216
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                199,
+                                205,
+                                233,
+                                216
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        199,
+                                        205,
+                                        233,
+                                        216
+                                    ],
+                                    "type": "text",
+                                    "content": "L3R 4M9"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 8,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        192,
+                        216,
+                        246,
+                        228
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                192,
+                                216,
+                                246,
+                                228
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        192,
+                                        216,
+                                        246,
+                                        228
+                                    ],
+                                    "type": "text",
+                                    "content": "905-477-6060"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 9,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        140,
+                        227,
+                        298,
+                        240
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                140,
+                                227,
+                                298,
+                                240
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        140,
+                                        227,
+                                        298,
+                                        240
+                                    ],
+                                    "type": "text",
+                                    "content": "ST# 03053 OP# 009080 TE# 80 TR# 01433"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 10,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        239,
+                        303,
+                        251
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                239,
+                                303,
+                                251
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        239,
+                                        303,
+                                        251
+                                    ],
+                                    "type": "text",
+                                    "content": "YFM CROISSAN 62'735274270 $5.94 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 11,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        250,
+                        303,
+                        262
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                250,
+                                303,
+                                262
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        250,
+                                        303,
+                                        262
+                                    ],
+                                    "type": "text",
+                                    "content": "CH STRIPS VF 627735019090 $10.98 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 12,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        148,
+                        272,
+                        303,
+                        284
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                148,
+                                272,
+                                303,
+                                284
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        148,
+                                        272,
+                                        303,
+                                        284
+                                    ],
+                                    "type": "text",
+                                    "content": "3.410 kg @ $4.34 /kg $14.80 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 13,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        144,
+                        283,
+                        304,
+                        295
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                144,
+                                283,
+                                304,
+                                295
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        144,
+                                        283,
+                                        304,
+                                        295
+                                    ],
+                                    "type": "text",
+                                    "content": "ORANGE 686201111240 $11.88 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 14,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        293,
+                        304,
+                        306
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                293,
+                                304,
+                                306
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        293,
+                                        304,
+                                        306
+                                    ],
+                                    "type": "text",
+                                    "content": "ORANGE 686201111240 $11.88 D"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 15,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        213,
+                        316,
+                        291,
+                        328
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                213,
+                                316,
+                                291,
+                                328
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        213,
+                                        316,
+                                        291,
+                                        328
+                                    ],
+                                    "type": "text",
+                                    "content": "SUBTOTAL $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 16,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        225,
+                        328,
+                        291,
+                        338
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                225,
+                                328,
+                                291,
+                                338
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        225,
+                                        328,
+                                        291,
+                                        338
+                                    ],
+                                    "type": "text",
+                                    "content": "TOTAL $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 17,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        206,
+                        337,
+                        291,
+                        348
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                337,
+                                291,
+                                348
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        337,
+                                        291,
+                                        348
+                                    ],
+                                    "type": "text",
+                                    "content": "MCARD TEND $55.48"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 18,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        206,
+                        347,
+                        291,
+                        359
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                206,
+                                347,
+                                291,
+                                359
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        206,
+                                        347,
+                                        291,
+                                        359
+                                    ],
+                                    "type": "text",
+                                    "content": "CHANGE DUE $0.00"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 19,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        364,
+                        278,
+                        378
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                364,
+                                278,
+                                378
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        364,
+                                        278,
+                                        378
+                                    ],
+                                    "type": "text",
+                                    "content": "MASTERCARD **** 1**** **** 4739 RF"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 20,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        150,
+                        375,
+                        241,
+                        386
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                150,
+                                375,
+                                241,
+                                386
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        150,
+                                        375,
+                                        241,
+                                        386
+                                    ],
+                                    "type": "text",
+                                    "content": "$55.48 TOTAL PURCHASE"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 21,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        384,
+                        214,
+                        395
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                384,
+                                214,
+                                395
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        384,
+                                        214,
+                                        395
+                                    ],
+                                    "type": "text",
+                                    "content": "APPROVAL # 042392"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 22,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        394,
+                        217,
+                        405
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                394,
+                                217,
+                                405
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        394,
+                                        217,
+                                        405
+                                    ],
+                                    "type": "text",
+                                    "content": "REN # 605100731786"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 23,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        414,
+                        218,
+                        425
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                414,
+                                218,
+                                425
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        414,
+                                        218,
+                                        425
+                                    ],
+                                    "type": "text",
+                                    "content": "AID A0000000C410'0"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 24,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        424,
+                        222,
+                        435
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                424,
+                                222,
+                                435
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        424,
+                                        222,
+                                        435
+                                    ],
+                                    "type": "text",
+                                    "content": "TC BE2EB3389E460EE8"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 25,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        434,
+                        237,
+                        444
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                434,
+                                237,
+                                444
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        434,
+                                        237,
+                                        444
+                                    ],
+                                    "type": "text",
+                                    "content": "TERMINAL ID LMTUP018955"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 26,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        143,
+                        444,
+                        234,
+                        454
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                143,
+                                444,
+                                234,
+                                454
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        143,
+                                        444,
+                                        234,
+                                        454
+                                    ],
+                                    "type": "text",
+                                    "content": "*No Signature Required"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 27,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        463,
+                        230,
+                        476
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                463,
+                                230,
+                                476
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        463,
+                                        230,
+                                        476
+                                    ],
+                                    "type": "text",
+                                    "content": "02/19/26 20:58:06"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 28,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        486,
+                        246,
+                        498
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                486,
+                                246,
+                                498
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        486,
+                                        246,
+                                        498
+                                    ],
+                                    "type": "text",
+                                    "content": "GST/HST 137466199 RT 0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 29,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        497,
+                        233,
+                        509
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                497,
+                                233,
+                                509
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        497,
+                                        233,
+                                        509
+                                    ],
+                                    "type": "text",
+                                    "content": "QST 1016551356 T0 0001"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 30,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        189,
+                        509,
+                        250,
+                        520
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                189,
+                                509,
+                                250,
+                                520
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        189,
+                                        509,
+                                        250,
+                                        520
+                                    ],
+                                    "type": "text",
+                                    "content": "# ITEMS SOLD 5"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 31,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        164,
+                        520,
+                        279,
+                        531
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                164,
+                                520,
+                                279,
+                                531
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        164,
+                                        520,
+                                        279,
+                                        531
+                                    ],
+                                    "type": "text",
+                                    "content": "TC# 2810 42'0 8692 3910 8218"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 32,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        145,
+                        529,
+                        311,
+                        544
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                145,
+                                529,
+                                311,
+                                544
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        145,
+                                        529,
+                                        311,
+                                        544
+                                    ],
+                                    "type": "text",
+                                    "content": "1"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 33,
+                    "merge_prev": false
+                },
+                {
+                    "bbox": [
+                        175,
+                        542,
+                        262,
+                        555
+                    ],
+                    "type": "text",
+                    "angle": 0,
+                    "lines": [
+                        {
+                            "bbox": [
+                                175,
+                                542,
+                                262,
+                                555
+                            ],
+                            "spans": [
+                                {
+                                    "bbox": [
+                                        175,
+                                        542,
+                                        262,
+                                        555
+                                    ],
+                                    "type": "text",
+                                    "content": "02/19/26 20:58:11"
+                                }
+                            ]
+                        }
+                    ],
+                    "index": 34,
+                    "merge_prev": false
+                }
+            ]
+        }
+    ],
+    "_backend": "hybrid",
+    "_effort": "medium",
+    "_ocr_enable": true,
+    "_version_name": "3.4.4"
+}

@@ -33,33 +33,63 @@ Key prompt design rules:
 ```python
 import re, json, subprocess
 
-result = subprocess.run(
-    ["mmx", "vision", "describe", "--image", path, "--prompt", prompt, "--quiet", "--output", "text"],
-    capture_output=True, text=True, timeout=60
-)
-m = re.search(r"\{[\s\S]*\}", result.stdout)
-data = json.loads(m.group(0)) if m else {}
+def call_minimax(path, prompt, timeout=300):
+    try:
+        result = subprocess.run(
+            ["mmx", "vision", "describe", "--image", path,
+             "--prompt", prompt, "--quiet", "--output", "text"],
+            capture_output=True, text=True, timeout=timeout
+        )
+    except subprocess.TimeoutExpired:
+        return None, "TIMEOUT"          # explicit failure — never a silent empty dict
+
+    m = re.search(r"\{[\s\S]*\}", result.stdout)
+    if not m:
+        return None, "NO_JSON"
+    try:
+        return json.loads(m.group(0)), "OK"   # json.loads is the success test
+    except json.JSONDecodeError:
+        return None, "BAD_JSON"
 ```
 
 Do **not** write field-level regex extraction beyond this. Trust the JSON.
 
+> ⚠️ **Never use `re.search(r"\{[\s\S]*\}", ...)` as the success test.** A `subprocess` timeout raises an exception whose string **echoes the full command including the prompt** — and the prompt *is* a JSON schema, full of braces. The regex matches, and a call that completely failed gets recorded as a success with garbage data. This is not hypothetical: the largest receipt in the test corpus (66 line items) blew a 120 s timeout and passed this check. **Success = `json.loads` did not raise.**
+
+**Timeout**: default `timeout=300`. Receipts with 50+ line items exceed 120 s; the previously documented `timeout=60` fails on any non-trivial receipt. Retry once on timeout; on a second failure record an explicit extraction failure rather than writing an empty result.
+
 ### Failure modes
 
+- Timeout: retry once at the same timeout, then record explicit failure. Do **not** fall back to an empty dict.
 - Empty stdout: API key issue or rate limit. Wait 5s and retry.
 - JSON with `null` for all fields: model couldn't parse the image. Re-prompt with `"Look at this image carefully and extract..."`.
 - No JSON block: model output prose. Tighten the prompt or use `--output json` if available.
 - Output truncated at token limit on long receipts (50+ line items): rely on MinerU markdown to fill gaps.
+- **Date shifted by years**: the model may "correct" a printed date it believes is in the future (knowledge-cutoff artifact). Take dates from MinerU. See SKILL.md §2.1.
 
 ## MinerU Precision Parse
 
 ### Authentication
-API key is in `/Users/jacky/.agents/skills/mineru/.env` as `MINERU_API_KEY`. The `run_mineru.py` script reads it automatically.
+API key is in `/Users/jacky/.agents/skills/mineru/.env` as `MINERU_API_KEY`. `precision_parse` reads it automatically via `load_env()`.
 
 ### Command
 
-```bash
-python3 /Users/jacky/.agents/skills/mineru/run_mineru.py <image_path> --timeout 300
+**Call `precision_parse` directly. Do NOT use the `run_mineru.py` CLI.**
+
+```python
+import sys
+sys.path.insert(0, "/Users/jacky/.agents/skills/mineru")
+from run_mineru import precision_parse
+
+precision_parse(image_path, timeout=300)
 ```
+
+> ⚠️ **The CLI violates this skill's own rule.** `run_mineru.py`'s `main()` calls `parse_with_fallback()`, whose docstring reads *"解析文件，优先使用 Agent API，失败时降级到 Precision API"* — **Agent is the primary path**, Precision only the fallback. SKILL.md requires Precision Parse only. The Agent failure prints one log line and is then swallowed by a successful fallback, so the output looks entirely normal and the violation is invisible. Verified in trial_run_2's `run.log`: repeated `cdn-mineru.openxlab.org.cn` SSL failures, results still produced.
+
+**`precision_parse` takes no output-directory argument** — it writes `./output_<stem>/` relative to the **current working directory**. When parallelising, give each call its own cwd (`subprocess.run(..., cwd=...)`), or concurrent calls will collide.
+
+Signature is `precision_parse(file_path, timeout=120)`. Note `parse_with_fallback(file_path, timeout)` takes **no** output-dir parameter either — passing one positionally raises `got multiple values for argument 'timeout'`.
+
 
 ### Output structure
 
@@ -78,7 +108,7 @@ The `full.md` is given to the LLM-judge for cross-validation, **not** parsed by 
 
 ### Agent lightweight mode caveat
 
-The same script supports agent mode via `agent_parse()`. **However, in practice the agent API's CDN download returns SSL errors** (cdn-mineru.openxlab.org.cn). Do not fall back to agent mode silently — if Precision Parse fails, **explicitly record the failure** and rely on MiniMax for that image.
+The same script supports agent mode via `agent_parse()`. **However, in practice the agent API's CDN download returns SSL errors** (cdn-mineru.openxlab.org.cn). 
 
 ## Tesseract OCR
 
