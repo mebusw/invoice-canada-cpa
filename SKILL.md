@@ -1,11 +1,11 @@
 ---
 name: invoice-canada-cpa
-description: Extract structured data from Canadian receipt and invoice images using multi-modal AI vision models (MiniMax vision CLI + MinerU Precision Parse) with LLM-as-judge cross-validation, then map each expense to a CRA GIFI code for T2 filing. Use this skill whenever the user mentions processing receipts, extracting invoice data, OCR on receipts, expense extraction, GIFI coding, T2 Schedule 125, Schedule 1 adjustments, or converting receipt images into a structured expense spreadsheet. Triggers on phrases like "process these receipts", "extract data from invoices", "OCR these photos", "categorize expenses by GIFI", "build an expense workpaper". Especially useful for Canadian small-business tax preparation, CPA workpapers, and batch processing of receipt photos or PDFs. ALWAYS use this skill when the user provides receipt images and wants structured data out — the cross-validation pipeline and the CRA-verified GIFI mapping produce far better results than handling it inline.
+description: Extract structured data from Canadian receipt and invoice images using multi-modal AI vision models (vision LLM + MinerU Precision Parse) with LLM-as-judge cross-validation, then map each expense to a CRA GIFI code for T2 filing. Use this skill whenever the user mentions processing receipts, extracting invoice data, OCR on receipts, expense extraction, GIFI coding, T2 Schedule 125, Schedule 1 adjustments, or converting receipt images into a structured expense spreadsheet. Triggers on phrases like "process these receipts", "extract data from invoices", "OCR these photos", "categorize expenses by GIFI", "build an expense workpaper". Especially useful for Canadian small-business tax preparation, CPA workpapers, and batch processing of receipt photos or PDFs. ALWAYS use this skill when the user provides receipt images and wants structured data out — the cross-validation pipeline and the CRA-verified GIFI mapping produce far better results than handling it inline.
 ---
 
-# 加拿大发票多模态提取与 GIFI 分类
+# 发票收据多模态提取与加拿大 GIFI 分类
 
-**核心理念**：让视觉模型和 LLM 做它们擅长的事（语义理解、版面识别、判断真伪），避免用正则和硬编码规则来"教"机器做事。规则应该集中在**评估**层面（勾稽、税率合理性、GIFI 映射），不在**提取**层面。
+**核心理念**：让视觉模型 LLM 做它们擅长的事（语义理解、版面识别、判断真伪），避免用正则和硬编码规则来"教"机器做事。规则应该集中在**评估**层面（勾稽、税率合理性、GIFI 映射），不在**提取**层面。
 
 ## 何时使用
 
@@ -28,10 +28,10 @@ description: Extract structured data from Canadian receipt and invoice images us
 
 ```
 阶段 1  多模态提取（并行）
-  ├─ MiniMax vision (mmx) — 一次性 prompt，含明细 + 金额 + 商户
-  └─ MinerU Precision Parse — markdown 结构化文本
+  ├─ （必做）LLM 自带的视觉模型，比如 chatGPT/MiniMax vision (mmx) — 一次性 prompt，含明细 + 金额 + 商户
+  └─ （可选）MinerU Precision Parse — markdown 结构化文本
         │
-阶段 2  LLM-as-judge（你，Claude）
+阶段 2  LLM-as-judge
   ├─ 合并两个来源，按可信度仲裁
   ├─ 勾稽（subtotal + tax = total；有折扣用折扣版）
   ├─ 税率合理性（vs 所属省法定税率）
@@ -43,11 +43,40 @@ description: Extract structured data from Canadian receipt and invoice images us
   └─ 标注 review_required 的行供 CPA 复核
 ```
 
-**为什么只用两个工具而不是写复杂 parser？** MinerU 和 MiniMax 都是云端视觉模型。MiniMax 在语义识别（商户、日期、明细结构）上更强；MinerU 在保留表格结构（数值精度、税额分行）上更强。**让模型自己解析输出，不要再用正则二次抽取**。
+**为什么只用两个工具而不是写复杂 parser？** MinerU 和 chatGPT/MiniMax 都是云端视觉模型。chatGPT/MiniMax 在语义识别（商户、日期、明细结构）上更强；MinerU 在保留表格结构（数值精度、税额分行）上更强。**让模型自己解析输出，不要再用正则二次抽取**。
+
+**如果没有安装 mineru sklll 则跳过 MinerU Precision Parse 步骤。**
 
 ## 阶段 1：多模态提取
 
-### 1.1 MiniMax vision — 一个 prompt 拿全字段
+### 1.1 vision LLM — 一个 prompt 拿全字段
+如果用 chatGPT LLM，则并使用以下提示词并附上照片：
+
+```
+You are extracting data from a Canadian receipt photo. Read the image carefully and return ONLY a JSON object (no markdown fences, no commentary) with this exact shape — populate every field you can read, use null for missing:
+{
+  "doc_type": "receipt | signature_slip | statement | unknown",
+  "vendor": "store or restaurant name as printed",
+  "vendor_cn": "Chinese name if any (preserve original characters)",
+  "address": "street, city, province postal as printed",
+  "date": "YYYY-MM-DD",
+  "time": "HH:MM",
+  "currency": "CAD | USD | other",
+  "payment_method": "Visa | MasterCard | Debit | Cash | other",
+  "line_items": [{"name": "as printed", "price": 0.00}, ...],
+  "subtotal": 0.00,
+  "discount": 0.00,
+  "tax": 0.00,
+  "tax_label": "HST | GST | PST | QST | N/A | mixed",
+  "total": 0.00,
+  "tip": 0.00,
+  "confidence": 0.0,
+  "notes": "anything that affects reconciliation or classification"
+}
+```
+
+
+如果使用 minimax LLM，则使用以下 cli 脚本来识别图片。
 
 ```bash
 mmx vision describe \
@@ -94,12 +123,12 @@ EOF
 
 
 ### 1.2 MinerU Precision Parse — 表格保真
-
+**如果没有安装 mineru sklll 则跳过此节步骤。**
 **必须直接调用 `precision_parse`，不要用 `run_mineru.py` 的命令行入口**：
 
 ```python
 import sys
-sys.path.insert(0, "/Users/jacky/.agents/skills/mineru")
+sys.path.insert(0, "～/.agents/skills/mineru")
 from run_mineru import precision_parse
 
 precision_parse(image_path, timeout=300)
@@ -135,17 +164,19 @@ precision_parse(image_path, timeout=300)
 
 ## 阶段 2：LLM-as-judge 交叉验证
 
-**你就是裁判**。拿 MiniMax JSON 和 MinerU markdown 两个产物，按下面的规则合并、判断、纠错。**不要写 regex parser** —— 你已经能看到结构化 JSON 和 markdown 文本，直接阅读、判断。
 
 ### 2.1 字段合并优先级
+**如果没有安装 mineru sklll 则跳过此节步骤。**
+
+**你就是裁判**。拿 JSON from vision LLM 和 markdown from MinerU  两个产物，按下面的规则合并、判断、纠错。**不要写 regex parser** —— 你已经能看到结构化 JSON 和 markdown 文本，直接阅读、判断。
 
 | 字段 | 主来源 | 回退 | 理由 |
 |---|---|---|---|
-| `vendor` / `vendor_cn` / `address` | MiniMax | MinerU 文本检索 | 视觉模型语义理解更强 |
-| **`date` / `time`** | **MinerU** | MiniMax | 见下方警告 —— 实测 MiniMax 12 张错 2 张，MinerU 两次都对 |
-| `subtotal` / `tax` / `discount` / `total` | MinerU | MiniMax | MinerU 表格保真，数值可靠 |
-| `line_items` | MiniMax（数组结构） | MinerU markdown 表格解析 | JSON 数组比 markdown 表格好处理 |
-| `payment_method` | MiniMax | MinerU 关键词 | 模型判断"VISA" / "MASTERCARD" |
+| `vendor` / `vendor_cn` / `address` | chatgpt/MiniMax | MinerU 文本检索 | 视觉模型语义理解更强 |
+| **`date` / `time`** | **MinerU** | chatgpt/MiniMax | 见下方警告 —— 实测 MiniMax 12 张错 2 张，MinerU 两次都对 |
+| `subtotal` / `tax` / `discount` / `total` | MinerU | chatgpt/MiniMax | MinerU 表格保真，数值可靠 |
+| `line_items` | chatgpt/MiniMax（数组结构） | MinerU markdown 表格解析 | JSON 数组比 markdown 表格好处理 |
+| `payment_method` | chatgpt/MiniMax | MinerU 关键词 | 模型判断"VISA" / "MASTERCARD" |
 
 > ⚠️ **绝不因为日期"看起来在未来"就修改票面日期。** 申报年度由调用方给定，**不由模型推断**。
 >
@@ -153,7 +184,7 @@ precision_parse(image_path, timeout=300)
 >
 > 日期优先取 MinerU：收银/授权时间戳在小票上通常重复出现 2–3 次（交易行、AUTH 行、店铺 CODE），OCR 保真度高、可交叉验证。
 
-### 2.2 勾稽 —— 硬性算式
+### 2.2a 勾稽 —— 硬性算式
 
 ```python
 if discount is not None and discount > 0:
@@ -176,7 +207,7 @@ else:
 
 **重复扣减会直接打破勾稽**：Costco 那张 `1170.84 − 49.50 + 144.62 ≠ 1315.46`。已净额化的折扣写进 `notes`，不写进 `discount`。实测 12 张里有 3 张踩这个坑。
 
-若勾稽不平，**重新读 MinerU markdown**（你手里有全文），看是哪个数字错，纠正后重算。**不要写 fallback chain** —— LLM 直接判断。
+若勾稽不平，**重新读 MinerU markdown**（如果你手里有全文），看是哪个数字错，纠正后重算。**不要写 fallback chain** —— LLM 直接判断。
 
 ### 2.2b 明细加总勾稽 —— 最强的单行纠错手段
 
@@ -185,12 +216,6 @@ line_sum_ok = abs(sum(item.price for item in line_items) - subtotal) <= 0.02
 ```
 
 **这是本流水线中最有效的确定性校验。** 实测 4 处数值冲突里有 3 处由它直接判定，无需重读图像、无需主观取舍：
-
-| 冲突 | MiniMax | MinerU | 加总裁定 |
-|---|---|---|---|
-| 袋装甜橙 | 39.98 | 9.98 | MiniMax（唯有它加总 = 印出的 165.81） |
-| 台湾白菜 | 3.83 | 3.03 | MiniMax（加总 = 64.78） |
-| DNR ROLLS | 2.48 | 2.88 | MiniMax（加总 = 100.23） |
 
 **它比勾稽更强**：勾稽只看 subtotal / tax / total 三个汇总数，看不见单行 OCR 滑移；明细加总能定位到**具体是哪一行错了**。
 
@@ -249,7 +274,7 @@ elif 0 < rate < statutory:
 }
 ```
 
-常用来源标签：`MiniMax` / `MinerU` / `MiniMax (MinerU disagreement)` / `MiniMax (corrected from MinerU)` / `VISUAL` / `DERIVED (subtotal + tax = total)`。
+常用来源标签：`chatGPT` /`MiniMax` / `MinerU` / `MiniMax (MinerU disagreement)` / `MiniMax (corrected from MinerU)` / `VISUAL` / `DERIVED (subtotal + tax = total)`。
 
 **让 LLM-judge 自己写 `notes`**。它读得懂上下文，知道哪个数字值得说明。
 
@@ -525,9 +550,9 @@ filename_check = abs(total - gt_total) <= 0.01 and abs(tax - gt_tax) <= 0.01
   - `03_workpaper/` 放最终 Excel + `decisions.json`
 - `manifest.json` 与 `02_extraction/` 下的中间产物保留，构成审计轨迹 —— CRA 审计时需要能从工作底稿任一行回溯到原始凭证文件
 
-## 已知限制
+## 已知踩坑
 
-| 限制 | 应对 |
+| 踩坑 | 应对 |
 |---|---|
 | MinerU Agent API CDN 下载报 SSL 错误 | 降级到 `curl -k` 方案 |
 | MinerU 在旋转图片上版面混乱 | 让 LLM-judge 自己从 MiniMax + MinerU 文本里校正 |
