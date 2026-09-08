@@ -255,8 +255,24 @@ else:
 - **dual-vision**：**重新读 MinerU markdown**（如果你手里有全文），看是哪个数字错，纠正后重算。**不要写 fallback chain** —— LLM 直接判断。
 - **single-vision**：没有第二源对照；勾稽不平直接标 `review_required = true`，**置信度按 vision LLM 自身的 `confidence` 字段打折**（乘 0.6），并把疑似错的那一行（subtotal / tax / total 中的偏差最大者）在 `notes` 里点名。
 
-### 2.2b 明细加总勾稽 —— 模式相关的校验强度
+### 2.2b 长收据明细强制规则
 
+长收据（约 20 行以上、或票面明确显示 `Items Sold` 数量较大）必须执行分段视觉读取：先按收据上下区域裁切/放大，再按票面顺序合并结果。禁止只依赖一次整图读取，因为长收据最常见的失败是中段漏行，而不是汇总金额识别失败。
+
+以下规则为硬性要求：
+
+1. **不得汇总占位**：不得把多行收据压缩成一条 `aggregate`、`mixed basket` 或 `unresolved basket` 行来代替明细。每个可见的印刷行都必须单独输出。
+2. **无法辨认也要留行**：行名或金额不清时，保留该行并填写 `UNKNOWN` / `null`，同时设置 `review_required = true`、`line_confidence < 0.5` 和 `line_review_reason`；不得删除、合并或凭空补写。
+3. **区分印刷行类型**：每条明细增加 `line_type`：`item`、`discount`、`taxable_fee`、`deposit`、`refund` 或 `unknown`。TPD、即时折扣等印刷行必须保留为 `discount`，金额为负数；不能误当商品，也不能静默删除。
+4. **区分数量与行数**：`item_count` 表示票面商品数量；`printed_line_count` 表示输出的印刷行数量。折扣行可以增加 `printed_line_count`，但不增加 `item_count`。
+5. **逐行置信度**：除单据级 `confidence` 外，每行必须有 `line_confidence` 和 `line_review_reason`。单据级高置信度不能覆盖某一行的低置信度。
+6. **不为凑平而改数据**：若 `Σ line_items` 与票面 subtotal 不平，保留全部已读行，记录 `line_sum_difference`，标记 `review_required`；禁止为了凑平 subtotal 而增加、删除、合并或修改行金额。
+7. **覆盖率要可审计**：记录 `visible_line_count`、`extracted_line_count`、`unresolved_line_count` 和 `printed_line_count_match`。无法判断票面行数时，明确写 `unknown`，不得默认为“已完整提取”。
+
+长收据的最低合格标准是“逐行覆盖 + 不确定行显式复核”，不是“汇总金额勾稽通过”。
+
+
+### 2.2c 明细加总勾稽 —— 模式相关的校验强度
 ```python
 line_sum_ok = abs(sum(item.price for item in line_items) - subtotal) <= 0.02
 ```
@@ -562,7 +578,7 @@ line_tax_alloc = doc_tax * (line_amount / Σ(应税行 line_amount))
 | 10 | **GIFI 合法性** | code 在 CRA 清单中，且**不是 generic 块头**（§3.3） |
 | 11 | **可扣除性已判定** | 每条明细行 `is_deductible` ∈ {Y, REVIEW, N}，无空值（§3.5b） |
 | 12 | **来源标注** | 每个字段都有非空来源标签；`DERIVED` 已单独标记 |
-| 13 | **明细覆盖率** | line_items 非空（空时 GIFI 仅依赖商户+金额，confidence 应降低） |
+| 13 | **明细覆盖率** | 长收据须记录 visible/extracted/unresolved 行数；不得用一条 aggregate 行冒充完整明细 |
 
 **所有闸门状态在 Validation_Report 里列出**。`confidence < 0.7` 的行在 Validation_Report 置顶供 CPA 优先看。
 
@@ -631,7 +647,7 @@ filename_check = abs(total - gt_total) <= 0.01 and abs(tax - gt_tax) <= 0.01
 | MinerU Agent API CDN 下载报 SSL 错误 | 降级到 `curl -k` 方案 | dual-vision |
 | MinerU 在旋转图片上版面混乱 | 让 LLM-judge 自己从 vision LLM + MinerU 文本里校正 | dual-vision |
 | vision LLM 在低对比度图片上漏字段 | dual-vision：LLM-judge 看 MinerU markdown 补齐；single-vision：`confidence < 0.7` 直接 review_required | both |
-| 长收据（杂货 50+ 行）vision LLM 漏 line_items | dual-vision：依赖 MinerU markdown 表格回填；single-vision：截断未补齐部分到 `notes`，标 review_required | both |
+| 长收据（杂货 50+ 行）vision LLM 漏 line_items | 按上下区域分段放大读取；逐行保留；不确定行写 UNKNOWN 并标 `review_required`；禁止用 aggregate 行替代。dual-vision 可用 MinerU 作为交叉来源，但不得以其内容覆盖未获图像/vision 佐证的行 | both |
 | GPT-5 高分辨率 JPG (>20 MB) 触发 400 token 限制 | 预处理时压到长边 2048 px 再送 `image_url` | both（用 GPT-5 时） |
 | GPT-5 不带 `response_format=json_object` 时偶发返回 prose 包裹 | 永远带 `response_format={"type": "json_object"}`；收到 prose 仍按 `json.loads` 失败处理 | both（用 GPT-5 时） |
 | single-vision 模式下 confidence 普遍偏高（无第二源比对） | 配合 §2.3 的 1pp 收紧阈值与 §2.2b 的自检失败提示整体置信度折扣 | single-vision |
