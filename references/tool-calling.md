@@ -2,6 +2,30 @@
 
 Exact commands, parameters, and authentication for each tool in the pipeline.
 
+**Pipeline mode detection**（在抽取前先跑）：
+
+```bash
+test -f ~/.agents/skills/mineru/run_mineru.py && echo "minerU_AVAILABLE" || echo "minerU_MISSING"
+command -v mmx >/dev/null && echo "MMX_AVAILABLE" || echo "MMX_MISSING"
+echo "OPENAI_API_KEY set: ${OPENAI_API_KEY:+yes}${OPENAI_API_KEY:-no}"
+```
+
+按以下优先级决定 `pipeline_mode` 与 `vision_llm`：
+
+1. 用户在请求里显式说 "用 GPT / Codex / gpt-5" → `vision_llm=gpt-5`（若不可用直接报错）
+2. `mmx` 在 PATH 上 → `vision_llm=minimax`
+3. 否则退到 `vision_llm=gpt-5`
+
+然后 `pipeline_mode = dual-vision`（若 `minerU_AVAILABLE`）否则 `single-vision`。结果写入 `manifest.json`：
+
+```json
+{
+  "pipeline_mode": "dual-vision",
+  "vision_llm": "minimax",
+  "second_source": "mineru"
+}
+```
+
 ## MiniMax vision CLI
 
 ### Authentication
@@ -67,7 +91,28 @@ Do **not** write field-level regex extraction beyond this. Trust the JSON.
 - Output truncated at token limit on long receipts (50+ line items): rely on MinerU markdown to fill gaps.
 - **Date shifted by years**: the model may "correct" a printed date it believes is in the future (knowledge-cutoff artifact). Take dates from MinerU. See SKILL.md §2.1.
 
-## MinerU Precision Parse
+
+### Failure modes
+
+- **Timeout / API_ERROR**：重试一次，仍失败记显式提取失败，不要写空结果。
+- **400 / context_length_exceeded**：图太大（>20 MB），预处理时压到长边 2048 px，再重新上传。
+- **insufficient_quota / rate_limit**：等 30s 后重试一次，仍失败标 review_required，不写空结果。
+- **BAD_JSON**：模型无视 `response_format` 返回 prose。重新 prompt 时显式加 "Return ONLY valid JSON, no prose."；仍失败则 record 失败。
+- **Date shifted by years**（与 MiniMax 同）：GPT-5 也有 knowledge cutoff 幻觉。处理方式与 MiniMax 一致（见上面 Failure modes 与 SKILL.md §2.1）。
+
+### 推荐 prompt 写法
+
+与 MiniMax 完全共享 schema。**唯一建议差异**：在 prompt 末尾加一句
+
+```
+Return ONLY the JSON object. No prose before or after.
+```
+
+可以降低 GPT-5 输出 markdown fence 的概率（虽然 `response_format=json_object` 已能消除大部分情况）。
+
+## MinerU Precision Parse（仅 dual-vision 模式）
+
+> 如果 `~/.agents/skills/mineru/run_mineru.py` 不存在，整个章节跳过 —— single-vision 模式不调用 MinerU。
 
 ### Authentication
 API key is in `/Users/jacky/.agents/skills/mineru/.env` as `MINERU_API_KEY`. `precision_parse` reads it automatically via `load_env()`.
@@ -130,33 +175,54 @@ Default language: `chi_sim+chi_tra+eng`. Use `eng` only for English receipts.
 - **Long receipts lose lines** (vertical scrolling needed)
 - **Structure lost**: just text, no field labels
 
-Use Tesseract only as a sanity check or when both MiniMax and MinerU are unavailable.
+Use Tesseract only as a sanity check or when both vision LLM and MinerU are unavailable.
 
 ## Cost comparison (informal)
 
 | Tool | Per-image cost | Per-image time |
 |---|---|---|
-| MiniMax | $$ (vision API) | 5–15s |
+| MiniMax (`mmx vision describe`) | $$ (vision API) | 5–15s |
+| GPT-5 (`chat.completions`) | $$ (vision API) | 8–20s |
 | MinerU Precision Parse | $ (PDF parse API) | 20–40s |
 | Tesseract | Free | 1–3s |
 | LLM cross-validation | $ (Claude tokens) | 5–15s |
 
-For a 12-receipt batch: total cost dominated by MiniMax (~$0.50–1) and MinerU (~$0.10–0.30). LLM cross-validation adds ~$0.20 in tokens. Total per batch: roughly $1–2.
+For a 12-receipt batch（仅作数量级参考）：
+- **dual-vision + MiniMax**：~$0.50–1 (MiniMax) + ~$0.10–0.30 (MinerU) + ~$0.20 (LLM-judge) = ~$1–2
+- **dual-vision + GPT-5**：~$1.50–3 (GPT-5) + ~$0.10–0.30 (MinerU) + ~$0.20 (LLM-judge) = ~$2–3.5
+- **single-vision + MiniMax**：~$0.50–1 (MiniMax) + ~$0.20 (LLM-judge) = ~$0.7–1.2
+- **single-vision + GPT-5**：~$1.50–3 (GPT-5) + ~$0.20 (LLM-judge) = ~$1.7–3.2
 
-## Running tools in parallel
+精确价格以各供应商当期账单为准；这里仅供 batch 大小预算做量级判断。
 
-To minimize wall-clock time, run MiniMax and MinerU in parallel using a thread pool:
+## Running tools in parallel（按模式）
+
+### dual-vision 模式
+
+vision LLM 与 MinerU 用线程池并发跑；MinerU 是瓶颈（~30s/图），3–4 个 worker 把吞吐维持在 ~10–15s/图：
 
 ```python
 from concurrent.futures import ThreadPoolExecutor
 
 def process_one(image_path):
-    minimax = run_minimax(image_path)
-    mineru = run_mineru(image_path)
-    return minimax, mineru
+    llm_json  = run_vision_llm(image_path)   # MiniMax 或 GPT-5
+    mineru_md = run_mineru(image_path)
+    return llm_json, mineru_md
 
 with ThreadPoolExecutor(max_workers=4) as pool:
     results = list(pool.map(process_one, image_paths))
 ```
 
-MinerU is the slowest (~30s per image), so 3–4 workers keeps throughput at ~1 image per 10–15 seconds.
+### single-vision 模式
+
+无需并发 —— 只有一个工具。串行或单 worker 即可：
+
+```python
+def process_one(image_path):
+    return run_vision_llm(image_path), None   # 第二源固定为 None
+
+with ThreadPoolExecutor(max_workers=4) as pool:
+    results = list(pool.map(process_one, image_paths))
+```
+
+`pool.map` 在 single-vision 下意义不大但保留统一接口；调用方按 `pipeline_mode` 决定 worker 数即可。
